@@ -1,7 +1,7 @@
 # JMSites
 # 💜 JM Sites – Premium Web Design Portfolio
 
-![JM Sites Preview](https://i.imgur.com/sCXfcKA.png)
+![JM Sites Preview](https://images/jmsitesnew.png)
 
 🔗 **Live Site:** [jmsites.vercel.app](https://jmsites.vercel.app)
 
