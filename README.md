@@ -17,9 +17,9 @@ JM Sites is my personal freelance web design portfolio — a fully custom-built,
 
 ## ✨ Features
 
-- ⚡ **98/100 PageSpeed Score** – Optimized for performance
+- ⚡ **98/100 PageSpeed Score** – optimised for performance
 - 📱 **Fully Responsive** – Looks great on all devices
-- 🔍 **SEO Optimized** – Meta tags, Open Graph, semantic HTML
+- 🔍 **SEO optimised** – Meta tags, Open Graph, semantic HTML
 - ♿ **Accessible** – ARIA labels, keyboard navigation
 - 🎨 **Custom Design** – No templates, 100% original
 - 🚀 **Fast Deployment** – Hosted on Vercel/Netlify
