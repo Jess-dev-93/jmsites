@@ -3,7 +3,7 @@
 
 ![JM Sites Preview](images/jmsitesnew.png)
 
-🔗 **Live Site:** [jmsites.vercel.app](https://jmsites.vercel.app)
+🔗 **Live Site:** [jmsites.vercel.app](https://jmsites.dev)
 
 ---
 
@@ -76,7 +76,7 @@ Or just use the VS Code Live Server extension!
 
 I'm currently **available for freelance projects** and always happy to chat!
 
-- 🌐 Website: [jmsites.vercel.app](https://jmsites.vercel.app)
+- 🌐 Website: [jmsites.vercel.app](https://jmsites.dev)
 - 💼 LinkedIn: [jess-manning-dev](https://www.linkedin.com/in/jess-manning-dev)
 - 📸 Instagram: [@jmsites.dev](https://www.instagram.com/jmsites.dev/)
 - 📧 Email: jess.manning.dev@gmail.com
