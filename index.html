@@ -2,32 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
   <title>JM Sites | Premium Web Design by Jess</title>
-  <meta name="description" content="Premium, high-converting websites for businesses ready to stand out. Fast, SEO-optimised, mobile-first websites by Jess. Starting from \$1,197.">
+  <meta name="description" 
+    content="Premium, high-converting websites for 
+    businesses ready to stand out. Fast, 
+    SEO-optimised, mobile-first websites by Jess. 
+    Starting from \$1,197.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#3e015f">
   <link rel="canonical" href="https://jmsites.dev">
-  <meta name="google-site-verification: google717024246a4f76c6.html">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="JM Sites | Premium Web Design by Jess">
-  <meta property="og:description" content="Get a fast, beautiful, lead-generating website in 10 days or less.">
-  <meta property="og:image" content="https://i.imgur.com/sCXfcKA.png">
+  <!-- ✅ FIXED Google Search Console verification -->
+  <meta name="google-site-verification" 
+    content="google717024246a4f76c6">
+
+  <!-- Open Graph — ✅ FIXED image URL -->
+  <meta property="og:title" 
+    content="JM Sites | Premium Web Design by Jess">
+  <meta property="og:description" 
+    content="Get a fast, beautiful, lead-generating 
+    website in 10 days or less.">
+  <meta property="og:image" 
+    content="https://jmsites.dev/images/og-image.png">
   <meta property="og:url" content="https://jmsites.dev">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="JM Sites">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="JM Sites | Premium Web Design by Jess">
-  <meta name="twitter:description" content="Premium, high-converting websites built fast and designed to convert.">
-  <meta name="twitter:image" content="https://i.imgur.com/sCXfcKA.png">
+  <meta name="twitter:title" 
+    content="JM Sites | Premium Web Design by Jess">
+  <meta name="twitter:description" 
+    content="Premium, high-converting websites built 
+    fast and designed to convert.">
+  <meta name="twitter:image" 
+    content="https://jmsites.dev/images/og-image.png">
 
   <!-- Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" 
+    href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=
+    Inter:wght@400;600;700;800;900&display=swap" 
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="preload" href="images/logo.png" as="image">
 
@@ -41,12 +60,14 @@
     "@type": "ProfessionalService",
     "name": "JM Sites",
     "url": "https://jmsites.dev",
-    "image": "https://i.imgur.com/sCXfcKA.png",
-    "description": "Premium web design and front-end development for businesses that want fast, custom-coded, mobile-first websites.",
+    "image": "https://jmsites.dev/images/og-image.png",
+    "description": "Premium web design and front-end 
+      development for businesses that want fast, 
+      custom-coded, mobile-first websites.",
     "areaServed": "Australia",
     "founder": {
       "@type": "Person",
-      "name": "Jess"
+      "name": "Jessica Manning"
     },
     "sameAs": [
       "https://www.linkedin.com/in/jess-manning-dev",
@@ -499,57 +520,41 @@
   </footer>
 
   <script>
-    // Set Current Year in Footer
-    document.getElementById('year').textContent = new Date().getFullYear();
+  // Set Current Year in Footer
+  document.getElementById('year').textContent = 
+    new Date().getFullYear();
 
-    // Close Mobile Nav on Link Click
-    document.querySelectorAll('.nav__link').forEach(link => {
-      link.addEventListener('click', () => {
-        document.getElementById('nav-toggle').checked = false;
-      });
+  // Close Mobile Nav on Link Click
+  document.querySelectorAll('.nav__link').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('nav-toggle').checked = false;
     });
+  });
 
-    // Add Shadow to Header on Scroll
-    const header = document.querySelector('.header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 20) {
-        header.classList.add('header--scrolled');
-      } else {
-        header.classList.remove('header--scrolled');
+  // Add Shadow to Header on Scroll
+  const header = document.querySelector('.header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      header.classList.add('header--scrolled');
+    } else {
+      header.classList.remove('header--scrolled');
+    }
+  });
+
+  // Fade Up Animation Observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
       }
     });
+  }, {
+    threshold: 0.12
+  });
 
-    // Fade Up Animation Observer
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-        }
-      });
-    }, {
-      threshold: 0.12
-    });
-
-    document.querySelectorAll('.reveal').forEach(el => {
-      observer.observe(el);
-    });
-
-    export const metadata = {
-  title: 'JM Sites | Premium Web Design by Jess',
-  description: 'Your description here',
-  openGraph: {
-    title: 'JM Sites | Premium Web Design by Jess',
-    description: 'Your description here',
-    url: 'https://jmsites.dev',
-    images: [
-      {
-        url: 'https://jmsites.dev/og-image.jpg',
-        width: 1200,
-        height: 630,
-      },
-    ],
-  },
-}
-  </script>
+  document.querySelectorAll('.reveal').forEach(el => {
+    observer.observe(el);
+  });
+</script>
 </body>
 </html>
