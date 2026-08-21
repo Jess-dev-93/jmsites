@@ -1,0 +1,870 @@
+/* ═══════════════════════════════════════════════
+   JM SITES — GLOBAL DESIGN SYSTEM
+   Source of truth for public JM Sites pages
+   ═══════════════════════════════════════════════ */
+
+
+/* =========================================================
+   01 — DESIGN TOKENS
+========================================================= */
+
+:root {
+
+  /* BRAND */
+
+  --jm-purple: #3e015f;
+  --jm-purple-bright: #9f4de0;
+  --jm-purple-mid: #6f1d95;
+
+  --jm-cyan: #00d4ff;
+
+  --jm-lilac: #efe6f7;
+  --jm-soft: #fbf9fc;
+  --jm-soft-purple: #f7f1fb;
+
+  --jm-dark: #160a20;
+  --jm-dark-soft: #21112d;
+
+  --jm-white: #ffffff;
+
+
+  /* TEXT */
+
+  --jm-ink: #18131f;
+  --jm-text: #3f3946;
+  --jm-muted: #6e6676;
+  --jm-text-on-dark: rgba(255, 255, 255, 0.76);
+
+
+  /* BORDERS */
+
+  --jm-border: rgba(62, 1, 95, 0.10);
+  --jm-border-strong: rgba(62, 1, 95, 0.16);
+  --jm-border-dark: rgba(255, 255, 255, 0.10);
+
+
+  /* GRADIENTS */
+
+  --jm-gradient-brand:
+    linear-gradient(
+      90deg,
+      var(--jm-purple),
+      var(--jm-purple-bright),
+      var(--jm-cyan)
+    );
+
+  --jm-gradient-purple:
+    linear-gradient(
+      145deg,
+      var(--jm-purple),
+      var(--jm-purple-mid)
+    );
+
+  --jm-gradient-dark:
+    linear-gradient(
+      145deg,
+      var(--jm-dark),
+      var(--jm-dark-soft)
+    );
+
+  --jm-gradient-soft:
+    linear-gradient(
+      180deg,
+      #faf8fc,
+      #f7f1fb
+    );
+
+
+  /* TYPOGRAPHY */
+
+  --jm-text-xs: 0.75rem;
+  --jm-text-sm: 0.9rem;
+  --jm-text-card: 1rem;
+
+  /* Your preferred normal paragraph size */
+  --jm-text-body: 1.25rem;
+
+  --jm-text-lead: 1.4rem;
+
+  --jm-h3:
+    clamp(1.5rem, 2.5vw, 2.2rem);
+
+  --jm-h2:
+    clamp(2rem, 4.5vw, 3.35rem);
+
+  --jm-h1:
+    clamp(3rem, 7vw, 7rem);
+
+
+  /* LINE HEIGHT */
+
+  --jm-line-tight: 1.05;
+  --jm-line-heading: 1.1;
+  --jm-line-body: 1.65;
+  --jm-line-card: 1.55;
+
+
+  /* RADII */
+
+  --jm-radius-sm: 7px;
+  --jm-radius-md: 12px;
+  --jm-radius-card: 18px;
+  --jm-radius-large: 24px;
+  --jm-radius-pill: 999px;
+
+
+  /* SPACING */
+
+  --jm-space-xs: 0.5rem;
+  --jm-space-sm: 0.75rem;
+  --jm-space-md: 1rem;
+  --jm-space-lg: 1.5rem;
+  --jm-space-xl: 2rem;
+  --jm-space-2xl: 3rem;
+
+  --jm-section-space:
+    clamp(3.25rem, 5vw, 5rem);
+
+
+  /* SHADOW */
+
+  --jm-shadow-card:
+    0 15px 50px rgba(62, 1, 95, 0.06);
+
+  --jm-shadow-small:
+    0 5px 14px rgba(62, 1, 95, 0.12);
+}
+
+
+/* =========================================================
+   02 — PAGE FOUNDATION
+========================================================= */
+
+.jm-page {
+  margin: 0;
+
+  background: var(--jm-white);
+  color: var(--jm-ink);
+}
+
+.jm-container {
+  width: min(1240px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.jm-reading-width {
+  width: min(1050px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+
+/* =========================================================
+   03 — TYPOGRAPHY
+========================================================= */
+
+.jm-h1 {
+  margin: 0;
+
+  color: var(--jm-ink);
+
+  font-size: var(--jm-h1);
+  line-height: 1.08;
+  font-weight: 900;
+  letter-spacing: -0.045em;
+}
+
+.jm-h2 {
+  margin: 0 0 1.25rem;
+
+  color: var(--jm-ink);
+
+  font-size: var(--jm-h2);
+  line-height: var(--jm-line-tight);
+  font-weight: 900;
+
+  letter-spacing: -0.035em;
+}
+
+.jm-h3 {
+  margin: 0 0 0.75rem;
+
+  color: var(--jm-ink);
+
+  font-size: var(--jm-h3);
+  line-height: var(--jm-line-heading);
+  font-weight: 900;
+}
+
+.jm-body {
+  margin: 0 0 1rem;
+
+  color: var(--jm-text);
+
+  font-size: var(--jm-text-body);
+  line-height: var(--jm-line-body);
+  font-weight: 400;
+}
+
+.jm-lead {
+  margin: 0 0 1.2rem;
+
+  color: var(--jm-ink);
+
+  font-size: var(--jm-text-lead);
+  line-height: 1.55;
+  font-weight: 650;
+}
+
+.jm-small {
+  color: var(--jm-muted);
+
+  font-size: var(--jm-text-sm);
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   04 — EYEBROWS / LABELS
+========================================================= */
+
+.jm-eyebrow,
+.jm-label {
+  display: block;
+
+  margin-bottom: 0.7rem;
+
+  color: var(--jm-purple-bright);
+
+  font-size: var(--jm-text-xs);
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.jm-eyebrow--center {
+  text-align: center;
+}
+
+
+/* =========================================================
+   05 — GRADIENT TEXT
+========================================================= */
+
+.jm-gradient-text {
+  background: var(--jm-gradient-brand);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+
+/* =========================================================
+   06 — SECTIONS
+========================================================= */
+
+.jm-section {
+  margin: 0;
+
+  padding:
+    var(--jm-section-space)
+    0;
+}
+
+.jm-section--soft {
+  background: var(--jm-gradient-soft);
+}
+
+.jm-section--dark {
+  background: var(--jm-gradient-dark);
+
+  color: var(--jm-white);
+}
+
+.jm-section--dark .jm-h2,
+.jm-section--dark .jm-h3 {
+  color: var(--jm-white);
+}
+
+.jm-section--dark .jm-body,
+.jm-section--dark .jm-small {
+  color: var(--jm-text-on-dark);
+}
+
+
+/* =========================================================
+   07 — CARD FOUNDATION
+========================================================= */
+
+.jm-card {
+  padding: 1.4rem;
+
+  border: 1px solid var(--jm-border);
+  border-radius: var(--jm-radius-card);
+
+  background: var(--jm-white);
+
+  color: var(--jm-ink);
+}
+
+
+/* CARD CONTENT */
+
+.jm-card__label {
+  display: block;
+
+  margin-bottom: 1rem;
+
+  color: var(--jm-purple-bright);
+
+  font-size: var(--jm-text-xs);
+  font-weight: 900;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.jm-card__title {
+  display: block;
+
+  margin-bottom: 0.55rem;
+
+  color: var(--jm-ink);
+
+  font-size: 1.15rem;
+  line-height: 1.3;
+  font-weight: 850;
+}
+
+.jm-card__text {
+  margin: 0;
+
+  color: var(--jm-muted);
+
+  /* THIS fixes your tiny technical-page cards */
+  font-size: var(--jm-text-card);
+  line-height: var(--jm-line-card);
+}
+
+
+/* =========================================================
+   08 — CARD VARIANTS
+========================================================= */
+
+
+/* Standard white */
+
+.jm-card--white {
+  background: var(--jm-white);
+}
+
+
+/* Soft lilac */
+
+.jm-card--soft {
+  background: var(--jm-soft);
+}
+
+
+/* Slight shadow */
+
+.jm-card--raised {
+  box-shadow: var(--jm-shadow-card);
+}
+
+
+/* Purple card */
+
+.jm-card--purple {
+  border-color: transparent;
+
+  background: var(--jm-gradient-purple);
+
+  color: var(--jm-white);
+}
+
+.jm-card--purple .jm-card__label {
+  color: #dcb5f6;
+}
+
+.jm-card--purple .jm-card__title,
+.jm-card--purple .jm-card__text {
+  color: var(--jm-white);
+}
+
+
+/* Dark card */
+
+.jm-card--dark {
+  border-color: var(--jm-border-dark);
+
+  background: rgba(255, 255, 255, 0.045);
+
+  color: var(--jm-white);
+}
+
+.jm-card--dark .jm-card__label {
+  color: #c985ed;
+}
+
+.jm-card--dark .jm-card__title {
+  color: var(--jm-white);
+}
+
+.jm-card--dark .jm-card__text {
+  color: var(--jm-text-on-dark);
+}
+
+
+/* Highlight card */
+
+.jm-card--highlight {
+  background:
+    linear-gradient(
+      135deg,
+      #f7f1fb,
+      #f3fbfd
+    );
+}
+
+
+/* =========================================================
+   09 — NUMBER / CHECK BADGES
+========================================================= */
+
+.jm-number {
+  display: grid;
+  place-items: center;
+
+  flex: 0 0 auto;
+
+  width: 26px;
+  height: 26px;
+
+  border-radius: var(--jm-radius-sm);
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--jm-purple),
+      var(--jm-purple-bright)
+    );
+
+  color: var(--jm-white);
+
+  font-size: 0.62rem;
+  line-height: 1;
+  font-weight: 900;
+
+  box-shadow: var(--jm-shadow-small);
+}
+
+.jm-number--large {
+  width: 34px;
+  height: 34px;
+
+  font-size: 0.7rem;
+}
+
+
+/* =========================================================
+   10 — STRUCTURED LIST / ROW SYSTEM
+========================================================= */
+
+.jm-list {
+  margin: 1.5rem 0;
+
+  overflow: hidden;
+
+  border: 1px solid var(--jm-border);
+  border-radius: var(--jm-radius-card);
+
+  background: var(--jm-soft);
+}
+
+.jm-list__row {
+  display: grid;
+  grid-template-columns: 34px 120px 1fr;
+  align-items: center;
+  gap: 0.8rem;
+
+  padding: 0.9rem 1rem;
+
+  border-bottom: 1px solid rgba(62, 1, 95, 0.08);
+}
+
+.jm-list__row:last-child {
+  border-bottom: 0;
+}
+
+.jm-list__title {
+  color: var(--jm-purple);
+
+  font-size: 0.95rem;
+  font-weight: 850;
+}
+
+.jm-list__text {
+  color: var(--jm-muted);
+
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   11 — QUOTES / STATEMENTS
+========================================================= */
+
+.jm-quote {
+  margin: 1.5rem 0;
+
+  padding: 1.1rem 1.2rem;
+
+  border-left: 4px solid var(--jm-purple-bright);
+
+  background: var(--jm-soft);
+
+  color: var(--jm-ink);
+
+  font-size: 1.15rem;
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+.jm-statement {
+  margin: 2.5rem auto;
+
+  max-width: 900px;
+
+  color: var(--jm-purple);
+
+  font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+  line-height: 1.08;
+  font-weight: 900;
+
+  text-align: center;
+}
+
+
+/* Purple statement variant */
+
+.jm-statement--purple {
+  padding: 1.3rem 1.5rem;
+
+  border-radius: var(--jm-radius-card);
+
+  background: var(--jm-gradient-purple);
+
+  color: var(--jm-white);
+}
+
+
+/* =========================================================
+   12 — BUTTONS
+========================================================= */
+
+.jm-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+
+  padding: 0.85rem 1.2rem;
+
+  border: 1px solid transparent;
+  border-radius: var(--jm-radius-pill);
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+  line-height: 1;
+  font-weight: 800;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.jm-button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* Primary */
+
+.jm-button--primary {
+  background: var(--jm-purple);
+  color: var(--jm-white);
+}
+
+
+/* Secondary */
+
+.jm-button--secondary {
+  border-color: var(--jm-border-strong);
+
+  background: var(--jm-white);
+  color: var(--jm-purple);
+}
+
+
+/* Dark surface button */
+
+.jm-button--glass {
+  border-color: rgba(255, 255, 255, 0.18);
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: var(--jm-white);
+}
+
+.jm-button--glass:hover {
+  background: var(--jm-white);
+  color: var(--jm-purple);
+}
+
+
+/* =========================================================
+   13 — NAVIGATION
+========================================================= */
+
+.jm-nav {
+  position: relative;
+  z-index: 20;
+
+  border-bottom: 1px solid rgba(62, 1, 95, 0.08);
+
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.jm-nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  width: min(1180px, calc(100% - 2rem));
+  min-height: 76px;
+
+  margin-inline: auto;
+}
+
+.jm-nav__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: var(--jm-purple);
+
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.jm-nav__logo {
+  width: 42px;
+  height: 42px;
+
+  object-fit: contain;
+
+  border-radius: 10px;
+}
+
+.jm-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.jm-nav__links a {
+  color: var(--jm-muted);
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.jm-nav__links a:hover {
+  color: var(--jm-purple);
+}
+
+
+/* =========================================================
+   14 — FOOTER
+========================================================= */
+
+.jm-footer {
+  margin: 0;
+
+  padding: 1.4rem;
+
+  background: #180621;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  text-align: center;
+}
+
+.jm-footer p {
+  margin: 0;
+
+  color: inherit;
+
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   15 — FINAL / HERO DARK BLOCK
+========================================================= */
+
+.jm-final {
+  margin: 0;
+
+  padding:
+    clamp(3.5rem, 6vw, 5rem)
+    1rem;
+
+  background:
+    linear-gradient(
+      145deg,
+      #260036,
+      #4d086d 55%,
+      #351047
+    );
+
+  color: var(--jm-white);
+
+  text-align: center;
+}
+
+.jm-final__eyebrow {
+  margin: 0 0 1rem;
+
+  color: #dcb8ef;
+
+  font-size: var(--jm-text-xs);
+  font-weight: 900;
+
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.jm-final__title {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  color: var(--jm-white);
+
+  font-size: clamp(2.6rem, 7vw, 6rem);
+  line-height: 0.98;
+  font-weight: 900;
+
+  letter-spacing: -0.04em;
+}
+
+.jm-final__text {
+  max-width: 760px;
+
+  margin: 1.5rem auto 0;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   16 — RESPONSIVE
+========================================================= */
+
+@media (max-width: 640px) {
+
+  .jm-container,
+  .jm-reading-width {
+    width: calc(100% - 1.4rem);
+  }
+
+
+  /* Typography */
+
+  .jm-body {
+    font-size: 1rem;
+    line-height: 1.68;
+  }
+
+  .jm-lead {
+    font-size: 1.2rem;
+  }
+
+  .jm-h2 {
+    font-size: clamp(1.9rem, 9vw, 2.5rem);
+  }
+
+  .jm-h3 {
+    font-size: clamp(1.45rem, 7vw, 2rem);
+  }
+
+
+  /* Navigation */
+
+  .jm-nav__inner {
+    min-height: 64px;
+
+    width: calc(100% - 1.2rem);
+  }
+
+  .jm-nav__logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .jm-nav__links {
+    gap: 0.7rem;
+  }
+
+  .jm-nav__links a {
+    font-size: 0.78rem;
+  }
+
+
+  /* Sections */
+
+  .jm-section {
+    padding: 2.7rem 0;
+  }
+
+
+  /* Cards */
+
+  .jm-card {
+    padding: 1rem;
+  }
+
+  .jm-card__text {
+    font-size: 0.95rem;
+  }
+
+
+  /* Lists */
+
+  .jm-list__row {
+    grid-template-columns: 30px 1fr;
+    gap: 0.55rem 0.75rem;
+
+    padding: 0.85rem;
+  }
+
+  .jm-list__text {
+    grid-column: 2;
+  }
+
+}

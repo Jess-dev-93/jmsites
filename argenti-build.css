@@ -1,0 +1,759 @@
+/* ═══════════════════════════════════════════════
+   ARGENTI — TECHNICAL BUILD CASE STUDY
+   PAGE-SPECIFIC CSS ONLY
+
+   jm-system.css owns:
+   typography · colours · cards · buttons ·
+   numbers · nav · footer · section rhythm ·
+   global spacing · radii · shadows
+
+   This file owns:
+   unique Argenti technical-page compositions
+   ═══════════════════════════════════════════════ */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.build-hero {
+  position: relative;
+  overflow: hidden;
+
+  padding: 1.5rem 0 3rem;
+
+  background:
+    radial-gradient(
+      circle at 50% -20%,
+      rgba(159, 77, 224, 0.18),
+      transparent 55%
+    ),
+    linear-gradient(
+      180deg,
+      var(--jm-white) 0%,
+      var(--jm-soft) 100%
+    );
+}
+
+.build-hero__title {
+  max-width: 950px;
+  margin-inline: auto;
+
+  text-align: center;
+}
+
+.build-hero__line {
+  display: block;
+
+  /* protects g / y / p descenders */
+  padding-bottom: 0.06em;
+}
+
+.build-hero__intro {
+  max-width: 720px;
+
+  margin:
+    2rem
+    auto
+    0;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   HERO SUMMARY
+========================================================= */
+
+.build-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+}
+
+
+/* =========================================================
+   OVERVIEW
+========================================================= */
+
+.build-heading-row {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: end;
+  gap: 4rem;
+}
+
+.build-heading-row > p {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   DEVELOPMENT FLOW
+========================================================= */
+
+.build-flow {
+  display: flex;
+  align-items: stretch;
+  gap: 0.6rem;
+
+  margin-top: 2rem;
+}
+
+.build-flow__item {
+  flex: 1;
+  min-width: 0;
+}
+
+.build-flow__item .jm-number {
+  margin-bottom: 0.75rem;
+}
+
+.build-flow__arrow {
+  align-self: center;
+
+  flex: 0 0 auto;
+
+  color: #b89dc8;
+}
+
+
+/* =========================================================
+   SECTION INTRO
+========================================================= */
+
+.build-section__intro {
+  max-width: 900px;
+
+  margin-bottom: 2rem;
+}
+
+.build-section__intro .jm-body {
+  max-width: 760px;
+}
+
+
+/* =========================================================
+   FEATURE / CODE GRIDS
+========================================================= */
+
+.build-feature-grid,
+.build-code-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+
+/* =========================================================
+   DEVELOPMENT PRINCIPLE
+========================================================= */
+
+.build-rule {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: center;
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+}
+
+.build-rule .jm-card__label,
+.build-rule .jm-card__title {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   VISUAL PROOF PLACEHOLDER
+========================================================= */
+
+.build-proof-placeholder {
+  display: grid;
+  place-items: center;
+
+  min-height: 230px;
+
+  margin-top: 1.5rem;
+  padding: 2rem;
+
+  border: 1px dashed var(--jm-border-strong);
+  border-radius: var(--jm-radius-large);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--jm-soft),
+      #f2faff
+    );
+
+  text-align: center;
+}
+
+.build-proof-placeholder .jm-label {
+  margin-bottom: 0;
+}
+
+.build-proof-placeholder__title {
+  display: block;
+
+  margin-top: 0.45rem;
+
+  color: var(--jm-purple);
+
+  font-size: 1.15rem;
+  line-height: 1.3;
+  font-weight: 850;
+}
+
+.build-proof-placeholder .jm-small {
+  margin:
+    0.45rem
+    0
+    0;
+}
+
+
+/* =========================================================
+   CMS TYPES
+========================================================= */
+
+.build-cms-types {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+}
+
+.build-cms-card {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.build-cms-card .jm-card__title {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   CMS SYSTEM DIAGRAM
+========================================================= */
+
+.build-system-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+
+  margin-top: 1.5rem;
+}
+
+.build-system-step {
+  flex: 1;
+
+  padding: 0.65rem;
+
+  text-align: center;
+}
+
+.build-system-step .jm-label {
+  margin-bottom: 0.3rem;
+}
+
+.build-system-step strong {
+  display: block;
+
+  color: var(--jm-purple);
+
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.build-system-diagram > span {
+  flex: 0 0 auto;
+
+  color: #b89dc8;
+}
+
+
+/* =========================================================
+   TWO COLUMN CARDS
+========================================================= */
+
+.build-two-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+}
+
+
+/* =========================================================
+   DEBUGGING EXAMPLE
+========================================================= */
+
+.build-debug-example {
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+.build-debug-example__copy .jm-card__text + .jm-card__text {
+  margin-top: 1rem;
+}
+
+
+/* =========================================================
+   DEBUGGING PATH
+========================================================= */
+
+.build-debug-path {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border: 1px solid var(--jm-border);
+  border-radius: var(--jm-radius-card);
+
+  background: var(--jm-white);
+}
+
+.build-debug-path span {
+  padding: 0.7rem 0.8rem;
+
+  color: var(--jm-purple);
+
+  font-size: 0.95rem;
+  line-height: 1.3;
+  font-weight: 800;
+
+  text-align: center;
+}
+
+.build-debug-path b {
+  color: var(--jm-purple-bright);
+
+  font-size: 0.7rem;
+  line-height: 1;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   WEBFLOW STATEMENT
+========================================================= */
+
+.build-webflow-line {
+  margin-top: 2.5rem;
+}
+
+
+/* =========================================================
+   CONNECTED STACK
+========================================================= */
+
+.build-stack {
+  display: flex;
+  align-items: stretch;
+  gap: 0.55rem;
+}
+
+.build-stack__item {
+  flex: 1;
+  min-width: 0;
+}
+
+.build-stack__item .jm-card__label,
+.build-stack__item .jm-card__title {
+  margin-bottom: 0;
+}
+
+.build-stack > b {
+  align-self: center;
+
+  flex: 0 0 auto;
+
+  color: rgba(255, 255, 255, 0.35);
+}
+
+
+/* =========================================================
+   INTEGRATION DETAIL CARDS
+========================================================= */
+
+.build-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+}
+
+
+/* =========================================================
+   PERFORMANCE
+========================================================= */
+
+.build-performance {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.build-performance__score > div {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+
+  margin-top: 0.8rem;
+}
+
+.build-performance__score small {
+  color: #a59aaa;
+
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1;
+  font-weight: 800;
+}
+
+.build-performance__score b {
+  color: #c8bdcc;
+
+  font-size: 1.4rem;
+}
+
+.build-performance__score strong {
+  color: var(--jm-purple);
+
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 0.95;
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   PERFORMANCE META
+========================================================= */
+
+.build-performance-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+
+  margin-top: 1rem;
+}
+
+.build-performance-meta span {
+  padding: 0.5rem 0.75rem;
+
+  border-radius: var(--jm-radius-pill);
+
+  background: rgba(0, 212, 255, 0.1);
+
+  color: #087f9c;
+
+  font-size: var(--jm-text-xs);
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   PERFORMANCE WORK GRID
+========================================================= */
+
+.build-performance-work {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: 1.5rem;
+
+  overflow: hidden;
+
+  border: 1px solid var(--jm-border);
+  border-radius: var(--jm-radius-card);
+
+  background: var(--jm-soft);
+}
+
+.build-performance-work div {
+  padding: 0.9rem 1rem;
+
+  border-right: 1px solid var(--jm-border);
+  border-bottom: 1px solid var(--jm-border);
+
+  color: var(--jm-muted);
+
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.build-performance-work div:nth-child(4n) {
+  border-right: 0;
+}
+
+.build-performance-work div:nth-last-child(-n + 4) {
+  border-bottom: 0;
+}
+
+
+/* =========================================================
+   RELEASE PROCESS
+========================================================= */
+
+.build-release {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.55rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.build-release__item {
+  text-align: center;
+}
+
+.build-release__item .jm-number {
+  margin:
+    0
+    auto
+    0.6rem;
+}
+
+.build-release__item strong {
+  display: block;
+
+  color: var(--jm-purple);
+
+  font-size: 0.9rem;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   FINAL RESULT
+========================================================= */
+
+.build-result {
+  position: relative;
+  overflow: hidden;
+}
+
+.build-result::before {
+  content: "";
+
+  position: absolute;
+  top: -20rem;
+  left: 50%;
+
+  width: 45rem;
+  height: 45rem;
+
+  transform: translateX(-50%);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(169, 79, 228, 0.28),
+      transparent 68%
+    );
+
+  pointer-events: none;
+}
+
+.build-result > .jm-container {
+  position: relative;
+}
+
+.build-result__accent {
+  display: block;
+
+  color: #d994f5;
+}
+
+.build-result__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
+  margin-top: 2rem;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .build-summary,
+  .build-feature-grid,
+  .build-code-grid,
+  .build-cms-types {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .build-heading-row,
+  .build-debug-example {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .build-flow,
+  .build-system-diagram,
+  .build-stack {
+    flex-wrap: wrap;
+  }
+
+  .build-flow__arrow,
+  .build-system-diagram > span,
+  .build-stack > b {
+    display: none;
+  }
+
+  .build-flow__item,
+  .build-system-step,
+  .build-stack__item {
+    flex:
+      1
+      1
+      30%;
+  }
+
+  .build-release {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .build-performance-work {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .build-performance-work div:nth-child(4n) {
+    border-right: 1px solid var(--jm-border);
+  }
+
+  .build-performance-work div:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .build-performance-work div:nth-last-child(-n + 4) {
+    border-bottom: 1px solid var(--jm-border);
+  }
+
+  .build-performance-work div:nth-last-child(-n + 2) {
+    border-bottom: 0;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+
+  /* HERO */
+
+  .build-hero {
+    padding:
+      3rem
+      0
+      2.4rem;
+  }
+
+  .build-hero__intro {
+    margin-top: 1.5rem;
+  }
+
+
+  /* SUMMARY */
+
+  .build-summary {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+
+  /* OVERVIEW */
+
+  .build-heading-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+
+  /* FLOW */
+
+  .build-flow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.55rem;
+  }
+
+  .build-flow__item {
+    width: 100%;
+  }
+
+
+  /* CONTENT GRIDS */
+
+  .build-feature-grid,
+  .build-code-grid,
+  .build-cms-types,
+  .build-two-column,
+  .build-highlight-grid,
+  .build-performance {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* PRINCIPLE */
+
+  .build-rule {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* CMS SYSTEM */
+
+  .build-system-diagram {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+
+  /* STACK */
+
+  .build-stack {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  /* PERFORMANCE */
+
+  .build-performance-work {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  /* RELEASE */
+
+  .build-release {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}

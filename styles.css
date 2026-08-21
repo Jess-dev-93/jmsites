@@ -1478,3 +1478,354 @@ p {
     transition: none !important;
   }
 }
+/* ═══════════════════════════════════════════════════════
+   FEATURED PORTFOLIO PROJECT — ARGENTI
+   JM Sites
+   ═══════════════════════════════════════════════════════ */
+
+.argenti-feature {
+  max-width: 1240px;
+  margin: 0 auto 3rem;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(62, 1, 95, 0.12);
+  border-radius: 24px;
+
+  background: #fff;
+
+  box-shadow:
+    0 24px 70px rgba(62, 1, 95, 0.1);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.argenti-feature__image {
+  display: block;
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #160a20;
+}
+
+.argenti-feature__image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  object-position: top center;
+
+  transition: transform 0.4s ease;
+}
+
+.argenti-feature__image:hover img {
+  transform: scale(1.01);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.argenti-feature__content {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(420px, 0.9fr);
+
+  grid-template-areas:
+    "copy proof"
+    "copy actions";
+
+  column-gap: clamp(2rem, 5vw, 5rem);
+  row-gap: 1.25rem;
+
+  align-items: center;
+
+  padding: clamp(2rem, 4vw, 3.5rem);
+
+  background:
+    radial-gradient(
+      circle at 100% 0,
+      rgba(159, 77, 224, 0.1),
+      transparent 42%
+    ),
+    #fff;
+}
+
+
+/* Copy column */
+
+.argenti-feature__content > div:first-child {
+  grid-area: copy;
+}
+
+
+/* =========================================================
+   EYEBROW + TITLE + INTRO
+========================================================= */
+
+.argenti-feature__eyebrow {
+  display: block;
+
+  margin-bottom: 0.75rem;
+
+  color: #9f4de0;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.argenti-feature h3 {
+  margin: 0 0 1rem;
+
+  color: #18131f;
+
+  font-size: clamp(2.6rem, 5vw, 4.5rem);
+  line-height: 0.98;
+
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.argenti-feature__intro {
+  max-width: 680px;
+
+  margin: 0;
+
+  color: #625a68;
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   PROOF CARDS
+========================================================= */
+
+.argenti-feature__proof {
+  grid-area: proof;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 0.65rem;
+
+  margin: 0;
+}
+
+.argenti-feature__proof div {
+  min-width: 0;
+
+  padding: 1rem;
+
+  border: 1px solid rgba(62, 1, 95, 0.09);
+  border-radius: 14px;
+
+  background: #faf7fc;
+}
+
+.argenti-feature__proof span,
+.argenti-feature__proof strong {
+  display: block;
+}
+
+.argenti-feature__proof span {
+  margin-bottom: 0.45rem;
+
+  color: #9f4de0;
+
+  font-size: 0.64rem;
+  line-height: 1.35;
+  font-weight: 900;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.argenti-feature__proof strong {
+  color: #3e015f;
+
+  font-size: 0.88rem;
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.argenti-feature__actions {
+  grid-area: actions;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 0.7rem;
+
+  margin: 0;
+}
+
+.argenti-feature__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.55rem;
+
+  padding: 0.8rem 1rem;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+
+  font-size: 0.82rem;
+  font-weight: 800;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.argenti-feature__button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* Primary */
+
+.argenti-feature__button--primary {
+  background:
+    linear-gradient(
+      135deg,
+      #3e015f,
+      #7a18a8
+    );
+
+  color: #fff;
+}
+
+
+/* Secondary */
+
+.argenti-feature__button--secondary {
+  border: 1px solid rgba(62, 1, 95, 0.14);
+
+  background: #fff;
+  color: #3e015f;
+}
+
+.argenti-feature__button--secondary:hover {
+  background: #faf7fc;
+}
+
+
+/* Live website */
+
+.argenti-feature__live {
+  color: #6e6676;
+
+  font-size: 0.8rem;
+  font-weight: 750;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.argenti-feature__live:hover {
+  color: #3e015f;
+}
+
+
+/* ═══════════════════════════════════════════════════════
+   TABLET
+   ═══════════════════════════════════════════════════════ */
+
+@media (max-width: 1000px) {
+
+  .argenti-feature__content {
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "copy"
+      "proof"
+      "actions";
+
+    gap: 1.5rem;
+  }
+
+  .argenti-feature__proof {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* ═══════════════════════════════════════════════════════
+   MOBILE
+   ═══════════════════════════════════════════════════════ */
+
+@media (max-width: 640px) {
+
+  .argenti-feature {
+    margin-bottom: 2rem;
+
+    border-radius: 18px;
+  }
+
+  .argenti-feature__content {
+    padding: 1.4rem;
+
+    gap: 1.3rem;
+  }
+
+  .argenti-feature h3 {
+    font-size: 2.5rem;
+  }
+
+  .argenti-feature__intro {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .argenti-feature__proof {
+    grid-template-columns: 1fr;
+
+    gap: 0.6rem;
+  }
+
+  .argenti-feature__actions {
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0.65rem;
+  }
+
+  .argenti-feature__button {
+    width: 100%;
+  }
+
+  .argenti-feature__live {
+    display: block;
+
+    padding-top: 0.35rem;
+
+    text-align: center;
+  }
+
+}
