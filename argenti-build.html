@@ -13,7 +13,7 @@
 
   <meta
     name="description"
-    content="A technical case study of the Argenti website rebuild by JM Sites — Webflow architecture, CMS, custom code, HubSpot, analytics, performance, QA and launch."
+    content="Inside the Argenti website build by JM Sites — Webflow architecture, CMS, custom front-end development, responsive systems, performance, QA and handover."
   >
 
   <meta name="robots" content="noindex, nofollow">
@@ -41,7 +41,7 @@
   <!-- JM SITES GLOBAL SYSTEM -->
   <link rel="stylesheet" href="jm-system.css">
 
-  <!-- THIS PAGE ONLY -->
+  <!-- ARGENTI TECHNICAL PAGE ONLY -->
   <link rel="stylesheet" href="argenti-build.css">
 
   <link
@@ -126,8 +126,9 @@
         <p class="jm-lead build-hero__intro">
           How a focused Webflow redevelopment grew into
           a connected website platform spanning reusable
-          design systems, CMS architecture, custom code,
-          integrations, performance, QA and handover.
+          systems, CMS architecture, custom front-end
+          development, responsive implementation,
+          performance, QA and handover.
         </p>
 
 
@@ -172,15 +173,15 @@
           <article class="jm-card jm-card--raised">
 
             <span class="jm-card__label">
-              Connected Stack
+              CMS
             </span>
 
             <strong class="jm-card__title">
-              HubSpot · GTM · GA4
+              Connected publishing
             </strong>
 
             <p class="jm-card__text">
-              Clarity · LinkedIn · Consent
+              Templates · taxonomy · filters
             </p>
 
           </article>
@@ -193,11 +194,11 @@
             </span>
 
             <strong class="jm-card__title">
-              64 → 90
+              46 → 90+
             </strong>
 
             <p class="jm-card__text">
-              Mobile · Desktop 79 → 98
+              Mobile · Desktop 65 → 90+
             </p>
 
           </article>
@@ -211,7 +212,7 @@
 
 
     <!-- =========================================
-         OVERVIEW
+         INTRO
     ========================================== -->
 
     <section class="jm-section build-overview">
@@ -225,10 +226,10 @@
           </h2>
 
           <p class="jm-body">
-            The challenge became building a system Argenti
-            could continue using after launch, not a set of
-            pages that only worked while I was maintaining
-            every detail manually.
+            As the project expanded, the challenge became
+            building a website Argenti could continue using
+            after launch, not just a collection of pages that
+            only workeds with me or a developer. 
           </p>
 
         </div>
@@ -237,85 +238,41 @@
         <div class="build-flow">
 
           <div class="jm-card jm-card--soft build-flow__item">
-
             <span class="jm-number">01</span>
-
-            <strong class="jm-card__title">
-              Structure
-            </strong>
-
-            <p class="jm-card__text">
-              Reusable Webflow system
-            </p>
-
+            <strong class="jm-card__title">System</strong>
+            <p class="jm-card__text">Reusable Webflow foundations</p>
           </div>
 
           <b class="build-flow__arrow" aria-hidden="true">→</b>
 
-
           <div class="jm-card jm-card--soft build-flow__item">
-
             <span class="jm-number">02</span>
-
-            <strong class="jm-card__title">
-              Content
-            </strong>
-
-            <p class="jm-card__text">
-              Connected CMS
-            </p>
-
+            <strong class="jm-card__title">CMS</strong>
+            <p class="jm-card__text">Connected publishing</p>
           </div>
 
           <b class="build-flow__arrow" aria-hidden="true">→</b>
 
-
           <div class="jm-card jm-card--soft build-flow__item">
-
             <span class="jm-number">03</span>
-
-            <strong class="jm-card__title">
-              Extend
-            </strong>
-
-            <p class="jm-card__text">
-              Custom code
-            </p>
-
+            <strong class="jm-card__title">Extend</strong>
+            <p class="jm-card__text">Custom front-end logic</p>
           </div>
 
           <b class="build-flow__arrow" aria-hidden="true">→</b>
 
-
           <div class="jm-card jm-card--soft build-flow__item">
-
             <span class="jm-number">04</span>
-
-            <strong class="jm-card__title">
-              Connect
-            </strong>
-
-            <p class="jm-card__text">
-              Marketing systems
-            </p>
-
+            <strong class="jm-card__title">Build</strong>
+            <p class="jm-card__text">Custom visual systems</p>
           </div>
 
           <b class="build-flow__arrow" aria-hidden="true">→</b>
 
-
           <div class="jm-card jm-card--soft build-flow__item">
-
             <span class="jm-number">05</span>
-
-            <strong class="jm-card__title">
-              Verify
-            </strong>
-
-            <p class="jm-card__text">
-              QA + launch
-            </p>
-
+            <strong class="jm-card__title">Verify</strong>
+            <p class="jm-card__text">Performance + launch</p>
           </div>
 
         </div>
@@ -327,7 +284,7 @@
 
 
     <!-- =========================================
-         01 — WEBFLOW SYSTEM
+         01 — SYSTEM
     ========================================== -->
 
     <section class="jm-section build-section">
@@ -336,15 +293,28 @@
 
         <div class="build-section__intro">
 
+          <p class="jm-eyebrow">
+            01 · Webflow architecture
+          </p>
+
           <h2 class="jm-h2">
-            From one-off pages to a reusable Webflow system
+            A system that evolved with the website
           </h2>
 
           <p class="jm-body">
-            As the site expanded, building every page
-            independently would have created duplicated
-            classes, inconsistent behaviour and a painful
-            handover.
+            Argenti didn't begin with a perfectly mapped
+            design system. As the website expanded, I could
+            see where one-off classes and page-specific
+            decisions were becoming harder to manage.
+          </p>
+
+          <p class="jm-body">
+            I created the Style Guide as a source of truth
+            for the reusable parts of the site — typography,
+            layouts, buttons, colour treatments, grids and
+            common components — while existing page-specific
+            systems were progressively consolidated rather
+            than rebuilt simply for the sake of consistency.
           </p>
 
         </div>
@@ -363,8 +333,8 @@
             </strong>
 
             <p class="jm-card__text">
-              Consistent headings, body copy and reusable
-              text treatments across the site.
+              Reusable heading, body and supporting
+              text treatments.
             </p>
 
           </article>
@@ -381,8 +351,8 @@
             </strong>
 
             <p class="jm-card__text">
-              Containers, content wrappers, grids and
-              responsive section patterns.
+              Containers, content wrappers, grids
+              and responsive section patterns.
             </p>
 
           </article>
@@ -395,12 +365,12 @@
             </span>
 
             <strong class="jm-card__title">
-              Shared interface system
+              Shared interface language
             </strong>
 
             <p class="jm-card__text">
-              Buttons, cards, CTAs, capability tags,
-              image treatments and reusable patterns.
+              Buttons, cards, CTAs, capability tags
+              and image treatments.
             </p>
 
           </article>
@@ -409,25 +379,22 @@
           <article class="jm-card">
 
             <span class="jm-card__label">
-              Responsive
+              Ownership
             </span>
 
             <strong class="jm-card__title">
-              Real breakpoint testing
+              Global versus page-specific
             </strong>
 
             <p class="jm-card__text">
-              Behaviour checked around 1100/1099,
-              992/991, 767 and 479px — not only
-              comfortable preset widths.
+              Shared systems where possible and isolated
+              page logic where genuinely necessary.
             </p>
 
           </article>
 
         </div>
 
-
-        <!-- DEVELOPMENT PRINCIPLE -->
 
         <div class="jm-card jm-card--purple build-rule">
 
@@ -436,38 +403,28 @@
           </span>
 
           <strong class="jm-card__title">
-            Reuse first. Override second.
-            Add new structure only when it is genuinely needed.
+            Reuse first · Override second · Add new structure only when it is genuinely needed
           </strong>
 
         </div>
 
 
-        <!-- VISUAL PROOF PLACEHOLDER -->
-
-        <div class="build-proof-placeholder">
-
-          <span class="jm-label">
-            Visual proof
-          </span>
-
-          <strong class="build-proof-placeholder__title">
-            Argenti Webflow Style Guide
-          </strong>
+        <figure class="build-proof">
 
           <img
-    src="images/client-argenti-images/argenti-style-guide.png"
-    alt="Argenti Webflow Style Guide developed by JM Sites"
-    class="build-proof__image"
-    loading="lazy"
-  >
+            src="images/client-argenti-images/argenti-style-guide.png"
+            alt="Argenti Webflow Style Guide showing reusable website classes and systems"
+            class="build-proof__image"
+            loading="lazy"
+          >
 
+          <figcaption class="jm-small">
+            The Argenti Webflow Style Guide became the
+            reference point for reusable website foundations
+            and future maintenance.
+          </figcaption>
 
-          <p class="jm-small">
-            Add your Style Guide screenshot here when ready.
-          </p>
-
-        </div>
+        </figure>
 
       </div>
 
@@ -485,14 +442,19 @@
 
         <div class="build-section__intro">
 
+          <p class="jm-eyebrow">
+            02 · CMS architecture
+          </p>
+
           <h2 class="jm-h2">
-            Building the CMS behind the website
+            Building a connected publishing system
           </h2>
 
           <p class="jm-body">
             Blog Posts, Authors, Case Studies and
-            Accelerators needed to work as connected
-            content systems rather than manually rebuilt pages.
+            Accelerators needed to behave as connected
+            content systems rather than pages rebuilt
+            manually every time something new was published.
           </p>
 
         </div>
@@ -530,81 +492,40 @@
         <div class="jm-card build-system-diagram">
 
           <div class="build-system-step">
-
-            <small class="jm-label">
-              Source
-            </small>
-
-            <strong>
-              CMS Record
-            </strong>
-
+            <small class="jm-label">Source</small>
+            <strong>CMS Record</strong>
           </div>
 
           <span aria-hidden="true">→</span>
 
-
           <div class="build-system-step">
-
-            <small class="jm-label">
-              Surface
-            </small>
-
-            <strong>
-              Listing Card
-            </strong>
-
+            <small class="jm-label">Surface</small>
+            <strong>Listing Card</strong>
           </div>
 
           <span aria-hidden="true">→</span>
 
-
           <div class="build-system-step">
-
-            <small class="jm-label">
-              Page
-            </small>
-
-            <strong>
-              Template
-            </strong>
-
+            <small class="jm-label">Page</small>
+            <strong>Template</strong>
           </div>
 
           <span aria-hidden="true">→</span>
 
-
           <div class="build-system-step">
-
-            <small class="jm-label">
-              Logic
-            </small>
-
-            <strong>
-              Filtering
-            </strong>
-
+            <small class="jm-label">Logic</small>
+            <strong>Filtering</strong>
           </div>
 
           <span aria-hidden="true">→</span>
 
-
           <div class="build-system-step">
-
-            <small class="jm-label">
-              Discovery
-            </small>
-
-            <strong>
-              Related Content
-            </strong>
-
+            <small class="jm-label">Discovery</small>
+            <strong>Related Content</strong>
           </div>
 
         </div>
 
-
-        <!-- CMS DETAIL CARDS -->
 
         <div class="build-two-column">
 
@@ -615,7 +536,7 @@
             </span>
 
             <h3 class="jm-card__title">
-              Capability wasn't just a label
+              Capability became part of the system
             </h3>
 
             <p class="jm-card__text">
@@ -638,12 +559,51 @@
             </h3>
 
             <p class="jm-card__text">
-              Shared templates keep the presentation
-              consistent while editors update the content
-              through CMS fields.
+              Templates control the presentation while the
+              team manages content safely through CMS fields.
             </p>
 
           </article>
+
+        </div>
+
+
+        <!-- CMS VISUAL PROOF -->
+
+        <div class="build-proof-grid">
+
+          <figure class="build-proof">
+
+            <img
+              src="images/client-argenti-images/argenti-filters.png"
+              alt="Argenti Accelerators CMS filtering interface"
+              class="build-proof__image"
+              loading="lazy"
+            >
+
+            <figcaption class="jm-small">
+              Capability-driven filtering connected to
+              structured CMS content.
+            </figcaption>
+
+          </figure>
+
+
+          <figure class="build-proof">
+
+            <img
+              src="images/client-argenti-images/argenti-case-studies.png"
+              alt="Argenti Case Studies CMS listing"
+              class="build-proof__image"
+              loading="lazy"
+            >
+
+            <figcaption class="jm-small">
+              Structured Case Study records feeding reusable
+              listing cards and templates.
+            </figcaption>
+
+          </figure>
 
         </div>
 
@@ -654,7 +614,7 @@
 
 
     <!-- =========================================
-         03 — CUSTOM CODE / DEBUGGING
+         03 — DEBUGGING
     ========================================== -->
 
     <section class="jm-section build-section">
@@ -663,97 +623,42 @@
 
         <div class="build-section__intro">
 
+          <p class="jm-eyebrow">
+            03 · Custom code and debugging
+          </p>
+
           <h2 class="jm-h2">
             Where Webflow stopped being simple
           </h2>
 
           <p class="jm-body">
-            Custom HTML, CSS and JavaScript extended the
-            platform where native behaviour wasn't enough.
+            As the website became more complex, some
+            problems stopped being purely Webflow problems.
+            CMS relationships, custom code, responsive
+            behaviour, third-party scripts and runtime
+            state could all interact with one another.
           </p>
 
         </div>
 
 
-        <div class="build-code-grid">
+        <!-- TECH STRIP -->
 
-          <article class="jm-card">
+        <div class="build-tech-strip">
 
-            <span class="jm-card__label">
-              Custom CSS
-            </span>
-
-            <strong class="jm-card__title">
-              Page and global systems
-            </strong>
-
-            <p class="jm-card__text">
-              Responsive rules, capability treatments,
-              layouts, forms, imagery and component behaviour.
-            </p>
-
-          </article>
-
-
-          <article class="jm-card">
-
-            <span class="jm-card__label">
-              JavaScript
-            </span>
-
-            <strong class="jm-card__title">
-              Dynamic functionality
-            </strong>
-
-            <p class="jm-card__text">
-              Related content, loading behaviour,
-              reveal logic, CMS enhancements and
-              interactive systems.
-            </p>
-
-          </article>
-
-
-          <article class="jm-card">
-
-            <span class="jm-card__label">
-              Finsweet
-            </span>
-
-            <strong class="jm-card__title">
-              CMS filtering
-            </strong>
-
-            <p class="jm-card__text">
-              Industry and Capability filtering connected
-              to structured Case Study data.
-            </p>
-
-          </article>
-
-
-          <article class="jm-card">
-
-            <span class="jm-card__label">
-              DevTools
-            </span>
-
-            <strong class="jm-card__title">
-              Runtime debugging
-            </strong>
-
-            <p class="jm-card__text">
-              Published behaviour inspected directly
-              instead of assuming Designer Preview
-              was always the final truth.
-            </p>
-
-          </article>
+          <span>Custom CSS</span>
+          <span>JavaScript</span>
+          <span>Finsweet</span>
+          <span>HubSpot</span>
+          <span>DevTools</span>
+          <span>GTM</span>
+          <span>GA4</span>
+          <span>Consent</span>
 
         </div>
 
 
-        <!-- DEBUGGING EXAMPLE -->
+        <!-- DEBUG EXAMPLE -->
 
         <div class="jm-card jm-card--soft build-debug-example">
 
@@ -777,7 +682,8 @@
             <p class="jm-card__text">
               Instead of continuing to change the design,
               I inspected the published state with DevTools
-              to trace what was actually happening.
+              and traced the behaviour back through the
+              systems that actually owned it.
             </p>
 
           </div>
@@ -812,7 +718,7 @@
 
 
         <h3 class="jm-statement build-webflow-line">
-          I am strongest where Webflow stops being simple.
+          I am strongest where Webflow stops being simple
         </h3>
 
       </div>
@@ -822,7 +728,7 @@
 
 
     <!-- =========================================
-         04 — CONNECTED STACK
+         04 — CUSTOM VISUAL SYSTEMS
     ========================================== -->
 
     <section class="jm-section jm-section--dark build-section">
@@ -831,112 +737,80 @@
 
         <div class="build-section__intro">
 
+          <p class="jm-eyebrow">
+            04 · Custom implementation
+          </p>
+
           <h2 class="jm-h2">
-            Connecting the website to the wider stack
+            Building the parts that did not fit a template
           </h2>
 
           <p class="jm-body">
-            The visible website was only one part of the
-            finished system.
+            Not every important section could come from a
+            standard component library. Some parts of the
+            site needed their own visual and responsive
+            logic while still belonging to the wider
+            Argenti design language.
+          </p>
+
+          <p class="jm-body">
+            These sections combined Webflow structure with
+            custom CSS, responsive rules and page-specific
+            implementation where the shared system alone
+            was not enough.
           </p>
 
         </div>
 
 
-        <!-- STACK -->
+        <div class="build-visual-gallery">
 
-        <div class="build-stack">
+          <figure class="build-visual-card">
 
-          <div class="jm-card jm-card--dark build-stack__item">
-            <span class="jm-card__label">Website</span>
-            <strong class="jm-card__title">Webflow</strong>
-          </div>
+            <img
+              src="images/client-argenti-images/argenti-loop.png"
+              alt="The Argenti Loop interactive visual system"
+              loading="lazy"
+            >
 
-          <b aria-hidden="true">+</b>
+            <figcaption>
+              <span class="jm-card__label">Argenti Loop</span>
+              <strong>Custom process visualisation</strong>
+            </figcaption>
 
-
-          <div class="jm-card jm-card--dark build-stack__item">
-            <span class="jm-card__label">CRM</span>
-            <strong class="jm-card__title">HubSpot</strong>
-          </div>
-
-          <b aria-hidden="true">+</b>
+          </figure>
 
 
-          <div class="jm-card jm-card--dark build-stack__item">
-            <span class="jm-card__label">Tags</span>
-            <strong class="jm-card__title">GTM</strong>
-          </div>
+          <figure class="build-visual-card">
 
-          <b aria-hidden="true">+</b>
+            <img
+              src="images/client-argenti-images/argenti-data-ai.png"
+              alt="Argenti Data and AI page visual system"
+              loading="lazy"
+            >
 
+            <figcaption>
+              <span class="jm-card__label">Data & AI</span>
+              <strong>Responsive visual composition</strong>
+            </figcaption>
 
-          <div class="jm-card jm-card--dark build-stack__item">
-            <span class="jm-card__label">Analytics</span>
-            <strong class="jm-card__title">GA4</strong>
-          </div>
-
-          <b aria-hidden="true">+</b>
-
-
-          <div class="jm-card jm-card--dark build-stack__item">
-            <span class="jm-card__label">Behaviour</span>
-            <strong class="jm-card__title">Clarity</strong>
-          </div>
-
-          <b aria-hidden="true">+</b>
+          </figure>
 
 
-          <div class="jm-card jm-card--dark build-stack__item">
-            <span class="jm-card__label">Marketing</span>
-            <strong class="jm-card__title">LinkedIn</strong>
-          </div>
+          <figure class="build-visual-card">
 
-        </div>
+            <img
+              src="images/client-argenti-images/argenti-accelerators.png"
+              alt="Argenti Accelerators website section"
+              loading="lazy"
+            >
 
+            <figcaption>
+              <span class="jm-card__label">Accelerators</span>
+              <strong>Reusable content and capability system</strong>
+            </figcaption>
 
-        <!-- STACK DETAIL -->
-
-        <div class="build-highlight-grid">
-
-          <article class="jm-card jm-card--dark">
-
-            <span class="jm-card__label">
-              HubSpot
-            </span>
-
-            <h3 class="jm-card__title">
-              More than pasting in a form embed
-            </h3>
-
-            <p class="jm-card__text">
-              I built a custom loading and fallback
-              experience around the HubSpot form,
-              including asynchronous loading,
-              duplicate-initialisation protection,
-              responsive presentation and retry behaviour.
-            </p>
-
-          </article>
-
-
-          <article class="jm-card jm-card--dark">
-
-            <span class="jm-card__label">
-              Consent + tracking
-            </span>
-
-            <h3 class="jm-card__title">
-              Measurement had to respect consent state
-            </h3>
-
-            <p class="jm-card__text">
-              GTM, GA4, Clarity, LinkedIn and HubSpot
-              were tested alongside consent behaviour
-              rather than treated as disconnected scripts.
-            </p>
-
-          </article>
+          </figure>
 
         </div>
 
@@ -947,7 +821,7 @@
 
 
     <!-- =========================================
-         05 — PERFORMANCE
+         05 — PERFORMANCE + RELEASE
     ========================================== -->
 
     <section class="jm-section build-section">
@@ -956,21 +830,25 @@
 
         <div class="build-section__intro">
 
+          <p class="jm-eyebrow">
+            05 · Performance and release
+          </p>
+
           <h2 class="jm-h2">
-            Performance became part of development
+            Built to hold up after launch
           </h2>
 
           <p class="jm-body">
-            Image weight, responsive media, animation,
-            code, layout stability and third-party loading
-            were considered throughout the rebuild rather
-            than checked once at the end.
+            Performance, responsive behaviour, CMS output,
+            forms, tracking and production behaviour were
+            treated as part of development rather than
+            something to check once the design looked finished.
           </p>
 
         </div>
 
 
-        <!-- SCORES -->
+        <!-- PERFORMANCE STORY -->
 
         <div class="build-performance">
 
@@ -983,7 +861,7 @@
             <div>
               <small>46</small>
               <b aria-hidden="true">→</b>
-              <strong>90</strong>
+              <strong>90+</strong>
             </div>
 
           </article>
@@ -998,7 +876,7 @@
             <div>
               <small>65</small>
               <b aria-hidden="true">→</b>
-              <strong>98</strong>
+              <strong>90+</strong>
             </div>
 
           </article>
@@ -1010,130 +888,64 @@
 
           <span>100 Best Practices</span>
           <span>100 SEO</span>
-          <span>Live Homepage</span>
+          <span>Live Production</span>
 
         </div>
 
 
-        <!-- PERFORMANCE WORK -->
+        <!-- LIVE PAGESPEED PROOF -->
 
-        <div class="build-performance-work">
+        <div class="build-proof-grid build-proof-grid--performance">
 
-          <div>✓ Image optimisation</div>
-          <div>✓ Responsive media</div>
-          <div>✓ Code consolidation</div>
-          <div>✓ Animation cost</div>
+          <figure class="build-proof">
 
-          <div>✓ Mobile fallbacks</div>
-          <div>✓ Third-party loading</div>
-          <div>✓ Layout stability</div>
-          <div>✓ Repeat testing</div>
+            <img
+              src="images/client-argenti-images/argenti-pagespeed-mobile-live.png"
+              alt="Google PageSpeed Insights live mobile results for the Argenti website"
+              class="build-proof__image"
+              loading="lazy"
+            >
 
-        </div>
+            <figcaption class="jm-small">
+              Live mobile production verification
+            </figcaption>
 
-
-        <!-- VISUAL PROOF PLACEHOLDER -->
-
-        <div class="build-proof-placeholder">
-
-          <span class="jm-label">
-            Performance proof
-          </span>
-
-          <strong class="build-proof-placeholder__title">
-            Google PageSpeed Insights
-          </strong>
-
-          <p class="jm-small">
-            Add the 90 mobile / 98 desktop screenshots here.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+          </figure>
 
 
+          <figure class="build-proof">
 
-    <!-- =========================================
-         06 — QA / LAUNCH / HANDOVER
-    ========================================== -->
+            <img
+              src="images/client-argenti-images/argenti-pagespeed-desktop-live.png"
+              alt="Google PageSpeed Insights live desktop results for the Argenti website"
+              class="build-proof__image"
+              loading="lazy"
+            >
 
-    <section class="jm-section jm-section--soft build-section">
+            <figcaption class="jm-small">
+              Live desktop production verification
+            </figcaption>
 
-      <div class="jm-container">
-
-        <div class="build-section__intro">
-
-          <h2 class="jm-h2">
-            “Finished in Webflow” wasn't the finish line
-          </h2>
-
-          <p class="jm-body">
-            The final stage became a controlled release
-            process covering the website, CMS, integrations,
-            production environment and the team inheriting it.
-          </p>
+          </figure>
 
         </div>
 
 
-        <!-- RELEASE PROCESS -->
-
-        <div class="build-release">
-
-          <div class="jm-card build-release__item">
-            <span class="jm-number">01</span>
-            <strong>Finish</strong>
-          </div>
-
-          <div class="jm-card build-release__item">
-            <span class="jm-number">02</span>
-            <strong>Freeze</strong>
-          </div>
-
-          <div class="jm-card build-release__item">
-            <span class="jm-number">03</span>
-            <strong>Backup</strong>
-          </div>
-
-          <div class="jm-card build-release__item">
-            <span class="jm-number">04</span>
-            <strong>Test Day</strong>
-          </div>
-
-          <div class="jm-card build-release__item">
-            <span class="jm-number">05</span>
-            <strong>Fix findings</strong>
-          </div>
-
-          <div class="jm-card build-release__item">
-            <span class="jm-number">06</span>
-            <strong>Approval</strong>
-          </div>
-
-          <div class="jm-card build-release__item">
-            <span class="jm-number">07</span>
-            <strong>Publish</strong>
-          </div>
-
-          <div class="jm-card build-release__item">
-            <span class="jm-number">08</span>
-            <strong>Verify</strong>
-          </div>
-
-        </div>
+        <p class="jm-small build-performance-note">
+          Google PageSpeed Insights · Live production testing ·
+          21 August 2026 · Lighthouse scores are laboratory
+          estimates and can vary between runs.
+        </p>
 
 
-        <!-- QA / HANDOVER -->
+        <!-- QA + HANDOVER -->
 
-        <div class="build-two-column">
+        <div class="build-two-column build-release-summary">
 
           <article class="jm-card">
 
             <span class="jm-card__label">
-              QA
+              QA and launch
             </span>
 
             <h3 class="jm-card__title">
@@ -1144,7 +956,8 @@
               Responsive behaviour, CMS templates,
               navigation, forms, HubSpot, consent,
               tracking, redirects, legal links,
-              browser behaviour and performance.
+              browser behaviour and performance were
+              included in final verification.
             </p>
 
           </article>
@@ -1157,14 +970,15 @@
             </span>
 
             <h3 class="jm-card__title">
-              Don't leave the system in my head
+              Do not leave the system in my head
             </h3>
 
             <p class="jm-card__text">
-              CMS administration, Style Guide,
+              CMS administration, the Style Guide,
               custom-code ownership, integrations,
-              access, troubleshooting and launch
-              processes were documented for the team.
+              troubleshooting and launch processes were
+              documented so the team could understand
+              what they were inheriting.
             </p>
 
           </article>
@@ -1197,11 +1011,12 @@
         </h2>
 
         <p class="jm-final__text">
-          The finished build brought together reusable
-          Webflow architecture, structured publishing,
-          custom front-end development, marketing
-          integrations, performance work, technical QA
-          and operational handover.
+          The finished website became a connected Webflow
+          platform Argenti can publish into, measure,
+          maintain and continue growing — supported by
+          reusable architecture, structured CMS publishing,
+          custom front-end development, technical QA and
+          documented handover.
         </p>
 
 
