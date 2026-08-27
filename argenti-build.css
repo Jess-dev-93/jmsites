@@ -1,163 +1,372 @@
-/* ═══════════════════════════════════════════════
+/* ═══════════════════════════════════════════════════════════
    ARGENTI — TECHNICAL BUILD CASE STUDY
-   PAGE-SPECIFIC CSS ONLY
+
+   Page-specific composition only.
 
    jm-system.css owns:
-   typography · colours · cards · buttons ·
-   numbers · nav · footer · section rhythm ·
-   global spacing · radii · shadows
+   typography · page frame · hero surface · sections ·
+   cards · buttons · navigation · footer · final CTA
 
    This file owns:
-   unique Argenti technical-page compositions
-   ═══════════════════════════════════════════════ */
+   build summary · system flows · diagrams · galleries ·
+   technical proof layouts · performance composition
+   ═══════════════════════════════════════════════════════════ */
 
 
 /* =========================================================
-   HERO
+   01 — HERO SUMMARY
 ========================================================= */
 
 .build-hero {
-  position: relative;
-  overflow: hidden;
-
-  padding: 1.5rem 0 3rem;
-
-  background:
-    radial-gradient(
-      circle at 50% -20%,
-      rgba(159, 77, 224, 0.18),
-      transparent 55%
-    ),
-    linear-gradient(
-      180deg,
-      var(--jm-white) 0%,
-      var(--jm-soft) 100%
-    );
+  --jm-hero-purple-x: 12%;
+  --jm-hero-purple-y: 18%;
+  --jm-hero-cyan-x: 88%;
+  --jm-hero-cyan-y: 76%;
 }
-
-.build-hero__title {
-  max-width: 950px;
-  margin-inline: auto;
-
-  text-align: center;
-}
-
-.build-hero__line {
-  display: block;
-
-  /* protects g / y / p descenders */
-  padding-bottom: 0.06em;
-}
-
-.build-hero__intro {
-  max-width: 720px;
-
-  margin:
-    2rem
-    auto
-    0;
-
-  text-align: center;
-}
-
-
-/* =========================================================
-   HERO SUMMARY
-========================================================= */
 
 .build-summary {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
   gap: 1rem;
 
-  margin-top: 1.5rem;
+  width: 100%;
+
+  max-width:
+    var(--jm-content-max);
+
+  margin-top: 2.25rem;
+
+  text-align: left;
+}
+
+.build-summary .jm-card {
+  isolation: isolate;
+
+  min-height: 150px;
+
+  overflow: hidden;
+
+  border-color:
+    rgba(126, 34, 206, 0.16);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.90),
+      rgba(244, 237, 252, 0.78)
+    );
+
+  box-shadow:
+    0 16px 38px
+    rgba(62, 1, 95, 0.10),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.94);
+
+  -webkit-backdrop-filter:
+    blur(18px)
+    saturate(140%);
+
+  backdrop-filter:
+    blur(18px)
+    saturate(140%);
+}
+
+.build-summary .jm-card::after {
+  content: "";
+
+  position: absolute;
+
+  right: -4rem;
+  bottom: -5rem;
+
+  z-index: -1;
+
+  width: 10rem;
+  height: 10rem;
+
+  border-radius: 50%;
+
+  background:
+    rgba(0, 212, 255, 0.10);
+
+  filter:
+    blur(24px);
+
+  pointer-events: none;
+}
+
+.build-summary .jm-card--purple {
+  border-color:
+    rgba(255, 255, 255, 0.15);
+
+  background:
+    radial-gradient(
+      circle at 100% 0,
+      rgba(0, 212, 255, 0.20),
+      transparent 42%
+    ),
+    var(--jm-gradient-purple-deep);
+
+  box-shadow:
+    0 22px 50px
+    rgba(62, 1, 95, 0.22),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.12);
 }
 
 
 /* =========================================================
-   OVERVIEW
+   02 — SHARED BUILD CONTENT
 ========================================================= */
+
+.build-copy {
+  width: 100%;
+
+  max-width:
+    var(--jm-content-max);
+}
+
+.build-copy--after-card {
+  margin-top: 1.75rem;
+}
 
 .build-heading-row {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  align-items: end;
-  gap: 4rem;
+
+  grid-template-columns:
+    minmax(0, 0.82fr)
+    minmax(0, 1.18fr);
+
+  align-items: start;
+
+  gap:
+    clamp(2rem, 5vw, 5rem);
 }
 
-.build-heading-row > p {
+.build-heading-row .jm-body {
   margin-bottom: 0;
 }
 
 
 /* =========================================================
-   DEVELOPMENT FLOW
+   03 — DARK SECTION ATMOSPHERE
+========================================================= */
+
+.jm-dark:has(.build-flow),
+.jm-dark:has(.build-performance) {
+  isolation: isolate;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 12% 18%,
+      rgba(168, 85, 247, 0.22),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 88% 78%,
+      rgba(0, 212, 255, 0.13),
+      transparent 32%
+    ),
+    var(--jm-gradient-dark);
+}
+
+
+/* =========================================================
+   04 — DEVELOPMENT FLOW
 ========================================================= */
 
 .build-flow {
   display: flex;
-  align-items: stretch;
-  gap: 0.6rem;
 
-  margin-top: 2rem;
+  align-items: stretch;
+
+  gap: 0.65rem;
+
+  margin-top: 2.25rem;
 }
 
 .build-flow__item {
   flex: 1;
+
   min-width: 0;
+
+  overflow: hidden;
+
+  border-color:
+    rgba(255, 255, 255, 0.13);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.10),
+      rgba(198, 107, 247, 0.055)
+    );
+
+  color:
+    var(--jm-white);
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.10),
+
+    0 14px 34px
+    rgba(0, 0, 0, 0.16);
+
+  -webkit-backdrop-filter:
+    blur(16px);
+
+  backdrop-filter:
+    blur(16px);
+}
+
+.build-flow__item:hover {
+  border-color:
+    rgba(0, 212, 255, 0.36);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(198, 107, 247, 0.16),
+      rgba(0, 212, 255, 0.07)
+    );
 }
 
 .build-flow__item .jm-number {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.build-flow__item .jm-card__title {
+  color:
+    var(--jm-white);
+}
+
+.build-flow__item .jm-card__text {
+  color:
+    rgba(255, 255, 255, 0.68);
 }
 
 .build-flow__arrow {
   align-self: center;
 
-  flex: 0 0 auto;
+  flex:
+    0 0 auto;
 
-  color: #b89dc8;
+  color:
+    var(--jm-cyan);
+
+  opacity: 0.58;
+
+  text-shadow:
+    0 0 12px
+    rgba(0, 212, 255, 0.45);
 }
 
 
 /* =========================================================
-   SECTION INTRO
+   05 — FEATURE GRID
 ========================================================= */
 
-.build-section__intro {
-  max-width: 900px;
-
-  margin-bottom: 2rem;
-}
-
-.build-section__intro .jm-body {
-  max-width: 760px;
-}
-
-
-/* =========================================================
-   FEATURE / CODE GRIDS
-========================================================= */
-
-.build-feature-grid,
-.build-code-grid {
+.build-feature-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
   gap: 1rem;
+
+  margin-top: 2.25rem;
+}
+
+.build-feature-grid .jm-card,
+.build-two-column .jm-card,
+.build-cms-card {
+  overflow: hidden;
+
+  border-color:
+    rgba(126, 34, 206, 0.14);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.94),
+      rgba(247, 242, 252, 0.84)
+    );
+
+  box-shadow:
+    0 14px 34px
+    rgba(62, 1, 95, 0.08),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.96);
+}
+
+.build-feature-grid .jm-card::before,
+.build-two-column .jm-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--jm-purple-light),
+      var(--jm-cyan),
+      transparent 82%
+    );
+
+  opacity: 0.72;
 }
 
 
 /* =========================================================
-   DEVELOPMENT PRINCIPLE
+   06 — DEVELOPMENT PRINCIPLE
 ========================================================= */
 
 .build-rule {
   display: grid;
-  grid-template-columns: 180px 1fr;
+
+  grid-template-columns:
+    150px
+    minmax(0, 1fr);
+
   align-items: center;
-  gap: 1rem;
+
+  gap: 1.25rem;
 
   margin-top: 1.5rem;
+
+  overflow: hidden;
+
+  border-color:
+    rgba(255, 255, 255, 0.16);
+
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(0, 212, 255, 0.18),
+      transparent 30%
+    ),
+    var(--jm-gradient-purple-deep);
+
+  box-shadow:
+    0 22px 50px
+    rgba(62, 1, 95, 0.20),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.12);
 }
 
 .build-rule .jm-card__label,
@@ -167,593 +376,897 @@
 
 
 /* =========================================================
-   VISUAL PROOF PLACEHOLDER
+   07 — PROOF IMAGES
 ========================================================= */
 
-.build-proof-placeholder {
-  display: grid;
-  place-items: center;
+.build-proof {
+  margin:
+    1.75rem
+    0
+    0;
 
-  min-height: 230px;
+  overflow: hidden;
 
-  margin-top: 1.5rem;
-  padding: 2rem;
+  border:
+    1px solid
+    rgba(126, 34, 206, 0.16);
 
-  border: 1px dashed var(--jm-border-strong);
-  border-radius: var(--jm-radius-large);
+  border-radius:
+    var(--jm-radius-large);
 
   background:
     linear-gradient(
-      135deg,
-      var(--jm-soft),
-      #f2faff
+      145deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(244, 239, 252, 0.90)
     );
+
+  box-shadow:
+    var(--jm-shadow-large),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.96);
+}
+
+.build-proof__image {
+  width: 100%;
+  height: auto;
+
+  transition:
+    transform
+    var(--jm-transition-slow);
+}
+
+.build-proof:hover .build-proof__image {
+  transform:
+    scale(1.012);
+}
+
+.build-proof figcaption {
+  padding:
+    0.9rem
+    1rem;
+
+  border-top:
+    1px solid
+    var(--jm-border);
+
+  background:
+    rgba(255, 255, 255, 0.72);
 
   text-align: center;
 }
 
-.build-proof-placeholder .jm-label {
-  margin-bottom: 0;
+.build-proof-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 1rem;
+
+  margin-top: 1.75rem;
 }
 
-.build-proof-placeholder__title {
-  display: block;
-
-  margin-top: 0.45rem;
-
-  color: var(--jm-purple);
-
-  font-size: 1.15rem;
-  line-height: 1.3;
-  font-weight: 850;
+.build-proof-grid .build-proof {
+  margin-top: 0;
 }
 
-.build-proof-placeholder .jm-small {
-  margin:
-    0.45rem
-    0
-    0;
+.jm-dark .build-proof {
+  border-color:
+    rgba(255, 255, 255, 0.13);
+
+  background:
+    rgba(255, 255, 255, 0.06);
+
+  box-shadow:
+    0 22px 55px
+    rgba(0, 0, 0, 0.24),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.08);
+}
+
+.jm-dark .build-proof figcaption {
+  border-color:
+    rgba(255, 255, 255, 0.10);
+
+  background:
+    rgba(255, 255, 255, 0.055);
+
+  color:
+    rgba(255, 255, 255, 0.66);
 }
 
 
 /* =========================================================
-   CMS TYPES
+   08 — CMS COLLECTIONS
 ========================================================= */
 
 .build-cms-types {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
   gap: 0.8rem;
+
+  margin-top: 2.25rem;
 }
 
 .build-cms-card {
-  display: grid;
-  grid-template-columns: 34px 1fr;
+  display: flex;
+
   align-items: center;
-  gap: 0.8rem;
+
+  min-height: 92px;
+}
+
+.build-cms-card::after {
+  content: "";
+
+  position: absolute;
+
+  right: -2.5rem;
+  bottom: -3rem;
+
+  width: 7rem;
+  height: 7rem;
+
+  border-radius: 50%;
+
+  background:
+    rgba(0, 212, 255, 0.08);
+
+  filter:
+    blur(18px);
 }
 
 .build-cms-card .jm-card__title {
+  position: relative;
+
+  z-index: 1;
+
   margin-bottom: 0;
 }
 
 
 /* =========================================================
-   CMS SYSTEM DIAGRAM
+   09 — CMS SYSTEM DIAGRAM
 ========================================================= */
 
 .build-system-diagram {
   display: flex;
+
   align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
+
+  gap: 0.55rem;
 
   margin-top: 1.5rem;
+
+  overflow: hidden;
+
+  border-color:
+    rgba(126, 34, 206, 0.18);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.90),
+      rgba(238, 229, 250, 0.72)
+    );
+
+  box-shadow:
+    0 18px 45px
+    rgba(62, 1, 95, 0.11),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.96);
+}
+
+.build-system-diagram:hover {
+  transform: none;
 }
 
 .build-system-step {
   flex: 1;
 
-  padding: 0.65rem;
+  min-width: 0;
+
+  padding:
+    0.85rem
+    0.65rem;
+
+  border:
+    1px solid
+    rgba(126, 34, 206, 0.11);
+
+  border-radius:
+    var(--jm-radius-md);
+
+  background:
+    rgba(255, 255, 255, 0.64);
 
   text-align: center;
-}
-
-.build-system-step .jm-label {
-  margin-bottom: 0.3rem;
 }
 
 .build-system-step strong {
   display: block;
 
-  color: var(--jm-purple);
+  color:
+    var(--jm-purple);
 
-  font-size: 1rem;
+  font-size: 0.9rem;
+
   line-height: 1.3;
-  font-weight: 800;
+
+  font-weight: 850;
 }
 
 .build-system-diagram > span {
-  flex: 0 0 auto;
+  flex:
+    0 0 auto;
 
-  color: #b89dc8;
+  color:
+    var(--jm-purple-bright);
+
+  opacity: 0.58;
 }
 
 
 /* =========================================================
-   TWO COLUMN CARDS
+   10 — TWO-COLUMN CARDS
 ========================================================= */
 
 .build-two-column {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
   gap: 1rem;
 
   margin-top: 1.5rem;
 }
 
+.jm-dark .build-two-column .jm-card {
+  border-color:
+    rgba(255, 255, 255, 0.14);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.09),
+      rgba(198, 107, 247, 0.05)
+    );
+
+  color:
+    var(--jm-white);
+
+  box-shadow:
+    0 18px 42px
+    rgba(0, 0, 0, 0.18),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.09);
+}
+
+.jm-dark .build-two-column .jm-card__label {
+  color:
+    #dcb8ef;
+}
+
+.jm-dark .build-two-column .jm-card__title {
+  color:
+    var(--jm-white);
+}
+
+.jm-dark .build-two-column .jm-card__text {
+  color:
+    rgba(255, 255, 255, 0.68);
+}
+
 
 /* =========================================================
-   DEBUGGING EXAMPLE
+   11 — TECH STRIP
+========================================================= */
+
+.build-tech-strip {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.55rem;
+
+  margin-top: 2rem;
+}
+
+.build-tech-strip span {
+  padding:
+    0.62rem
+    0.85rem;
+
+  border:
+    1px solid
+    rgba(126, 34, 206, 0.16);
+
+  border-radius: 9px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.90),
+      rgba(242, 232, 255, 0.72)
+    );
+
+  color:
+    var(--jm-purple);
+
+  font-size:
+    var(--jm-text-sm);
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  box-shadow:
+    0 8px 20px
+    rgba(62, 1, 95, 0.07),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.94);
+}
+
+
+/* =========================================================
+   12 — DEBUGGING EXAMPLE
 ========================================================= */
 
 .build-debug-example {
   display: grid;
-  grid-template-columns: 1.35fr 0.65fr;
+
+  grid-template-columns:
+    minmax(0, 1.3fr)
+    minmax(230px, 0.7fr);
+
   gap: 1.5rem;
 
   margin-top: 1.5rem;
-}
-
-.build-debug-example__copy .jm-card__text + .jm-card__text {
-  margin-top: 1rem;
-}
-
-
-/* =========================================================
-   DEBUGGING PATH
-========================================================= */
-
-.build-debug-path {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
   overflow: hidden;
 
-  border: 1px solid var(--jm-border);
-  border-radius: var(--jm-radius-card);
+  border-color:
+    rgba(198, 107, 247, 0.24);
 
-  background: var(--jm-white);
+  background:
+    radial-gradient(
+      circle at 92% 8%,
+      rgba(0, 212, 255, 0.16),
+      transparent 32%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(62, 1, 95, 0.97),
+      rgba(22, 10, 32, 0.98)
+    );
+
+  color:
+    var(--jm-white);
+
+  box-shadow:
+    0 26px 65px
+    rgba(37, 0, 56, 0.24),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.10);
+}
+
+.build-debug-example:hover {
+  transform: none;
+
+  border-color:
+    rgba(0, 212, 255, 0.36);
+}
+
+.build-debug-example .jm-card__label {
+  color:
+    #dcb8ef;
+}
+
+.build-debug-example .jm-h3 {
+  color:
+    var(--jm-white);
+}
+
+.build-debug-example .jm-card__text {
+  color:
+    rgba(255, 255, 255, 0.72);
+}
+
+.build-debug-example .jm-card__text + .jm-card__text {
+  margin-top: 1rem;
+}
+
+.build-debug-path {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  margin-bottom: 0.5rem;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.14);
+
+  border-radius:
+    var(--jm-radius-card);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.10),
+      rgba(0, 212, 255, 0.045)
+    );
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.08);
 }
 
 .build-debug-path span {
-  padding: 0.7rem 0.8rem;
+  padding:
+    0.72rem
+    0.8rem;
 
-  color: var(--jm-purple);
+  color:
+    var(--jm-white);
 
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+
   line-height: 1.3;
+
   font-weight: 800;
 
   text-align: center;
 }
 
 .build-debug-path b {
-  color: var(--jm-purple-bright);
+  color:
+    var(--jm-cyan);
 
   font-size: 0.7rem;
+
   line-height: 1;
 
   text-align: center;
+
+  text-shadow:
+    0 0 10px
+    rgba(0, 212, 255, 0.42);
 }
-
-
-/* =========================================================
-   WEBFLOW STATEMENT
-========================================================= */
 
 .build-webflow-line {
-  margin-top: 2.5rem;
+  margin-top: 2.75rem;
 }
 
 
 /* =========================================================
-   CONNECTED STACK
+   13 — VISUAL GALLERY
 ========================================================= */
 
-.build-stack {
-  display: flex;
-  align-items: stretch;
-  gap: 0.55rem;
-}
-
-.build-stack__item {
-  flex: 1;
-  min-width: 0;
-}
-
-.build-stack__item .jm-card__label,
-.build-stack__item .jm-card__title {
-  margin-bottom: 0;
-}
-
-.build-stack > b {
-  align-self: center;
-
-  flex: 0 0 auto;
-
-  color: rgba(255, 255, 255, 0.35);
-}
-
-
-/* =========================================================
-   INTEGRATION DETAIL CARDS
-========================================================= */
-
-.build-highlight-grid {
+.build-visual-gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
   gap: 1rem;
 
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+}
+
+.build-visual-card {
+  position: relative;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(126, 34, 206, 0.18);
+
+  border-radius:
+    var(--jm-radius-card);
+
+  background:
+    var(--jm-dark);
+
+  box-shadow:
+    0 18px 44px
+    rgba(62, 1, 95, 0.14);
+
+  transition:
+    transform
+    var(--jm-transition),
+
+    border-color
+    var(--jm-transition),
+
+    box-shadow
+    var(--jm-transition);
+}
+
+.build-visual-card:hover {
+  transform:
+    translateY(-5px);
+
+  border-color:
+    rgba(0, 212, 255, 0.38);
+
+  box-shadow:
+    0 24px 55px
+    rgba(62, 1, 95, 0.20),
+
+    0 0 24px
+    rgba(0, 212, 255, 0.08);
+}
+
+.build-visual-card img {
+  width: 100%;
+
+  aspect-ratio:
+    16 / 10;
+
+  object-fit: cover;
+
+  object-position:
+    top center;
+
+  transition:
+    transform
+    var(--jm-transition-slow);
+}
+
+.build-visual-card:hover img {
+  transform:
+    scale(1.025);
+}
+
+.build-visual-card figcaption {
+  padding: 1rem;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.10);
+
+  background:
+    radial-gradient(
+      circle at 100% 0,
+      rgba(0, 212, 255, 0.10),
+      transparent 38%
+    ),
+    var(--jm-gradient-dark);
+}
+
+.build-visual-card .jm-card__label {
+  margin-bottom: 0.45rem;
+
+  color:
+    #dcb8ef;
+}
+
+.build-visual-card strong {
+  display: block;
+
+  color:
+    var(--jm-white);
+
+  font-size: 1rem;
+
+  line-height: 1.4;
+
+  font-weight: 800;
 }
 
 
 /* =========================================================
-   PERFORMANCE
+   14 — PERFORMANCE
 ========================================================= */
 
 .build-performance {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
   gap: 1rem;
+
+  margin-top: 2.25rem;
+}
+
+.build-performance__score {
+  overflow: hidden;
+
+  border-color:
+    rgba(255, 255, 255, 0.14);
+
+  background:
+    radial-gradient(
+      circle at 88% 10%,
+      rgba(0, 212, 255, 0.14),
+      transparent 34%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.10),
+      rgba(198, 107, 247, 0.055)
+    );
+
+  box-shadow:
+    0 20px 48px
+    rgba(0, 0, 0, 0.20),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.10);
+}
+
+.build-performance__score .jm-card__label {
+  color:
+    #dcb8ef;
 }
 
 .build-performance__score > div {
   display: flex;
+
   align-items: center;
-  gap: 0.7rem;
+
+  gap: 0.8rem;
 
   margin-top: 0.8rem;
 }
 
 .build-performance__score small {
-  color: #a59aaa;
+  color:
+    rgba(255, 255, 255, 0.45);
 
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-size:
+    clamp(1.8rem, 3vw, 2.6rem);
+
   line-height: 1;
+
   font-weight: 800;
 }
 
 .build-performance__score b {
-  color: #c8bdcc;
+  color:
+    var(--jm-cyan);
 
   font-size: 1.4rem;
+
+  line-height: 1;
+
+  opacity: 0.72;
+
+  text-shadow:
+    0 0 12px
+    rgba(0, 212, 255, 0.42);
 }
 
 .build-performance__score strong {
-  color: var(--jm-purple);
+  background:
+    linear-gradient(
+      90deg,
+      var(--jm-purple-light),
+      var(--jm-cyan)
+    );
 
-  font-size: clamp(3rem, 6vw, 5rem);
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  color: transparent;
+
+  -webkit-text-fill-color: transparent;
+
+  font-size:
+    clamp(3rem, 6vw, 5rem);
+
   line-height: 0.95;
+
   font-weight: 900;
 }
 
+.build-performance-note {
+  max-width: 900px;
 
-/* =========================================================
-   PERFORMANCE META
-========================================================= */
+  margin:
+    1rem
+    auto
+    0;
 
-.build-performance-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-
-  margin-top: 1rem;
-}
-
-.build-performance-meta span {
-  padding: 0.5rem 0.75rem;
-
-  border-radius: var(--jm-radius-pill);
-
-  background: rgba(0, 212, 255, 0.1);
-
-  color: #087f9c;
-
-  font-size: var(--jm-text-xs);
-  font-weight: 800;
-}
-
-
-/* =========================================================
-   PERFORMANCE WORK GRID
-========================================================= */
-
-.build-performance-work {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  margin-top: 1.5rem;
-
-  overflow: hidden;
-
-  border: 1px solid var(--jm-border);
-  border-radius: var(--jm-radius-card);
-
-  background: var(--jm-soft);
-}
-
-.build-performance-work div {
-  padding: 0.9rem 1rem;
-
-  border-right: 1px solid var(--jm-border);
-  border-bottom: 1px solid var(--jm-border);
-
-  color: var(--jm-muted);
-
-  font-size: 0.95rem;
-  line-height: 1.5;
-  font-weight: 700;
-}
-
-.build-performance-work div:nth-child(4n) {
-  border-right: 0;
-}
-
-.build-performance-work div:nth-last-child(-n + 4) {
-  border-bottom: 0;
-}
-
-
-/* =========================================================
-   RELEASE PROCESS
-========================================================= */
-
-.build-release {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 0.55rem;
-
-  margin-bottom: 1.5rem;
-}
-
-.build-release__item {
   text-align: center;
 }
 
-.build-release__item .jm-number {
-  margin:
-    0
-    auto
-    0.6rem;
-}
-
-.build-release__item strong {
-  display: block;
-
-  color: var(--jm-purple);
-
-  font-size: 0.9rem;
-  line-height: 1.3;
-  font-weight: 800;
-}
-
 
 /* =========================================================
-   FINAL RESULT
+   15 — FINAL RESULT ACCENT
 ========================================================= */
-
-.build-result {
-  position: relative;
-  overflow: hidden;
-}
-
-.build-result::before {
-  content: "";
-
-  position: absolute;
-  top: -20rem;
-  left: 50%;
-
-  width: 45rem;
-  height: 45rem;
-
-  transform: translateX(-50%);
-
-  background:
-    radial-gradient(
-      circle,
-      rgba(169, 79, 228, 0.28),
-      transparent 68%
-    );
-
-  pointer-events: none;
-}
-
-.build-result > .jm-container {
-  position: relative;
-}
 
 .build-result__accent {
   display: block;
 
-  color: #d994f5;
-}
+  margin-top: 0.15em;
 
-.build-result__links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+  background:
+    linear-gradient(
+      90deg,
+      var(--jm-purple-light),
+      var(--jm-cyan)
+    );
 
-  margin-top: 2rem;
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  color: transparent;
+
+  -webkit-text-fill-color: transparent;
 }
 
 
 /* =========================================================
-   TABLET
+   16 — TABLET
 ========================================================= */
 
 @media (max-width: 950px) {
 
   .build-summary,
   .build-feature-grid,
-  .build-code-grid,
   .build-cms-types {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
   }
 
-  .build-heading-row,
-  .build-debug-example {
+  .build-heading-row {
     grid-template-columns: 1fr;
+
     gap: 1.5rem;
   }
 
-  .build-flow,
-  .build-system-diagram,
-  .build-stack {
-    flex-wrap: wrap;
+  .build-flow {
+    display: grid;
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
   }
 
-  .build-flow__arrow,
-  .build-system-diagram > span,
-  .build-stack > b {
+  .build-flow__arrow {
     display: none;
   }
 
-  .build-flow__item,
-  .build-system-step,
-  .build-stack__item {
-    flex:
-      1
-      1
-      30%;
+  .build-system-diagram {
+    display: grid;
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
   }
 
-  .build-release {
-    grid-template-columns: repeat(4, 1fr);
+  .build-system-diagram > span {
+    display: none;
   }
 
-  .build-performance-work {
-    grid-template-columns: repeat(2, 1fr);
+  .build-debug-example {
+    grid-template-columns: 1fr;
   }
 
-  .build-performance-work div:nth-child(4n) {
-    border-right: 1px solid var(--jm-border);
+  .build-debug-path {
+    display: grid;
+
+    grid-template-columns:
+      repeat(5, minmax(0, 1fr));
+
+    margin-bottom: 0;
   }
 
-  .build-performance-work div:nth-child(2n) {
-    border-right: 0;
+  .build-debug-path b {
+    display: none;
   }
 
-  .build-performance-work div:nth-last-child(-n + 4) {
-    border-bottom: 1px solid var(--jm-border);
-  }
-
-  .build-performance-work div:nth-last-child(-n + 2) {
-    border-bottom: 0;
+  .build-visual-gallery {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
   }
 
 }
 
 
 /* =========================================================
-   MOBILE
+   17 — MOBILE
 ========================================================= */
 
 @media (max-width: 640px) {
 
-  /* HERO */
-
-  .build-hero {
-    padding:
-      3rem
-      0
-      2.4rem;
-  }
-
-  .build-hero__intro {
-    margin-top: 1.5rem;
-  }
-
-
-  /* SUMMARY */
-
-  .build-summary {
+  .build-summary,
+  .build-feature-grid,
+  .build-cms-types,
+  .build-two-column,
+  .build-proof-grid,
+  .build-performance,
+  .build-visual-gallery {
     grid-template-columns: 1fr;
-    gap: 0.8rem;
   }
 
-
-  /* OVERVIEW */
+  .build-summary .jm-card {
+    min-height: 0;
+  }
 
   .build-heading-row {
-    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
-
-  /* FLOW */
-
   .build-flow {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
     gap: 0.55rem;
   }
 
-  .build-flow__item {
-    width: 100%;
-  }
-
-
-  /* CONTENT GRIDS */
-
-  .build-feature-grid,
-  .build-code-grid,
-  .build-cms-types,
-  .build-two-column,
-  .build-highlight-grid,
-  .build-performance {
-    grid-template-columns: 1fr;
-  }
-
-
-  /* PRINCIPLE */
-
   .build-rule {
     grid-template-columns: 1fr;
+
+    gap: 0.6rem;
   }
 
-
-  /* CMS SYSTEM */
-
   .build-system-diagram {
-    display: grid;
     grid-template-columns: 1fr;
   }
 
-
-  /* STACK */
-
-  .build-stack {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .build-tech-strip {
+    gap: 0.45rem;
   }
 
+  .build-tech-strip span {
+    padding:
+      0.55rem
+      0.7rem;
 
-  /* PERFORMANCE */
-
-  .build-performance-work {
-    grid-template-columns: 1fr 1fr;
+    font-size:
+      var(--jm-text-xs);
   }
 
+  .build-debug-example {
+    gap: 1rem;
+  }
 
-  /* RELEASE */
+  .build-debug-path {
+    grid-template-columns: 1fr;
+  }
 
-  .build-release {
-    grid-template-columns: repeat(2, 1fr);
+  .build-performance__score strong {
+    font-size:
+      clamp(3rem, 18vw, 4.5rem);
+  }
+
+}
+
+
+/* =========================================================
+   18 — REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .build-proof:hover .build-proof__image,
+  .build-visual-card:hover,
+  .build-visual-card:hover img,
+  .build-summary .jm-card:hover,
+  .build-flow__item:hover {
+    transform: none;
   }
 
 }

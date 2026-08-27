@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
@@ -8,19 +9,20 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>
-    Argenti Case Study | JM Sites
-  </title>
+  <title>Argenti Case Study | JM Sites</title>
 
   <meta
     name="description"
     content="How the Argenti website project helped shape the way Jessica Manning builds through JM Sites — human-led, AI-accelerated."
   >
 
-  <!-- Keep this private/local for now -->
+  <!-- Keep private while the case study is being completed -->
   <meta name="robots" content="noindex, nofollow">
 
   <meta name="theme-color" content="#3e015f">
+
+
+  <!-- FONTS -->
 
   <link
     rel="preconnect"
@@ -38,600 +40,1179 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- STYLES -->
+
   <link rel="stylesheet" href="jm-system.css">
   <link rel="stylesheet" href="argenti-case-study.css">
+ 
+
+
+  <!-- FAVICON -->
 
   <link
     rel="icon"
     href="images/logo.png"
     type="image/png"
   >
+
 </head>
 
-<body class="case-study-page">
 
-  <a href="#main-content" class="skip-link">
+<body class="jm-page">
+
+  <a
+    href="#main-content"
+    class="skip-link"
+  >
     Skip to content
   </a>
 
-  <!-- =========================================
-       CASE STUDY HEADER
-  ========================================== -->
 
-  <header class="case-header">
-    <div class="case-header__inner">
+
+  <!-- =====================================================
+       NAVIGATION
+  ====================================================== -->
+
+<header class="jm-nav" id="top">
+
+  <div class="jm-nav__inner">
+
+    <a
+      href="index.html"
+      class="jm-nav__brand"
+      aria-label="JM Sites home"
+    >
+
+      <img
+        src="images/logo.png"
+        alt=""
+        class="jm-nav__logo"
+        width="50"
+        height="50"
+      >
+
+      <span class="jm-nav__brand-copy">
+
+        <strong class="jm-nav__brand-name">
+          JM Sites
+        </strong>
+
+        <span class="jm-nav__brand-tagline">
+          Websites & Digital Systems
+        </span>
+
+      </span>
+
+    </a>
+
+
+    <button
+      type="button"
+      class="jm-nav__toggle"
+      aria-expanded="false"
+      aria-controls="jm-primary-navigation"
+      aria-label="Open main menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+
+    <nav
+      class="jm-nav__menu"
+      id="jm-primary-navigation"
+      aria-label="Main navigation"
+    >
 
       <a
+        class="jm-nav__link"
         href="index.html"
-        class="case-header__brand"
-        aria-label="JM Sites home"
       >
-        <img
-          src="images/logo.png"
-          alt="JM Sites"
-          class="case-header__logo"
-        >
-
-        <span>JM Sites</span>
+        Home
       </a>
 
       <a
-        href="index.html#portfolio"
-        class="case-header__back"
+        class="jm-nav__link"
+        href="projects.html"
+        aria-current="page"
       >
-        ← Back to portfolio
+        Projects
       </a>
 
-    </div>
-  </header>
+      <a
+        class="jm-nav__link"
+        href="pricing.html"
+      >
+        Pricing
+      </a>
+
+      <a
+        class="jm-nav__link jm-nav__cta"
+        href="contact.html"
+      >
+        Get Started
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
 
 
   <main id="main-content">
 
-    <!-- =========================================
+
+
+    <!-- =====================================================
          HERO
-    ========================================== -->
+    ====================================================== -->
 
-    <section class="case-hero">
+    <section
+      class="jm-hero jm-hero--spotlight case-hero"
+      aria-labelledby="case-study-title"
+    >
 
-      <div
-        class="case-hero__glow"
-        aria-hidden="true"
-      ></div>
+      <p class="jm-eyebrow jm-eyebrow--center">
+        Argenti × JM Sites
+      </p>
 
-      <div class="case-container">
 
-        <p class="case-eyebrow">
-          Argenti × JM Sites
+      <h1
+        id="case-study-title"
+        class="jm-h1 jm-hero__title"
+      >
+
+        Human-led
+
+        <span class="jm-gradient-text">
+          AI-accelerated
+        </span>
+
+      </h1>
+
+
+      <p class="jm-lead jm-hero__intro">
+        How Argenti taught me what being a web developer actually means
+      </p>
+
+
+      <!-- HERO PROOF -->
+
+      <div class="case-proof-grid">
+
+
+        <article class="jm-card jm-card--raised">
+
+          <span class="jm-card__label">
+            The Client
+          </span>
+
+          <strong class="jm-card__title">
+            Argenti
+          </strong>
+
+          <p class="jm-card__text">
+            Data, AI & Technology Consulting
+          </p>
+
+        </article>
+
+
+        <article class="jm-card jm-card--raised">
+
+          <span class="jm-card__label">
+            The Stack
+          </span>
+
+          <strong class="jm-card__title">
+            Webflow + Custom Code
+          </strong>
+
+          <p class="jm-card__text">
+            HTML · CSS · JavaScript · HubSpot ·
+            GTM · GA4 · Clarity
+          </p>
+
+        </article>
+
+
+        <article class="jm-card jm-card--purple">
+
+          <span class="jm-card__label">
+            The Win
+          </span>
+
+          <strong class="jm-card__title">
+            64 → 93 Mobile
+          </strong>
+
+          <p class="jm-card__text">
+            Desktop Performance: 79 → 92
+          </p>
+
+        </article>
+
+
+      </div>
+
+
+      <!-- HERO ACTION -->
+
+      <div class="jm-hero__actions">
+
+        <a
+          href="https://www.argenti.com.au/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="jm-button jm-button--primary"
+        >
+          View the Argenti website
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        
+        <a
+          href="argenti-build.html"
+          class="jm-button jm-button--secondary"
+        >
+          Explore the technical build
+          <span aria-hidden="true">→</span>
+        </a>
+        
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         WEBSITE SHOWCASE
+    ====================================================== -->
+
+    <section class="jm-section">
+
+      <figure class="case-showcase__figure">
+
+        <img
+          src="images/client-argenti-images/argenti-home.png"
+          alt="Argenti website homepage designed and developed by JM Sites"
+          loading="lazy"
+        >
+
+        <figcaption class="jm-small">
+          The finished Argenti website — designed and developed through JM Sites
+        </figcaption>
+
+      </figure>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         INTRO
+    ====================================================== -->
+
+    <section class="jm-section">
+
+      <div class="case-reading-width">
+
+        <p class="jm-lead">
+
+          When I started working with Argenti, I genuinely
+          thought I was already a web developer. I’d studied
+          web development years earlier, built a few smaller
+          sites, completed Webflow courses and thrown myself
+          back into development with AI helping me move
+          incredibly fast.
+
         </p>
 
-        <h1 class="case-hero__title">
-          Human-led
-          <span>AI-accelerated</span>
-        </h1>
 
-        <p class="case-hero__intro">
-          How Argenti taught me what being a
-          web developer actually means
+        <div class="jm-quote case-dialogue">
+
+          <p>
+            Don’t know something?
+            Ask AI.
+          </p>
+
+          <p>
+           Code isn’t working?
+            Ask AI.
+          </p>
+
+          <p>
+            Never built that before?
+            Sweet, AI and I will work it out.
+          </p>
+
+        </div>
+
+
+        <p class="jm-body">
+
+          I felt good because I could keep figuring things out.
+          Little did I know <strong>I mistook that for experience.</strong>
+          Then I got the call from Simon and Argenti handed me a
+          real business website and Webflow basically went:
+          <strong>Cool. Now do it for real.</strong> 😂
+
         </p>
 
-        <!-- TOP PROOF CARDS -->
 
-        <div class="case-proof-grid">
+        <p class="jm-body">
 
-          <article class="case-proof-card">
-            <span class="case-proof-label">
-              The Client
+          That was when I realised there was a huge difference
+          between being able to build something and being
+          responsible for delivering it professionally.
+
+        </p>
+
+
+        <!-- DELIVERY SYSTEM -->
+
+        <div class="jm-list">
+
+          <div class="jm-list__row">
+
+            <span class="jm-number">
+              ✓
             </span>
 
-            <strong>
-              Argenti
+            <strong class="jm-list__title">
+              Plan
             </strong>
 
-            <p>
-              Data, AI & Technology Consulting
-            </p>
-          </article>
-
-          <article class="case-proof-card">
-            <span class="case-proof-label">
-              The Stack
+            <span class="jm-list__text">
+              Discovery · Scope · Client meetings
             </span>
 
-            <strong>
-              Webflow + Custom Code
-            </strong>
+          </div>
 
-            <p>
-              HTML · CSS · JavaScript · HubSpot ·
-              GTM · GA4 · Clarity
-            </p>
-          </article>
 
-          <article class="case-proof-card case-proof-card--win">
-            <span class="case-proof-label">
-              The Win
+          <div class="jm-list__row">
+
+            <span class="jm-number">
+              ✓
             </span>
 
-            <strong>
-              64 → 90 Mobile
+            <strong class="jm-list__title">
+              Build
             </strong>
 
-            <p>
-              Desktop Performance:
-              <b>79 → 98</b>
-            </p>
-          </article>
+            <span class="jm-list__text">
+              CMS · Integrations · Development
+            </span>
+
+          </div>
+
+
+          <div class="jm-list__row">
+
+            <span class="jm-number">
+              ✓
+            </span>
+
+            <strong class="jm-list__title">
+              Measure
+            </strong>
+
+            <span class="jm-list__text">
+              Analytics · Performance
+            </span>
+
+          </div>
+
+
+          <div class="jm-list__row">
+
+            <span class="jm-number">
+              ✓
+            </span>
+
+            <strong class="jm-list__title">
+              Verify
+            </strong>
+
+            <span class="jm-list__text">
+              QA · Responsive testing · Launch
+            </span>
+
+          </div>
+
+
+          <div class="jm-list__row">
+
+            <span class="jm-number">
+              ✓
+            </span>
+
+            <strong class="jm-list__title">
+              Hand over
+            </strong>
+
+            <span class="jm-list__text">
+              Documentation · Client handover
+            </span>
+
+          </div>
 
         </div>
 
       </div>
-      <div class="case-hero__actions">
-  <a
-    href="https://www.argenti.com.au/"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="case-live-link"
-  >
-    View the Argenti website
-    <span aria-hidden="true">↗</span>
-  </a>
 
-   <!--<a
-    href="argenti-build.html"
-    class="case-build-link"
-  >
-    Explore the technical build
-    <span aria-hidden="true">→</span>
-  </a>-->
-</div>
     </section>
 
-<section class="case-showcase">
 
-  <div class="case-container">
 
-    <figure class="case-showcase__figure">
+    <!-- =====================================================
+         ARGENTI SUPPORT
+    ====================================================== -->
 
-      <img
-  src="images/client-argenti-images/argenti-home.png"
-        alt="Argenti website homepage designed and developed by JM Sites"
-        loading="eager"
-      >
-
-      <figcaption>
-        The finished Argenti website — designed and developed through JM Sites.
-      </figcaption>
-
-    </figure>
-
-  </div>
-
-</section>
-    <!-- =========================================
-         INTRO
-    ========================================== -->
-
-    <article class="case-story">
+    <section class="jm-section jm-soft">
 
       <div class="case-reading-width">
 
-  <p class="case-lead">
-    When I started working with Argenti, I genuinely thought I was already a web developer.
-    I’d studied web development years earlier, built a few smaller sites, completed Webflow
-    courses and thrown myself back into development with AI helping me move incredibly fast.
-  </p>
-
-  <div class="case-mini-dialogue">
-    <p><strong>Don’t know something?</strong> Ask AI.</p>
-    <p><strong>Code isn’t working?</strong> Ask AI.</p>
-    <p><strong>Never built that before?</strong> Sweet, AI and I will work it out.</p>
-  </div>
-
-  <p>
-    I felt good because I could keep figuring things out. Little did I know
-    <strong>I mistook that for experience.</strong>
-    Then I got the call from Simon and Argenti handed me a real business website and Webflow basically went: <strong>Cool. Now do it for real.</strong> 😂
-  </p>
-
-  <p>
-    That was when I realised there was a huge difference between being able to build
-    something and being responsible for delivering it professionally.
-  </p>
-
-  <div class="case-delivery-list">
-
-    <div class="case-delivery-row">
-      <span class="case-delivery-check">✓</span>
-      <strong>Plan</strong>
-      <span>Discovery · Scope · Client meetings</span>
-    </div>
-
-    <div class="case-delivery-row">
-      <span class="case-delivery-check">✓</span>
-      <strong>Build</strong>
-      <span>CMS · Integrations · Development</span>
-    </div>
-
-    <div class="case-delivery-row">
-      <span class="case-delivery-check">✓</span>
-      <strong>Measure</strong>
-      <span>Analytics · Performance</span>
-    </div>
-
-    <div class="case-delivery-row">
-      <span class="case-delivery-check">✓</span>
-      <strong>Verify</strong>
-      <span>QA · Responsive testing · Launch</span>
-    </div>
-
-    <div class="case-delivery-row">
-      <span class="case-delivery-check">✓</span>
-      <strong>Hand over</strong>
-      <span>Documentation · Client handover</span>
-    </div>
-
-  </div>
-
-</div>
+        <p class="jm-eyebrow">
+          The people behind the project
+        </p>
 
 
-      <!-- =========================================
-           ARGENTI SUPPORT
-      ========================================== -->
+        <h2 class="jm-h2">
+          Argenti gave me room to grow into it
+        </h2>
 
-      <section class="case-section case-section--soft">
 
-        <div class="case-reading-width">
+        <p class="jm-body">
 
-          <h2>
-            Argenti gave me room to grow into it
-          </h2>
+          My confidence went everywhere during this
+          project. At one point I was so deep in the details
+          and so aware of everything I didn’t know that full
+          imposter syndrome kicked in. All I could think was,
+          am I a developer at all?
 
-          <p>
-            My confidence went everywhere during this
-            project.
-            At one point I was so deep in the details
-            and so aware of everything I didn’t know,
-            that full imposter syndrome kicked in. All I could think was am I a developer at all?
-            What surprised me was the way Argenti
-            responded.
+        </p>
+
+
+        <p class="jm-body">
+          What surprised me was the way Argenti responded.
+        </p>
+
+
+        <p class="jm-quote">
+          They didn’t take the project away from me.
+          They guided me.
+        </p>
+
+
+        <p class="jm-body">
+
+          Dave seemed to have a very good habit of asking
+          the right question at exactly the right time.
+          Mila and Mel helped me understand what the business
+          actually needed and when the team could see I was
+          overloaded, they sometimes reduced the noise instead
+          of adding more of it.
+
+        </p>
+
+
+        <p class="jm-body">
+
+          They gave me room to solve things while still
+          reminding me that, yes Jess, there was eventually
+          supposed to be a finished website. 😂
+
+        </p>
+
+
+        <p class="jm-body">
+          Looking back, that balance mattered enormously.
+        </p>
+
+
+        <p class="jm-quote">
+
+          They didn’t remove the responsibility from me.
+          They gave me space to grow into it!
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         THE SHIFT
+    ====================================================== -->
+
+    <section class="jm-section">
+
+      <div class="case-reading-width">
+
+        <p class="jm-eyebrow">
+          The shift
+        </p>
+
+
+        <h2 class="jm-h2">
+          The shift that changed everything
+        </h2>
+
+
+        <p class="jm-body">
+
+          Before Argenti, my instinct was usually:
+          <strong>get in, build it, fix what breaks and keep moving.</strong>
+
+        </p>
+
+
+        <p class="jm-body">
+
+          The bigger the project became, the more obvious
+          it was that this approach wasn't going to work.
+
+        </p>
+
+
+        <p class="jm-body">
+
+          I could move quickly but sometimes I was designing
+          three pages ahead before I'd asked enough questions,
+          solving the same type of problem twice or getting
+          completely buried in details that didn't actually
+          need my attention yet.
+
+        </p>
+
+
+        <p class="jm-quote">
+
+          Argenti kept bringing me back to:
+          slow down, understand what actually matters,
+          then build from there.
+
+        </p>
+
+
+        <p class="jm-body">
+
+          Somewhere along the way I realised the answer
+          to most of my chaos was the same thing:
+          <strong>build a system</strong>
+
+        </p>
+
+
+        <!-- WORKING SYSTEM -->
+
+        <div class="case-system-flow">
+
+          <span>Understand</span>
+          <b aria-hidden="true">→</b>
+
+          <span>Plan</span>
+          <b aria-hidden="true">→</b>
+
+          <span>Build</span>
+          <b aria-hidden="true">→</b>
+
+          <span>Test</span>
+          <b aria-hidden="true">→</b>
+
+          <span>Improve</span>
+          <b aria-hidden="true">→</b>
+
+          <span>Document</span>
+
+        </div>
+
+
+        <p class="jm-body">
+
+          Unfortunately, building the system after you’ve
+          already made the mess isn’t exactly the easiest
+          way to do it but as Argenti went on, I started
+          looking at everything and asking, can I turn this
+          into something cleaner and reusable? Could I refine
+          more for this project and use it again across the
+          site and eventually carry it into the next build
+          instead of starting from zero every single time.
+
+        </p>
+
+
+        <p class="jm-body">
+
+          The Style Guide became a system for keeping the
+          design consistent. CMS Collections became systems
+          for publishing instead of rebuilding pages.
+          Debugging became a process instead of random fixes.
+          QA became a checklist. Launch became a process.
+          Even the way I worked with the team became more
+          structured.
+
+        </p>
+
+
+        <p class="jm-body">
+
+          I definitely didn’t manage to follow every system
+          perfectly while I was building them. Systems take
+          time to test, refine and actually become useful and
+          that was another one of those moments where I could
+          clearly see the difference between a pro dev and a
+          me dev 😂.
+
+          The difference now is that I know what I want to
+          improve next time.
+
+        </p>
+
+
+        <p class="jm-body">
+
+          Weirdly, having systems didn’t make the work feel
+          less creative, more difficult or restrictive.
+          It did the opposite. It gave me more room to be
+          creative and organised because I wasn’t trying to
+          hold the entire project in my head at once.
+
+        </p>
+
+
+        <p class="jm-quote">
+
+          Building systems from the beginning is one of the
+          biggest things Argenti taught me and something I’ll
+          carry into every JM Sites project from here:
+          <strong>
+            Build the solution for today, but build the
+            system for what comes next.
+          </strong>
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         AI
+    ====================================================== -->
+
+    <section class="jm-section jm-soft">
+
+      <div class="case-reading-width">
+
+        <p class="jm-eyebrow">
+          Human-led · AI-accelerated
+        </p>
+
+
+        <h2 class="jm-h2">
+          How Argenti changed my relationship with AI
+        </h2>
+
+
+        <p class="jm-body">
+
+          At the beginning, I trusted AI far too much.
+          If it sounded smarter than me, I assumed it
+          probably knew better.
+
+        </p>
+
+
+        <p class="jm-body">
+          Argenti completely changed that!
+        </p>
+
+
+        <div class="case-human-lines">
+
+          <p class="jm-gradient-text">
+            My voice matters
           </p>
 
-          <p class="case-emphasis">
-            They didn’t take the project away from me.
-            They guided me.
-          </p>
-
-          <p>
-            Dave seemed to have a very good habit of
-            asking the right question at exactly the
-            right time.
-        
-            Mila and Mel helped me understand what the
-            business actually needed and when the team
-            could see I was overloaded, they sometimes
-            reduced the noise instead of adding more of it.
-          </p>
-
-          <p>
-            They gave me room to solve things while still
-            reminding me that, yes Jess, there was
-            eventually supposed to be a finished website. 😂
-          </p>
-
-          <p>
-            Looking back, that balance mattered enormously.
-          </p>
-
-          <p class="case-emphasis">
-            They didn’t remove the responsibility from me.
-            They gave me space to grow into it!
+          <p class="jm-gradient-text">
+            My judgment matters
           </p>
 
         </div>
 
-      </section>
+
+        <p class="jm-body">
+
+          Making mistakes myself, understanding them
+          and learning how to fix them is a hell of a
+          lot more useful than hiding behind an AI
+          answer because it sounded clever.
+
+          AI was still part of the project every day,
+          helping me research, debug, learn, analyse
+          code and move faster, but I realised AI
+          couldn’t do the human side.
+
+          It couldn’t sit face-to-face in meetings,
+          understand which feedback mattered most,
+          make the final development decisions or take
+          responsibility for the website.
+
+          I’ve read versions of that idea before but
+          actually making the mistakes myself, finishing
+          the site and feeling the reward of getting there
+          taught me something no paragraph of text ever could.
+
+        </p>
 
 
-      <!-- =========================================
-     THE SHIFT — SYSTEMS
-========================================== -->
-
-<section class="case-section">
-
-  <div class="case-reading-width">
-
-    <h2>
-      The shift that changed everything
-    </h2>
-
-    <p>
-      Before Argenti, my instinct was usually:
-      <strong>get in, build it, fix what breaks and keep moving.</strong> 
-    </p>
-
-    <p>
-      The bigger the project became, the more obvious it was that this
-      approach wasn't going to work.
-    </p>
-
-    <p>
-      I could move quickly but sometimes I was designing three pages ahead
-      before I'd asked enough questions, solving the same type of problem
-      twice or I was getting completely buried in details that didn't actually
-      need my attention yet.
-    </p>
-
-    <blockquote class="case-mini-dialogue case-emphasis">
-      Argenti kept bringing me back to:
-      slow down, understand what actually matters,
-      then build from there.
-    </blockquote>
-
-    <p>
-      Somewhere along the way I realised the answer to most of my chaos
-      was the same thing:
-      <strong>build a system</strong>
-    </p>
-
-    <div class="case-system-flow">
-      <span>Understand</span>
-      <b>→</b>
-      <span>Plan</span>
-      <b>→</b>
-      <span>Build</span>
-      <b>→</b>
-      <span>Test</span>
-      <b>→</b>
-      <span>Improve</span>
-      <b>→</b>
-      <span>Document</span>
-    </div>
-<p>
-  Unfortunately, building the system after you’ve already made the mess
-  isn’t exactly the easiest way to do it but as Argenti went on,
-  I started looking at everything and asking, can I turn this into something
-  cleaner and reusable? Could I refine more for this project and use it again
-  across the site and eventually carry into the next build instead of
-  starting from zero every single time.
-</p>
-
-<p>
-  The Style Guide became a system for keeping the design consistent.
-  CMS Collections became systems for publishing instead of rebuilding
-  pages. Debugging became a process instead of random fixes. QA became
-  a checklist. Launch became a process. Even the way I worked with the
-  team became more structured.
-</p>
-
-<p>
-  I definitely didn’t manage to follow every system perfectly while I was
-  building them. Systems take time to test, refine and actually become
-  useful and that was another one of those moments where I could clearly
-  see the difference between a pro dev and a me dev😂. 
-  The difference now is that I know what I want to improve next time.
-</p>
-
-<p>
-  Weirdly, having systems didn’t make the work feel less creative,
-  more difficult or restrictive. It did the opposite. It gave me more
-  room to be creative and organised because I wasn’t trying to hold the
-  entire project in my head at once.
-</p>
-
-<p class="case-emphasis">
-  Building systems from the beginning is one of the biggest things Argenti
-  taught me and something I’ll carry into every JM Sites project from here:
-  Build the solution for today, but build the system for what comes next.
-</p>
-  </div>
-
-</section>
+        <p class="jm-quote">
+          AI cannot be held accountable for the work.
+          That part is mine.
+        </p>
 
 
-      <!-- =========================================
-           AI
-      ========================================== -->
+        <p class="jm-body">
 
-      <section class="case-section case-section--soft">
+          That is where
+          <strong>Human-led. AI-accelerated.</strong>
+          finally made sense to me.
 
-        <div class="case-reading-width">
+        </p>
 
-          <h2>
-            How Argenti changed my relationship with AI
-          </h2>
 
-          <p>
-            At the beginning, I trusted AI far too much.
-            If it sounded smarter than me, I assumed it
-            probably knew better.
-          </p>
+        <!-- AI PRINCIPLES -->
 
-          <p>
-            Argenti completely changed that!
-          </p>
+        <div class="case-ai-manifesto">
 
-          <div class="case-human-lines">
-            <p>My voice matters</p>
-            <p>My judgment matters</p>
+
+          <div class="jm-card">
+
+            <span class="jm-number">
+              01
+            </span>
+
+            <strong class="jm-card__title">
+              AI accelerates the work
+            </strong>
+
           </div>
 
-          <p>
-            Making mistakes myself, understanding them
-            and learning how to fix them is a hell of a
-            lot more useful than hiding behind an AI
-            answer because it sounded clever.
-    
-            AI was still part of the project every day,
-            helping me research, debug, learn, analyse
-            code and move faster
-            but I realised AI couldn’t do the human side.
-       
-            It couldn’t sit face-to-face in meetings,
-            understand which feedback mattered most,
-            make the final development decisions or take
-            responsibility for the website. I’ve read versions 
-            of that idea before but actually making the mistakes 
-            myself, finishing the site and feeling the reward of 
-            getting there taught me something no paragraph of text 
-            ever could.
-          </p>
 
-          <p class="case-emphasis">
-            AI cannot be held accountable for the work.
-            That part is mine.
-          </p>
+          <div class="jm-card">
 
-          <p>
-            That is where
-            <strong>Human-led. AI-accelerated.</strong>
-            finally made sense to me.
-          </p>
+            <span class="jm-number">
+              02
+            </span>
 
-
-          <div class="case-ai-manifesto">
-
-            <div>
-              <span>01</span>
-              <strong>AI accelerates the work</strong>
-            </div>
-
-            <div>
-              <span>02</span>
-              <strong>People shape it</strong>
-            </div>
-
-            <div>
-              <span>03</span>
-              <strong>I own the result</strong>
-            </div>
+            <strong class="jm-card__title">
+              People shape it
+            </strong>
 
           </div>
 
-        </div>
 
-      </section>
+          <div class="jm-card">
 
+            <span class="jm-number">
+              03
+            </span>
 
-      <!-- =========================================
-           CLOSER
-      ========================================== -->
+            <strong class="jm-card__title">
+              I own the result
+            </strong>
 
-      <section class="case-section case-section--closing">
-
-        <div class="case-reading-width">
-
-          <h2>
-            What I’m taking with me
-          </h2>
-
-          <p>
-            Argenti was my first real web development
-            project.
-      
-            Not my first website or my first line of
-            code but the first time I experienced the
-            full responsibility of delivering a
-            professional website from beginning to end.
-       
-            That matters to me because I came into
-            this project confident that I could figure
-            things out but now my confidence comes from something much better:
-          </p>
-
-          <div class="case-real-experience">
-            Real experience
           </div>
 
-          <p>
-            I still don’t know everything and I’m
-            actually far more comfortable with that now.
-          
-            I’ve also realised that the slightly muddled,
-            over-explaining, very-Jess way I think isn't
-            something I need AI to polish out of me. 
-         
-            It’s part of how I question things, care
-            about the details and keep digging when
-            something doesn’t feel right.
-          </p>
-
-          <p>
-            I’ll make mistakes. Sometimes things will
-            take longer than I expected but I will care
-            about the result above all else, I will own the work and I
-            will work hard to build something both
-            the client and I are proud of.
-          </p>
-
-          <p class="case-emphasis">
-            That is the developer I want to be!
-          </p>
-
-          <p>
-            So while JM Sites helped build Argenti’s next
-            digital chapter,
-          </p>
-
-          <h3 class="case-closing__subheading">
-            Argenti helped shape mine too
-          </h3>
-
-          <p>
-            Thank you Simon, Dave, Mila, Mel and the wider
-            Argenti team for the patience, trust, guidance
-            and an incredible unforgetable first project.
-         
-            You gave me more than a website to build.
-          </p>
-
-          <h3 class="case-closing__subheading">
-            You gave me a way to build
-          </h3>
-
-          <p>
-            I’ll carry a lot of the Argenti spirit
-            into whatever JM Sites builds next. 💜
-          </p>
 
         </div>
 
-        <div class="case-final">
+      </div>
 
-          <p>
-            Human-led, AI-accelerated
-          </p>
+    </section>
 
-          <h2>
-            Built by me<br>
-            Shaped by people<br>
-            Accelerated by AI
-          </h2>
 
-          <a
-            href="index.html"
-            class="case-final__button"
-          >
-            JM Sites
-            <span aria-hidden="true">→</span>
-          </a>
 
-        </div>
+    <!-- =====================================================
+         WHAT I AM TAKING WITH ME
+    ====================================================== -->
 
-      </section>
+    <section class="jm-section">
 
-    </article>
+      <div class="case-reading-width">
+
+        <p class="jm-eyebrow">
+          What came out of it
+        </p>
+
+
+        <h2 class="jm-h2">
+          What I’m taking with me
+        </h2>
+
+
+        <p class="jm-body">
+
+          Argenti was my first real web development project.
+
+          Not my first website or my first line of code but
+          the first time I experienced the full responsibility
+          of delivering a professional website from beginning
+          to end.
+
+          That matters to me because I came into this project
+          confident that I could figure things out but now my
+          confidence comes from something much better:
+
+        </p>
+
+
+        <p class="jm-statement jm-gradient-text">
+          Real experience
+        </p>
+
+
+        <p class="jm-body">
+
+          I still don’t know everything and I’m actually far
+          more comfortable with that now.
+
+          I’ve also realised that the slightly muddled,
+          over-explaining, very-Jess way I think isn't
+          something I need AI to polish out of me.
+
+          It’s part of how I question things, care about the
+          details and keep digging when something doesn’t
+          feel right.
+
+        </p>
+
+
+        <p class="jm-body">
+
+          I’ll make mistakes. Sometimes things will take
+          longer than I expected but I will care about the
+          result above all else, I will own the work and I
+          will work hard to build something both the client
+          and I are proud of.
+
+        </p>
+
+
+        <p class="jm-quote">
+          That is the developer I want to be!
+        </p>
+
+
+        <p class="jm-body">
+
+          So while JM Sites helped build Argenti’s next
+          digital chapter,
+
+        </p>
+
+
+        <h3 class="jm-h3 jm-gradient-text">
+          Argenti helped shape mine too
+        </h3>
+
+
+        <p class="jm-body">
+
+          Thank you Simon, Dave, Mila, Mel and the wider
+          Argenti team for the patience, trust, guidance
+          and an incredible unforgettable first project.
+
+          You gave me more than a website to build.
+
+        </p>
+
+
+        <h3 class="jm-h3 jm-gradient-text">
+          You gave me a way to build
+        </h3>
+
+
+        <p class="jm-body">
+
+          I’ll carry a lot of the Argenti spirit
+          into whatever JM Sites builds next. 💜
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FINAL
+    ====================================================== -->
+
+    <section class="jm-final jm-purple">
+
+      <p class="jm-final__eyebrow">
+        Human-led · AI-accelerated
+      </p>
+
+
+      <h2 class="jm-final__title">
+
+        Built by me
+
+        <span class="case-final__line">
+          Shaped by people
+        </span>
+
+        <span class="case-final__line">
+          Accelerated by AI
+        </span>
+
+      </h2>
+
+
+      <div class="jm-final__actions">
+
+        <a
+          href="index.html"
+          class="jm-button jm-button--glass"
+        >
+          JM Sites
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+    </section>
+
 
   </main>
 
+  <!-- =====================================================
+     GLOBAL JM SITES FOOTER
+====================================================== -->
 
-  <footer class="case-footer">
+<footer class="jm-footer">
+
+  <div
+    class="jm-footer__glow"
+    aria-hidden="true"
+  ></div>
+
+
+  <div class="jm-footer__inner">
+
+
+    <!-- SOCIALS — LEFT -->
+
+    <div class="jm-footer__social-block">
+
+      <span class="jm-footer__label">
+        Connect
+      </span>
+
+      <div
+        class="jm-footer__socials"
+        aria-label="JM Sites social links"
+      >
+
+        <a
+          href="https://www.linkedin.com/in/jess-manning-dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Jessica Manning on LinkedIn"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+<!-- X -->
+
+<a
+  href="https://x.com/JessJMSites"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="JM Sites on X"
+>
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.458l-5.056-6.605-5.79 6.605H2.215l7.55-8.63L1.773 2.25H8.39l4.57 6.04 5.284-6.04zm-1.161 17.52h1.833L7.394 4.126H5.428L17.083 19.77z"/>
+  </svg>
+</a>
+
+<!-- FACEBOOK -->
+
+<a
+  href="PASTE-YOUR-FACEBOOK-PAGE-URL-HERE"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="JM Sites on Facebook"
+>
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.099 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.414c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.971h-1.513c-1.49 0-1.956.931-1.956 1.887v2.262h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.099 24 12.073z"/>
+  </svg>
+</a>
+
+
+        <a
+          href="https://www.instagram.com/jmsites.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="JM Sites on Instagram"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+
+
+        <a
+          href="https://github.com/Jess-dev-93"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Jessica Manning on GitHub"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M12 .7C5.73.7.7 5.82.7 12.13c0 5.05 3.24 9.33 7.73 10.84.56.11.77-.25.77-.55v-2.15c-3.15.69-3.81-1.35-3.81-1.35-.51-1.33-1.26-1.68-1.26-1.68-1.03-.71.08-.7.08-.7 1.14.08 1.74 1.18 1.74 1.18 1.01 1.75 2.65 1.25 3.3.95.1-.74.4-1.25.72-1.54-2.51-.29-5.15-1.27-5.15-5.64 0-1.25.44-2.27 1.17-3.07-.12-.29-.51-1.45.11-3.03 0 0 .95-.31 3.12 1.17a10.7 10.7 0 0 1 5.68 0c2.17-1.48 3.12-1.17 3.12-1.17.62 1.58.23 2.74.11 3.03.73.8 1.17 1.82 1.17 3.07 0 4.38-2.65 5.34-5.17 5.63.41.36.77 1.06.77 2.14v3.17c0 .3.2.66.78.55 4.48-1.51 7.71-5.79 7.71-10.84C23.3 5.82 18.27.7 12 .7z"/>
+          </svg>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- BRAND — CENTRE -->
+
+    <a
+      href="index.html"
+      class="jm-footer__brand"
+      aria-label="JM Sites home"
+    >
+
+      <img
+        src="images/logo.png"
+        alt=""
+        class="jm-footer__logo"
+        width="50"
+        height="50"
+      >
+
+      <span class="jm-footer__brand-copy">
+
+        <strong>
+          JM Sites
+        </strong>
+
+      </span>
+
+    </a>
+
+
+    <!-- NAVIGATION — RIGHT -->
+
+    <nav
+      class="jm-footer__nav"
+      aria-label="Footer navigation"
+    >
+
+      <span class="jm-footer__label">
+        Explore
+      </span>
+
+      <div class="jm-footer__nav-links">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="projects.html">
+          Projects
+        </a>
+
+        <a href="pricing.html">
+          Pricing
+        </a>
+
+        <a href="index.html#about">
+          About
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </div>
+
+    </nav>
+
+
+  </div>
+
+
+  <!-- CONTACT + LEGAL -->
+
+  <div class="jm-footer__bottom">
+
+    <div class="jm-footer__direct">
+
+      <a href="mailto:jess.manning.dev@gmail.com">
+        jess.manning.dev@gmail.com
+      </a>
+
+      <a href="tel:+61415757754">
+        0415 757 754
+      </a>
+
+    </div>
+
     <p>
-      Argenti × JM Sites · Jessica Manning · 2026
+      © <span id="year"></span>
+      JM Sites · Web Development & Digital Solutions
     </p>
-  </footer>
+
+    <p>
+      ABN 84 985 864 627
+    </p>
+
+  </div>
+
+</footer>
+
+
+  <script src="jm-global.js"></script>
 
 </body>
+
 </html>

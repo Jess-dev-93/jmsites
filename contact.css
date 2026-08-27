@@ -1,0 +1,1153 @@
+/* ═══════════════════════════════════════════════════════════
+   JM SITES — CONTACT PAGE
+
+   Page-specific composition only.
+   Global components remain owned by jm-system.css.
+   ═══════════════════════════════════════════════════════════ */
+
+
+/* =========================================================
+   01 — CONTACT HERO
+========================================================= */
+
+.contact-hero {
+  isolation: isolate;
+
+  background:
+    radial-gradient(
+      circle at 18% 18%,
+      rgba(168, 85, 247, 0.22),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 82% 72%,
+      rgba(0, 212, 255, 0.18),
+      transparent 34%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #fbf8ff 55%,
+      #f5faff 100%
+    );
+}
+
+.contact-hero::before,
+.contact-hero::after {
+  content: "";
+
+  position: absolute;
+
+  z-index: 0;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.contact-hero::before {
+  top: -8rem;
+  left: -7rem;
+
+  width: 26rem;
+  height: 26rem;
+
+  background:
+    rgba(168, 85, 247, 0.2);
+
+  filter:
+    blur(75px);
+}
+
+.contact-hero::after {
+  right: -6rem;
+  bottom: -10rem;
+
+  width: 30rem;
+  height: 30rem;
+
+  background:
+    rgba(0, 212, 255, 0.15);
+
+  filter:
+    blur(85px);
+}
+
+.contact-hero .jm-eyebrow {
+  color: var(--jm-purple-bright);
+}
+
+.contact-hero .jm-hero__intro {
+  color: var(--jm-muted);
+}
+
+/* SERVICE OPTIONS */
+
+.contact-hero__options {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 0.6rem;
+
+  width: 100%;
+
+  max-width: 900px;
+
+  margin:
+    2rem
+    auto
+    0;
+}
+
+.contact-hero__options .jm-pill {
+  padding:
+    0.65rem
+    1rem;
+
+  border:
+    1px solid
+    rgba(126, 34, 206, 0.18);
+
+  border-radius:
+    var(--jm-radius-md);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.82),
+      rgba(242, 232, 255, 0.72)
+    );
+
+  color:
+    var(--jm-purple);
+
+  font-size:
+    0.82rem;
+
+  font-weight: 800;
+
+  box-shadow:
+    0 8px 20px
+    rgba(62, 1, 95, 0.09),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.96),
+
+    0 0 0 1px
+    rgba(0, 212, 255, 0.04);
+
+  -webkit-backdrop-filter:
+    blur(14px);
+
+  backdrop-filter:
+    blur(14px);
+
+  transition:
+    transform
+    var(--jm-transition-fast),
+
+    color
+    var(--jm-transition-fast),
+
+    border-color
+    var(--jm-transition-fast),
+
+    background
+    var(--jm-transition-fast),
+
+    box-shadow
+    var(--jm-transition-fast);
+}
+
+.contact-hero__options .jm-pill:hover {
+  transform:
+    translateY(-3px);
+
+  border-color:
+    rgba(0, 212, 255, 0.48);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(241, 224, 255, 0.94),
+      rgba(213, 247, 255, 0.94)
+    );
+
+  color:
+    var(--jm-purple-deep);
+
+  box-shadow:
+    0 12px 28px
+    rgba(62, 1, 95, 0.13),
+
+    0 0 20px
+    rgba(0, 212, 255, 0.1),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.98);
+}
+/* =========================================================
+   02 — CONTACT SECTION
+========================================================= */
+
+.contact-section {
+  isolation: isolate;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 8% 25%,
+      rgba(168, 85, 247, 0.19),
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at 92% 68%,
+      rgba(0, 212, 255, 0.13),
+      transparent 28%
+    ),
+    linear-gradient(
+      145deg,
+      #110819 0%,
+      #240d32 46%,
+      #160a20 100%
+    );
+}
+
+.contact-section::before {
+  content: "";
+
+  position: absolute;
+
+  top: 15%;
+  left: 50%;
+
+  z-index: 0;
+
+  width: min(850px, 85vw);
+  height: 430px;
+
+  transform:
+    translateX(-50%);
+
+  border-radius: 50%;
+
+  background:
+    rgba(122, 34, 168, 0.13);
+
+  filter:
+    blur(90px);
+
+  pointer-events: none;
+}
+
+.contact-section > * {
+  position: relative;
+
+  z-index: 1;
+}
+
+.contact-section .jm-section-heading {
+  max-width: 820px;
+}
+
+.contact-section .jm-section-heading .jm-eyebrow {
+  color:
+    #dcb8ef;
+}
+
+.contact-section .jm-section-heading .jm-body {
+  color:
+    rgba(255, 255, 255, 0.7);
+}
+
+
+/* =========================================================
+   03 — CONTACT LAYOUT
+========================================================= */
+
+.contact-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.5fr)
+    minmax(320px, 0.72fr);
+
+  align-items: start;
+
+  gap:
+    clamp(1.25rem, 3vw, 2rem);
+
+  width: 100%;
+
+  max-width: 1180px;
+
+  margin-inline: auto;
+}
+
+
+/* =========================================================
+   04 — FORM GLASS PANEL
+========================================================= */
+
+.contact-form-card {
+  position: relative;
+
+  isolation: isolate;
+
+  overflow: hidden;
+
+  padding:
+    clamp(1.4rem, 3vw, 2.25rem);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.52);
+
+  border-radius:
+    26px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(244, 239, 252, 0.92) 56%,
+      rgba(232, 249, 255, 0.9)
+    );
+
+  box-shadow:
+    0 30px 70px
+    rgba(0, 0, 0, 0.28),
+
+    0 0 0 1px
+    rgba(168, 85, 247, 0.16),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.95),
+
+    inset 0 -1px 0
+    rgba(0, 212, 255, 0.11);
+
+  -webkit-backdrop-filter:
+    blur(24px)
+    saturate(145%);
+
+  backdrop-filter:
+    blur(24px)
+    saturate(145%);
+}
+
+.contact-form-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: -10rem;
+  right: -9rem;
+
+  z-index: -1;
+
+  width: 25rem;
+  height: 25rem;
+
+  border-radius: 50%;
+
+  background:
+    rgba(0, 212, 255, 0.13);
+
+  filter:
+    blur(55px);
+
+  pointer-events: none;
+}
+
+.contact-form-card::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -10rem;
+  left: -8rem;
+
+  z-index: -1;
+
+  width: 24rem;
+  height: 24rem;
+
+  border-radius: 50%;
+
+  background:
+    rgba(168, 85, 247, 0.15);
+
+  filter:
+    blur(60px);
+
+  pointer-events: none;
+}
+
+.contact-form-card:hover {
+  transform: none;
+
+  border-color:
+    rgba(0, 212, 255, 0.4);
+
+  box-shadow:
+    0 34px 80px
+    rgba(0, 0, 0, 0.32),
+
+    0 0 30px
+    rgba(0, 212, 255, 0.08),
+
+    0 0 0 1px
+    rgba(168, 85, 247, 0.22),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.95);
+}
+
+.contact-form-card__heading {
+  position: relative;
+
+  margin-bottom: 1.5rem;
+
+  padding-bottom: 1.25rem;
+
+  border-bottom:
+    1px solid
+    rgba(62, 1, 95, 0.09);
+}
+
+.contact-form-card__heading::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -1px;
+  left: 0;
+
+  width: 150px;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--jm-purple-light),
+      var(--jm-cyan),
+      transparent
+    );
+
+  box-shadow:
+    0 0 12px
+    rgba(0, 212, 255, 0.28);
+}
+
+.contact-form-card__heading .jm-card__label {
+  margin-bottom: 0.6rem;
+
+  color:
+    var(--jm-purple-bright);
+}
+
+.contact-form-card__heading .jm-h3 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-hubspot-form,
+.contact-hubspot-form .hs-form-frame {
+  width: 100%;
+}
+
+.contact-hubspot-form {
+  min-height: 520px;
+}
+
+.contact-form-card__note {
+  margin:
+    1rem
+    0
+    0;
+
+  padding-top: 0.85rem;
+
+  border-top:
+    1px solid
+    rgba(62, 1, 95, 0.08);
+
+  color:
+    var(--jm-muted);
+
+  font-size:
+    var(--jm-text-xs);
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   05 — DIRECT CONTACT GLASS PANEL
+========================================================= */
+
+.contact-direct {
+  position: sticky;
+
+  top: 110px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.75rem;
+
+  min-width: 0;
+
+  padding:
+    clamp(1.2rem, 2.5vw, 1.55rem);
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(198, 107, 247, 0.22);
+
+  border-radius:
+    24px;
+
+  background:
+    radial-gradient(
+      circle at 90% 0,
+      rgba(0, 212, 255, 0.14),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(87, 24, 119, 0.52),
+      rgba(22, 10, 32, 0.74)
+    );
+
+  color:
+    var(--jm-white);
+
+  box-shadow:
+    0 28px 65px
+    rgba(0, 0, 0, 0.3),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.11),
+
+    0 0 0 1px
+    rgba(0, 212, 255, 0.05);
+
+  -webkit-backdrop-filter:
+    blur(24px)
+    saturate(150%);
+
+  backdrop-filter:
+    blur(24px)
+    saturate(150%);
+}
+
+.contact-direct::before {
+  content: "";
+
+  position: absolute;
+
+  top: -7rem;
+  left: -6rem;
+
+  width: 17rem;
+  height: 17rem;
+
+  border-radius: 50%;
+
+  background:
+    rgba(168, 85, 247, 0.18);
+
+  filter:
+    blur(50px);
+
+  pointer-events: none;
+}
+
+.contact-direct > * {
+  position: relative;
+
+  z-index: 1;
+}
+
+.contact-direct__intro {
+  margin-bottom: 0.25rem;
+
+  padding-bottom: 1rem;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+}
+
+.contact-direct__intro .jm-card__label {
+  margin-bottom: 0.45rem;
+
+  color:
+    #dcb8ef;
+}
+
+.contact-direct__intro .jm-h3 {
+  margin-bottom: 0.35rem;
+
+  color:
+    var(--jm-white);
+
+  font-size:
+    clamp(1.65rem, 2.6vw, 2.2rem);
+}
+
+.contact-direct__intro .jm-card__text {
+  color:
+    rgba(255, 255, 255, 0.65);
+}
+
+
+/* =========================================================
+   06 — DIRECT CONTACT ITEMS
+========================================================= */
+
+.contact-direct__item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.8rem;
+
+  min-width: 0;
+
+  padding:
+    0.9rem;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.11);
+
+  border-radius:
+    16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.09),
+      rgba(0, 212, 255, 0.035)
+    );
+
+  color:
+    var(--jm-white);
+
+  text-decoration: none;
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.08),
+
+    0 9px 24px
+    rgba(0, 0, 0, 0.12);
+
+  transition:
+    transform
+    var(--jm-transition-fast),
+
+    border-color
+    var(--jm-transition-fast),
+
+    background
+    var(--jm-transition-fast),
+
+    box-shadow
+    var(--jm-transition-fast);
+}
+
+.contact-direct__item:hover {
+  transform:
+    translateY(-3px)
+    translateZ(0);
+
+  border-color:
+    rgba(0, 212, 255, 0.45);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(168, 85, 247, 0.19),
+      rgba(0, 212, 255, 0.1)
+    );
+
+  box-shadow:
+    0 13px 30px
+    rgba(0, 0, 0, 0.2),
+
+    0 0 24px
+    rgba(0, 212, 255, 0.1),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.11);
+}
+
+.contact-direct__icon {
+  display: grid;
+
+  place-items: center;
+
+  flex:
+    0
+    0
+    auto;
+
+  width: 42px;
+  height: 42px;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.16);
+
+  border-radius:
+    13px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #7c3aed,
+      #5b21b6 48%,
+      #0369a1
+    );
+
+  color:
+    var(--jm-white);
+
+  font-size: 0.95rem;
+
+  line-height: 1;
+
+  font-weight: 900;
+
+  box-shadow:
+    0 9px 20px
+    rgba(37, 0, 56, 0.3),
+
+    0 0 18px
+    rgba(0, 212, 255, 0.12),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.24);
+}
+
+.contact-direct__copy {
+  display: flex;
+
+  flex-direction: column;
+
+  min-width: 0;
+}
+
+.contact-direct__copy small {
+  margin-bottom: 0.12rem;
+
+  color:
+    #cda2ff;
+
+  font-size: 0.62rem;
+
+  line-height: 1.3;
+
+  font-weight: 900;
+
+  letter-spacing:
+    0.09em;
+
+  text-transform: uppercase;
+}
+
+.contact-direct__copy strong {
+  color:
+    var(--jm-white);
+
+  font-size: 0.82rem;
+
+  line-height: 1.45;
+
+  overflow-wrap: anywhere;
+}
+
+.contact-direct__copy > span {
+  margin-top: 0.22rem;
+
+  color:
+    #7eeaff;
+
+  font-size: 0.7rem;
+
+  line-height: 1.4;
+
+  font-weight: 750;
+}
+
+
+/* =========================================================
+   07 — REASSURANCE
+========================================================= */
+
+.contact-direct__note {
+  margin-top: 0.2rem;
+
+  padding: 1rem;
+
+  border:
+    1px solid
+    rgba(0, 212, 255, 0.14);
+
+  border-radius:
+    16px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 212, 255, 0.07),
+      rgba(168, 85, 247, 0.08)
+    );
+}
+
+.contact-direct__note strong {
+  display: block;
+
+  margin-bottom: 0.3rem;
+
+  color:
+    var(--jm-white);
+
+  font-size: 0.88rem;
+}
+
+.contact-direct__note p {
+  margin:
+    0
+    0
+    0.55rem;
+
+  color:
+    rgba(255, 255, 255, 0.65);
+
+  font-size: 0.78rem;
+
+  line-height: 1.55;
+}
+
+.contact-direct__note small {
+  color:
+    #8deeff;
+
+  font-size: 0.7rem;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   08 — WHAT HAPPENS NEXT
+========================================================= */
+
+.contact-next {
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 0,
+      rgba(168, 85, 247, 0.11),
+      transparent 38%
+    ),
+    var(--jm-gradient-soft);
+}
+
+.contact-next__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 1.25rem;
+
+  max-width: 1100px;
+
+  margin-inline: auto;
+}
+
+.contact-next__card {
+  position: relative;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 1rem;
+
+  padding: 1.5rem;
+
+  overflow: hidden;
+
+  border-color:
+    rgba(168, 85, 247, 0.16);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.94),
+      rgba(243, 238, 252, 0.9)
+    );
+
+  box-shadow:
+    0 16px 40px
+    rgba(62, 1, 95, 0.09),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.95);
+}
+
+.contact-next__card::after {
+  content: "";
+
+  position: absolute;
+
+  right: -4rem;
+  bottom: -5rem;
+
+  width: 10rem;
+  height: 10rem;
+
+  border-radius: 50%;
+
+  background:
+    rgba(0, 212, 255, 0.08);
+
+  filter:
+    blur(20px);
+
+  pointer-events: none;
+}
+
+.contact-next__card:hover {
+  border-color:
+    rgba(0, 212, 255, 0.42);
+
+  box-shadow:
+    0 22px 52px
+    rgba(62, 1, 95, 0.14),
+
+    0 0 24px
+    rgba(0, 212, 255, 0.08);
+}
+
+.contact-next__card .jm-card__title {
+  margin-bottom: 0.4rem;
+}
+
+
+/* =========================================================
+   09 — FINAL SECTION
+========================================================= */
+
+.contact-final {
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(168, 85, 247, 0.32),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(0, 212, 255, 0.2),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      #250038,
+      #4b096c 52%,
+      #17102f
+    );
+}
+
+
+/* =========================================================
+   10 — TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+
+    max-width: 760px;
+  }
+
+  .contact-direct {
+    position: static;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .contact-direct__intro,
+  .contact-direct__note {
+    grid-column:
+      1 / -1;
+  }
+
+  .contact-direct__item {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .contact-next__grid {
+    grid-template-columns: 1fr;
+
+    max-width: 680px;
+  }
+
+}
+
+
+/* =========================================================
+   11 — MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+
+  .contact-hero__options {
+    gap: 0.45rem;
+  }
+
+  .contact-hero__options .jm-pill {
+    padding:
+      0.5rem
+      0.65rem;
+
+    font-size: 0.76rem;
+  }
+
+  .contact-form-card {
+    padding: 1.15rem;
+
+    border-radius: 20px;
+  }
+
+  .contact-hubspot-form {
+    min-height: 580px;
+  }
+
+  .contact-direct {
+    display: flex;
+
+    border-radius: 20px;
+  }
+
+  .contact-direct__item {
+    align-items: center;
+
+    flex-direction: row;
+  }
+
+  .contact-next__card {
+    padding: 1.2rem;
+  }
+
+}
+
+
+/* =========================================================
+   12 — REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .contact-direct__item:hover {
+    transform: none;
+  }
+
+}
+/* =========================================================
+   CONTACT FORM FINAL REFINEMENTS
+========================================================= */
+
+
+/* PURPLE + BLUE FORM TITLE */
+
+.contact-form-card .jm-h3 {
+  background:
+    linear-gradient(
+      90deg,
+      var(--jm-purple) 0%,
+      var(--jm-violet) 52%,
+      #047da6 100%
+    );
+
+  -webkit-background-clip:
+    text;
+
+  background-clip:
+    text;
+
+  color:
+    transparent;
+
+  -webkit-text-fill-color:
+    transparent;
+
+  text-shadow:
+    0 8px 24px
+    rgba(126, 34, 206, 0.1);
+}
+
+
+/* REMOVE LARGE FORM HOVER EFFECT */
+
+.contact-form-card,
+.contact-form-card:hover {
+  transform: none;
+
+  border-color:
+    rgba(255, 255, 255, 0.52);
+
+  box-shadow:
+    0 30px 70px
+    rgba(0, 0, 0, 0.28),
+
+    0 0 0 1px
+    rgba(168, 85, 247, 0.16),
+
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.95),
+
+    inset 0 -1px 0
+    rgba(0, 212, 255, 0.11);
+}
+
+
+/* PREVENT CHROME GLASS-RENDERING GLITCH */
+
+.contact-form-card,
+.contact-direct {
+  -webkit-backdrop-filter: none;
+
+  backdrop-filter: none;
+}
+
+
+/* KEEP SIDEBAR STABLE */
+
+.contact-direct {
+  transform:
+    translateZ(0);
+
+  backface-visibility:
+    hidden;
+}
