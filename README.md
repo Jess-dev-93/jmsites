@@ -9,7 +9,7 @@
 
 ## 👋 About This Project
 
-JM Sites is my personal freelance web design portfolio — a fully custom-built, lightning-fast website designed to attract premium clients and showcase my work.
+JM Sites is my personal freelance web design portfolio - a fully custom-built, lightning-fast website designed to attract premium clients and showcase my work.
 
 **No templates. No WordPress. No page builders.** Just clean, hand-coded HTML, CSS, and JavaScript.
 
