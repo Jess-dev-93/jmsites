@@ -284,10 +284,19 @@
        JM SITES ANALYTICS
   ====================================================== -->
 
-  <script
-    type="module"
-    src="/analytics.js"
-  ></script>
+  <!-- Vercel Web Analytics -->
+<script>
+  window.va =
+    window.va ||
+    function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
+</script>
+
+<script
+  defer
+  src="/_vercel/insights/script.js"
+></script>
 
 </head>
 
@@ -413,7 +422,7 @@
         </a>
 
         <a
-          class="jm-nav__link jm-nav__cta"
+          class="jm-nav__link jm-nav__cta "
           href="contact.html"
         >
           Get Started
@@ -439,49 +448,360 @@
     ==================================================== -->
 
    <section
-  class="jm-hero jm-hero--spotlight home-hero"
+  class="jm-hero home-hero"
   aria-labelledby="hero-title"
+  data-home-hero
+>
+  <div class="home-hero__veil" aria-hidden="true"></div>
+
+  <div class="home-hero__inner">
+    <div class="home-hero__content">
+      <span class="jm-eyebrow home-hero__eyebrow">
+        Web Developer &amp; Digital Solutions
+      </span>
+
+      <h1 id="hero-title" class="jm-h1 home-hero__title">
+        Digital experiences built to
+        <span class="jm-gradient-text">stand out</span>
+      </h1>
+
+      <p class="jm-lead home-hero__intro">
+        Strategy, design and development working together
+      </p>
+
+      <a href="projects.html" class="jm-button home-final-glass__button">
+          Explore My Work
+          <span aria-hidden="true">→</span>
+        </a>
+
+        <a href="contact.html" class="jm-button jm-button--glass">
+          Start a Project
+        </a>
+      </div>
+    </div>
+  
+   
+
+</section>
+
+
+
+<!-- ===================================================
+     SERVICES
+==================================================== -->
+
+<section
+  class="jm-section home-services"
+  aria-labelledby="services-title"
 >
 
-  <div class="jm-hero__content">
+  <div class="home-services__header reveal">
 
-    <span class="jm-eyebrow jm-eyebrow--center">
-      Web Developer &amp; Digital Solutions
-    </span>
-
-    <h1
-      id="hero-title"
-      class="jm-h1 jm-hero__title"
+    <h2
+      id="services-title"
+      class="jm-h2 home-services__title"
     >
-      Websites and digital systems that make you
-
+      Built around what you
       <span class="jm-gradient-text">
-        stand out, not blend in
+        actually need
       </span>
-    </h1>
+    </h2>
 
-    <p class="jm-lead jm-hero__intro">
-      I design, build and improve custom websites,
-      Webflow platforms and focused digital tools -
-      combining clear strategy, clean development
-      and technical problem-solving.
+    <p class="home-services__intro">
+      From complete websites to focused digital improvements,
+      I shape the solution around your business
     </p>
 
-    <div class="jm-hero__actions">
+  </div>
+
+
+  <div class="home-services__rows">
+
+
+    <!-- MULTIPLATFORM WEBSITES -->
+
+    <article class="home-service-row reveal">
+
+      <h3 class="jm-h3 home-service-row__title">
+        Multiplatform Websites
+      </h3>
+
+      <div class="home-service-row__content">
+
+        <p class="home-service-row__description">
+          Custom websites built in Webflow, WordPress or code,
+          based on what best suits your content, team and goals
+        </p>
+
+        <ul
+          class="home-service-row__tags"
+          aria-label="Multiplatform website capabilities"
+        >
+          <li>Webflow</li>
+          <li>WordPress</li>
+          <li>Custom Development</li>
+          <li>CMS</li>
+        </ul>
+
+      </div>
 
       <a
-        href="projects.html"
-        class="jm-button jm-button--primary"
+        href="pricing.html#website-pricing"
+        class="home-service-row__link"
       >
-        Explore My Work
+        View Website Pricing
+        <span aria-hidden="true">→</span>
       </a>
 
+    </article>
+
+
+    <!-- DIGITAL SOLUTIONS -->
+
+    <article class="home-service-row reveal">
+
+      <h3 class="jm-h3 home-service-row__title">
+        Digital Solutions
+      </h3>
+
+      <div class="home-service-row__content">
+
+        <p class="home-service-row__description">
+          Integrations, automations and focused digital tools
+          that connect systems and simplify how your business works
+        </p>
+
+        <ul
+          class="home-service-row__tags"
+          aria-label="Digital solution capabilities"
+        >
+          <li>Integrations</li>
+          <li>Automation</li>
+          <li>Analytics</li>
+          <li>Custom Tools</li>
+        </ul>
+
+      </div>
+
       <a
-        href="contact.html"
-        class="jm-button jm-button--secondary"
+        href="pricing.html"
+        class="home-service-row__link"
       >
-        Start a Project
+        Explore Digital Solutions
+        <span aria-hidden="true">→</span>
       </a>
+
+    </article>
+
+
+    <!-- WEBSITE SUPPORT -->
+
+    <article class="home-service-row reveal">
+
+      <h3 class="jm-h3 home-service-row__title">
+        Website Support
+      </h3>
+
+      <div class="home-service-row__content">
+
+        <p class="home-service-row__description">
+          Technical fixes, performance improvements and ongoing
+          support for websites that need more than a temporary patch
+        </p>
+
+        <ul
+          class="home-service-row__tags"
+          aria-label="Website support capabilities"
+        >
+          <li>Technical Support</li>
+          <li>Performance</li>
+          <li>SEO</li>
+          <li>Ongoing Care</li>
+        </ul>
+
+      </div>
+
+      <a
+        href="pricing.html"
+        class="home-service-row__link"
+      >
+        View Support Options
+        <span aria-hidden="true">→</span>
+      </a>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+ <!-- ===================================================
+       PROJECTS HERO
+  ==================================================== -->
+
+  <section
+    class="projects-hero"
+    aria-labelledby="projects-title"
+  >
+
+    <div
+      class="projects-hero__word"
+      aria-hidden="true"
+    >
+      PROJECTS
+    </div>
+
+    <div class="projects-hero__inner">
+
+      <div class="projects-hero__content">
+
+        <h2
+          id="projects-title"
+          class="jm-h1 projects-hero__title"
+        >
+          Websites and digital work
+          <span class="jm-gradient-text">
+            built to perform
+          </span>
+        </h2>
+
+        <p class="jm-lead projects-hero__intro">
+          Custom websites, Webflow systems and focused digital
+          solutions designed around real business goals
+        </p>
+
+       
+       
+        <a href="projects.html" class="jm-button home-final-glass__button">
+          Explore My Work
+          <span aria-hidden="true">→</span>
+        </a>
+       
+
+      </div>
+
+
+      <!-- STATIC PROJECT GALLERY -->
+
+<div
+  class="projects-hero__gallery"
+  aria-label="Selected JM Sites project previews"
+>
+  <!-- BACK LEFT -->
+
+  <a
+    href="https://sydney-cleaning-pro.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="projects-hero__preview projects-hero__preview--one"
+    aria-label="View Sydney Cleaning Pro"
+  >
+    <img
+      src="images/sydney-cleaning-pro-thumbnail.png"
+      alt=""
+    >
+  </a>
+
+  <!-- BACK RIGHT -->
+
+  <a
+    href="https://ibiza-cleaning.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="projects-hero__preview projects-hero__preview--two"
+    aria-label="View Ibiza Cleaning Services"
+  >
+    <img
+      src="images/ibiza-cleaning-thumbnail.png"
+      alt=""
+    >
+  </a>
+
+  <!-- FRONT: ARGENTI -->
+
+  <a
+    href="https://argenti.com.au/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="projects-hero__preview projects-hero__preview--three"
+    aria-label="View the Argenti website"
+  >
+    <img
+      src="images/client-argenti-images/argenti-home.png"
+            alt="Argenti website designed and developed by JM Sites"
+            loading="lazy"
+    >
+  </a>
+</div>
+
+    </div>
+
+  </section>
+
+
+ <!-- ===================================================
+     ABOUT JESS
+==================================================== -->
+
+<section
+  id="about"
+  class="jm-section home-about home-about-orbit"
+  aria-labelledby="about-title"
+>
+
+  <div class="home-about__layout">
+
+
+    <!-- PROFILE VISUAL -->
+
+    <div class="home-about__visual reveal">
+
+      <div
+        class="home-about__shards"
+        aria-hidden="true"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="home-about__image-wrap">
+
+        <img
+          src="images/profile.png"
+          alt="Jess Manning, founder and web developer at JM Sites"
+          class="home-about__image"
+          loading="lazy"
+        >
+
+      </div>
+
+    </div>
+
+
+    <!-- ABOUT CONTENT -->
+
+    <div class="home-about__content reveal">
+
+      <h2
+        id="about-title"
+        class="jm-h2 home-about__title"
+      >
+        Human-led
+
+        <span class="jm-gradient-text">
+          AI-accelerated
+        </span>
+      </h2>
+
+      <p class="home-about__summary">
+        I’m Jess, the developer behind JM Sites. I combine strategy,
+        development and practical problem-solving with AI-supported
+        research and debugging, while keeping every decision and final
+        result firmly human-led.
+      </p>
 
     </div>
 
@@ -491,511 +811,53 @@
 
 
     <!-- ===================================================
-         CAPABILITY BAR
-    ==================================================== -->
+     FINAL CTA
+==================================================== -->
 
-    <section
-      class="home-proof"
-      aria-label="JM Sites core capabilities"
+<section
+  class="jm-final home-final-glass"
+  aria-labelledby="final-title"
+>
+
+  <div
+    class="home-final-glass__liquid home-final-glass__liquid--one"
+    aria-hidden="true"
+  ></div>
+
+  <div
+    class="home-final-glass__liquid home-final-glass__liquid--two"
+    aria-hidden="true"
+  ></div>
+
+  <div class="home-final-glass__panel reveal">
+
+    <h2
+      id="final-title"
+      class="home-final-glass__title"
     >
+      Tell me what you need
 
-      <div class="home-proof__inner">
+      <span>
+        I’ll make the next step clear
+      </span>
+    </h2>
 
-        <span>
+    <p class="home-final-glass__text">
+      New website, technical support or a focused digital idea
+      starts with a simple conversation
+    </p>
 
-          <strong aria-hidden="true">
-            &lt;/&gt;
-          </strong>
-
-          Custom Development
-
-        </span>
-
-
-        <span>
-
-          <strong aria-hidden="true">
-            ◈
-          </strong>
-
-          Webflow
-
-        </span>
-
-
-        <span>
-
-          <strong aria-hidden="true">
-            ↗
-          </strong>
-
-          Performance
-
-        </span>
-
-
-        <span>
-
-          <strong aria-hidden="true">
-            ✓
-          </strong>
-
-          Technical QA
-
-        </span>
-
-      </div>
-
-    </section>
-
-
-    <!-- ===================================================
-         SERVICES
-    ==================================================== -->
-
-    <section
-      class="jm-section home-services"
-      aria-labelledby="services-title"
+    <a
+      href="contact.html"
+      class="jm-button home-final-glass__button"
     >
+      Start a Conversation
+      <span aria-hidden="true">→</span>
+    </a>
 
-      <div class="jm-section-heading reveal">
+  </div>
 
-        <span class="jm-eyebrow">
-          How I Can Help
-        </span>
-
-
-        <h2
-          id="services-title"
-          class="jm-h2"
-        >
-          The right solution for the actual problem
-        </h2>
-
-
-        <p class="jm-body">
-
-          I choose the platform and approach based on what
-          the project needs - not the other way around.
-
-        </p>
-
-      </div>
-
-
-      <div class="home-services__grid">
-
-
-        <!-- WEBSITE DESIGN -->
-
-        <article class="jm-card jm-card--raised home-service reveal">
-
-          <span
-            class="home-service__icon"
-            aria-hidden="true"
-          >
-            01
-          </span>
-
-
-          <span class="jm-card__label">
-            Website Design & Development
-          </span>
-
-
-          <h3 class="jm-h3">
-            Websites built around your business
-          </h3>
-
-
-          <p class="jm-card__text">
-
-            Custom, responsive websites designed to communicate
-            clearly, build trust and support real business goals.
-
-          </p>
-
-
-          <a
-            href="pricing.html#website-pricing"
-            class="home-service__link"
-          >
-            Explore website pricing →
-          </a>
-
-        </article>
-
-
-        <!-- WEBFLOW -->
-
-        <article class="jm-card jm-card--purple home-service reveal">
-
-          <span
-            class="home-service__icon"
-            aria-hidden="true"
-          >
-            02
-          </span>
-
-
-          <span class="jm-card__label">
-            Webflow Development
-          </span>
-
-
-          <h3 class="jm-h3">
-            Strongest where Webflow stops being simple
-          </h3>
-
-
-          <p class="jm-card__text">
-
-            Reusable design systems, CMS architecture,
-            custom code, integrations, responsive development
-            and technical improvements.
-
-          </p>
-
-
-          <a
-            href="projects.html"
-            class="home-service__link"
-          >
-            See my Webflow work →
-          </a>
-
-        </article>
-
-
-        <!-- TECHNICAL WORK -->
-
-        <article class="jm-card jm-card--raised home-service reveal">
-
-          <span
-            class="home-service__icon"
-            aria-hidden="true"
-          >
-            03
-          </span>
-
-
-          <span class="jm-card__label">
-            Technical Support & Digital Tools
-          </span>
-
-
-          <h3 class="jm-h3">
-            Help for problems that need more than a quick patch
-          </h3>
-
-
-          <p class="jm-card__text">
-
-            Technical diagnostics, website repairs,
-            performance work, integrations and focused
-            digital tools built around one clear workflow.
-
-          </p>
-
-
-          <a
-            href="pricing.html"
-            class="home-service__link"
-          >
-            View services and pricing →
-          </a>
-
-        </article>
-
-
-      </div>
-
-    </section>
-
-
-    <!-- ===================================================
-         FEATURED PROJECT - ARGENTI
-    ==================================================== -->
-
-    <section
-      class="jm-section jm-soft home-featured"
-      aria-labelledby="featured-title"
-    >
-
-      <div class="jm-section-heading reveal">
-
-        <span class="jm-eyebrow">
-          Featured Client Project
-        </span>
-
-
-        <h2
-          id="featured-title"
-          class="jm-h2"
-        >
-          Argenti
-        </h2>
-
-
-        <p class="jm-body">
-
-          A complete Webflow redevelopment for an Australian
-          Data and AI consultancy.
-
-        </p>
-
-      </div>
-
-
-      <article class="home-featured__project reveal">
-
-
-        <!-- PROJECT IMAGE -->
-
-        <a
-          href="argenti-case-study.html"
-          class="home-featured__image"
-          aria-label="Read the Argenti project story"
-        >
-
-          <img
-            src="images/client-argenti-images/argenti-home.png"
-            alt="Argenti website designed and developed by JM Sites"
-            loading="lazy"
-          >
-
-        </a>
-
-
-        <!-- PROJECT CONTENT -->
-
-        <div class="home-featured__content">
-
-          <span class="jm-card__label">
-            Webflow + Custom Development
-          </span>
-
-
-          <h3 class="jm-h2">
-            One website. A complete digital system.
-          </h3>
-
-
-          <p class="jm-card__text">
-
-            The project brought together reusable components,
-            CMS architecture, custom code, HubSpot, analytics,
-            performance optimisation, technical QA and
-            launch support.
-
-          </p>
-
-
-          <!-- PROJECT RESULTS -->
-
-          <div
-            class="home-featured__results"
-            aria-label="Argenti project results"
-          >
-
-            <div>
-
-              <span>
-                Mobile Performance
-              </span>
-
-              <strong>
-                64 → 93
-              </strong>
-
-            </div>
-
-
-            <div>
-
-              <span>
-                Desktop Performance
-              </span>
-
-              <strong>
-                79 → 92
-              </strong>
-
-            </div>
-
-
-            <div>
-
-              <span>
-                Delivery
-              </span>
-
-              <strong>
-                End-to-End
-              </strong>
-
-            </div>
-
-          </div>
-
-
-          <!-- PROJECT ACTIONS -->
-
-          <div class="home-featured__actions">
-
-            <a
-              href="argenti-case-study.html"
-              class="jm-button jm-button--primary"
-            >
-              Read the Project Story
-            </a>
-
-            <a
-              href="projects.html"
-              class="jm-button jm-button--secondary"
-            >
-              View All Projects
-            </a>
-
-          </div>
-
-        </div>
-
-
-      </article>
-
-    </section>
-
-
-    <!-- ===================================================
-         ABOUT JESS
-    ==================================================== -->
-
-    <section
-      id="about"
-      class="jm-section home-about"
-      aria-labelledby="about-title"
-    >
-
-      <div class="home-about__layout">
-
-
-        <!-- PROFILE IMAGE -->
-
-        <div class="home-about__image-wrap reveal">
-
-          <img
-            src="images/profile.png"
-            alt="Jess Manning, founder and web developer at JM Sites"
-            class="home-about__image"
-            loading="lazy"
-          >
-
-        </div>
-
-
-        <!-- ABOUT CONTENT -->
-
-        <div class="home-about__content reveal">
-
-          <span class="jm-eyebrow">
-            About Jess
-          </span>
-
-
-          <h2
-            id="about-title"
-            class="jm-h2"
-          >
-
-            Human-led
-
-            <span class="jm-gradient-text">
-              AI-accelerated
-            </span>
-
-          </h2>
-
-
-          <p class="jm-body">
-
-            I’m Jess, the developer behind JM Sites.
-            I work across websites, Webflow systems,
-            technical problem-solving and focused digital tools.
-
-          </p>
-
-
-          <p class="jm-body">
-
-            AI supports my research, debugging and speed,
-            while I remain responsible for the strategy,
-            decisions, implementation and final result.
-
-          </p>
-
-
-          <a
-            href="contact.html"
-            class="jm-button jm-button--secondary"
-          >
-            Work With Me
-          </a>
-
-        </div>
-
-
-      </div>
-
-    </section>
-
-
-    <!-- ===================================================
-         FINAL CTA
-    ==================================================== -->
-
-    <section class="jm-final jm-purple">
-
-      <p class="jm-final__eyebrow">
-        Have Something in Mind?
-      </p>
-
-
-      <h2 class="jm-final__title">
-
-        Tell me what you need<br>
-        I’ll help make the next step clear
-
-      </h2>
-
-
-      <p class="jm-final__text">
-
-        New website, Webflow support, a technical problem
-        or a focused digital idea - start with what you know so far.
-
-      </p>
-
-
-      <div class="jm-final__actions">
-
-        <a
-          href="contact.html"
-          class="jm-button jm-button--glass"
-        >
-          Start a Conversation
-        </a>
-
-        <a
-          href="pricing.html"
-          class="jm-button jm-button--glass"
-        >
-          View Pricing
-        </a>
-
-      </div>
-
-    </section>
+</section>
 
 
   </main>
@@ -1005,215 +867,121 @@
      GLOBAL JM SITES FOOTER
 ====================================================== -->
 
-<footer class="jm-footer">
+  <footer class="jm-footer">
+    <div class="jm-footer__glow" aria-hidden="true"></div>
 
-  <div
-    class="jm-footer__glow"
-    aria-hidden="true"
-  ></div>
+    <div class="jm-footer__inner">
+      <div class="jm-footer__social-block">
+        <span class="jm-footer__label">Connect</span>
 
-
-  <div class="jm-footer__inner">
-
-
-    <!-- SOCIALS - LEFT -->
-
-    <div class="jm-footer__social-block">
-
-      <span class="jm-footer__label">
-        Connect
-      </span>
-
-      <div
-        class="jm-footer__socials"
-        aria-label="JM Sites social links"
-      >
-
-        <a
-          href="https://www.linkedin.com/in/jess-manning-dev"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Jessica Manning on LinkedIn"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            aria-hidden="true"
+        <div class="jm-footer__socials" aria-label="JM Sites social links">
+          <a
+            href="https://www.linkedin.com/in/jess-manning-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Jessica Manning on LinkedIn"
           >
-            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-          </svg>
-        </a>
-<!-- X -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
 
-<a
-  href="https://x.com/JessJMSites"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="JM Sites on X"
->
-  <svg
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    aria-hidden="true"
-  >
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.458l-5.056-6.605-5.79 6.605H2.215l7.55-8.63L1.773 2.25H8.39l4.57 6.04 5.284-6.04zm-1.161 17.52h1.833L7.394 4.126H5.428L17.083 19.77z"/>
-  </svg>
-</a>
-
-<!-- FACEBOOK -->
-
-<a
-  href="PASTE-YOUR-FACEBOOK-PAGE-URL-HERE"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="JM Sites on Facebook"
->
-  <svg
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    aria-hidden="true"
-  >
-    <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.099 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.414c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.971h-1.513c-1.49 0-1.956.931-1.956 1.887v2.262h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.099 24 12.073z"/>
-  </svg>
-</a>
-
-
-        <a
-          href="https://www.instagram.com/jmsites.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="JM Sites on Instagram"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            aria-hidden="true"
+          <a
+            href="https://x.com/JessJMSites"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="JM Sites on X"
           >
-            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-          </svg>
-        </a>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.458l-5.056-6.605-5.79 6.605H2.215l7.55-8.63L1.773 2.25H8.39l4.57 6.04 5.284-6.04zm-1.161 17.52h1.833L7.394 4.126H5.428L17.083 19.77z"/>
+            </svg>
+          </a>
 
-
-        <a
-          href="https://github.com/Jess-dev-93"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Jessica Manning on GitHub"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            aria-hidden="true"
+          <a
+            href="https://www.facebook.com/profile.php?id=61593877079027"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="JM Sites on Facebook"
           >
-            <path d="M12 .7C5.73.7.7 5.82.7 12.13c0 5.05 3.24 9.33 7.73 10.84.56.11.77-.25.77-.55v-2.15c-3.15.69-3.81-1.35-3.81-1.35-.51-1.33-1.26-1.68-1.26-1.68-1.03-.71.08-.7.08-.7 1.14.08 1.74 1.18 1.74 1.18 1.01 1.75 2.65 1.25 3.3.95.1-.74.4-1.25.72-1.54-2.51-.29-5.15-1.27-5.15-5.64 0-1.25.44-2.27 1.17-3.07-.12-.29-.51-1.45.11-3.03 0 0 .95-.31 3.12 1.17a10.7 10.7 0 0 1 5.68 0c2.17-1.48 3.12-1.17 3.12-1.17.62 1.58.23 2.74.11 3.03.73.8 1.17 1.82 1.17 3.07 0 4.38-2.65 5.34-5.17 5.63.41.36.77 1.06.77 2.14v3.17c0 .3.2.66.78.55 4.48-1.51 7.71-5.79 7.71-10.84C23.3 5.82 18.27.7 12 .7z"/>
-          </svg>
-        </a>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.099 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.414c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.971h-1.513c-1.49 0-1.956.931-1.956 1.887v2.262h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.099 24 12.073z"/>
+            </svg>
+          </a>
 
+          <a
+            href="https://www.instagram.com/jmsites.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="JM Sites on Instagram"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+
+          <a
+            href="https://github.com/Jess-dev-93"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Jessica Manning on GitHub"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .7C5.73.7.7 5.82.7 12.13c0 5.05 3.24 9.33 7.73 10.84.56.11.77-.25.77-.55v-2.15c-3.15.69-3.81-1.35-3.81-1.35-.51-1.33-1.26-1.68-1.26-1.68-1.03-.71.08-.7.08-.7 1.14.08 1.74 1.18 1.74 1.18 1.01 1.75 2.65 1.25 3.3.95.1-.74.4-1.25.72-1.54-2.51-.29-5.15-1.27-5.15-5.64 0-1.25.44-2.27 1.17-3.07-.12-.29-.51-1.45.11-3.03 0 0 .95-.31 3.12 1.17a10.7 10.7 0 0 1 5.68 0c2.17-1.48 3.12-1.17 3.12-1.17.62 1.58.23 2.74.11 3.03.73.8 1.17 1.82 1.17 3.07 0 4.38-2.65 5.34-5.17 5.63.41.36.77 1.06.77 2.14v3.17c0 .3.2.66.78.55 4.48-1.51 7.71-5.79 7.71-10.84C23.3 5.82 18.27.7 12 .7z"/>
+            </svg>
+          </a>
+        </div>
       </div>
 
+      <a href="index.html" class="jm-footer__brand" aria-label="JM Sites home">
+        <img
+          src="images/logo.png"
+          alt=""
+          class="jm-footer__logo"
+          width="50"
+          height="50"
+        >
+        <span class="jm-footer__brand-copy"><strong>JM Sites</strong></span>
+      </a>
+
+      <nav class="jm-footer__nav" aria-label="Footer navigation">
+        <span class="jm-footer__label">Explore</span>
+        <div class="jm-footer__nav-links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="index.html#about">About</a>
+          <a href="contact.html">Contact</a>
+      
+        </div>
+      </nav>
     </div>
 
-
-    <!-- BRAND - CENTRE -->
-
-    <a
-      href="index.html"
-      class="jm-footer__brand"
-      aria-label="JM Sites home"
-    >
-
-      <img
-        src="images/logo.png"
-        alt=""
-        class="jm-footer__logo"
-        width="50"
-        height="50"
-      >
-
-      <span class="jm-footer__brand-copy">
-
-        <strong>
-          JM Sites
-        </strong>
-
-      </span>
-
-    </a>
-
-
-    <!-- NAVIGATION - RIGHT -->
-
-    <nav
-      class="jm-footer__nav"
-      aria-label="Footer navigation"
-    >
-
-      <span class="jm-footer__label">
-        Explore
-      </span>
-
-      <div class="jm-footer__nav-links">
-
-        <a href="index.html">
-          Home
-        </a>
-
-        <a href="projects.html">
-          Projects
-        </a>
-
-        <a href="pricing.html">
-          Pricing
-        </a>
-
-        <a href="index.html#about">
-          About
-        </a>
-
-        <a href="contact.html">
-          Contact
-        </a>
-
+    <div class="jm-footer__bottom">
+      <div class="jm-footer__direct">
+        <a href="mailto:jess.manning.dev@gmail.com">jess.manning.dev@gmail.com</a>
+        <a href="tel:+61415757754">0415 757 754</a>
       </div>
 
-    </nav>
-
-
-  </div>
-
-
-  <!-- CONTACT + LEGAL -->
-
-  <div class="jm-footer__bottom">
-
-    <div class="jm-footer__direct">
-
-      <a href="mailto:jess.manning.dev@gmail.com">
-        jess.manning.dev@gmail.com
-      </a>
-
-      <a href="tel:+61415757754">
-        0415 757 754
-      </a>
-
+      <p>© <span id="year"></span> JM Sites · Web Development &amp; Digital Solutions</p>
+      <p>ABN 84 985 864 627</p>
     </div>
 
-    <p>
-      © <span id="year"></span>
-      JM Sites · Web Development & Digital Solutions
-    </p>
-
-    <p>
-      ABN 84 985 864 627
-    </p>
-
-  </div>
-
-</footer>
+    <div class="jm-footer__legal" aria-label="Privacy links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <button
+        type="button"
+        onclick="window._hsp = window._hsp || []; window._hsp.push(['showBanner']);"
+      >
+        Cookie Settings
+      </button>
+    </div>
+  </footer>
 
 
   <script src="jm-global.js"></script>
-
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-ap1.hs-scripts.com/442868073.js"></script>
+<!-- End of HubSpot Embed Code -->
 </body>
 
 </html>

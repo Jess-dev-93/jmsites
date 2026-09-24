@@ -1,0 +1,427 @@
+/* ═══════════════════════════════════════════════════════════
+   JM SITES - PRIVACY POLICY
+   Page-specific layout only
+   ═══════════════════════════════════════════════════════════ */
+
+.privacy-page {
+  background: var(--jm-surface-light);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.privacy-hero {
+  min-height: clamp(24rem, 48vh, 32rem);
+}
+
+.privacy-hero__content {
+  max-width: 900px;
+}
+
+.privacy-hero__intro {
+  max-width: 760px;
+}
+
+.privacy-hero__updated {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 1.35rem 0 0;
+  padding: 0.5rem 0.8rem;
+
+  border: 1px solid var(--jm-border);
+  border-radius: var(--jm-radius-pill);
+
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--jm-muted);
+
+  font-size: var(--jm-text-sm);
+  line-height: 1;
+  font-weight: 700;
+
+  box-shadow: var(--jm-shadow-small);
+}
+
+
+/* =========================================================
+   CONTENT FRAME
+========================================================= */
+
+.privacy-content {
+  background:
+    linear-gradient(
+      180deg,
+      var(--jm-surface-light) 0%,
+      var(--jm-surface-purple) 50%,
+      var(--jm-surface-light) 100%
+    );
+}
+
+.privacy-content__inner {
+  width: 100%;
+  max-width: 940px;
+  margin-inline: auto;
+}
+
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.privacy-summary {
+  position: relative;
+  isolation: isolate;
+
+  margin-bottom: 1.25rem;
+  padding: clamp(1.4rem, 4vw, 2.25rem);
+
+  overflow: hidden;
+
+  border: 1px solid rgba(0, 212, 255, 0.22);
+  border-radius: var(--jm-radius-large);
+
+  background:
+    radial-gradient(
+      circle at 100% 0,
+      rgba(0, 212, 255, 0.11),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(247, 241, 251, 0.98),
+      rgba(255, 255, 255, 0.98)
+    );
+
+  box-shadow: var(--jm-shadow-card);
+}
+
+.privacy-summary::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 5px;
+
+  background: var(--jm-gradient-brand);
+}
+
+.privacy-summary .jm-eyebrow {
+  margin-bottom: 0.65rem;
+}
+
+.privacy-summary h2 {
+  margin: 0 0 0.8rem;
+  color: var(--jm-purple);
+
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
+  line-height: 1.15;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+}
+
+.privacy-summary p {
+  max-width: 780px;
+  margin: 0;
+
+  color: var(--jm-text);
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   POLICY SECTIONS
+========================================================= */
+
+.privacy-policy > section {
+  padding: clamp(1.4rem, 4vw, 2.1rem);
+
+  border: 1px solid var(--jm-border);
+  border-bottom: 0;
+
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.privacy-policy > section:first-child {
+  border-radius: var(--jm-radius-large) var(--jm-radius-large) 0 0;
+}
+
+.privacy-policy > section:last-child {
+  border-bottom: 1px solid var(--jm-border);
+  border-radius: 0 0 var(--jm-radius-large) var(--jm-radius-large);
+}
+
+.privacy-policy h2 {
+  margin: 0 0 1rem;
+
+  color: var(--jm-ink);
+
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+}
+
+.privacy-policy h3 {
+  margin: 0 0 0.55rem;
+
+  color: var(--jm-purple);
+
+  font-size: 1.05rem;
+  line-height: 1.35;
+  font-weight: 850;
+}
+
+.privacy-policy p,
+.privacy-policy li {
+  color: var(--jm-text);
+
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.privacy-policy p {
+  margin: 0 0 1rem;
+}
+
+.privacy-policy p:last-child {
+  margin-bottom: 0;
+}
+
+.privacy-policy ul {
+  margin: 0 0 1rem;
+  padding-left: 1.3rem;
+}
+
+.privacy-policy li + li {
+  margin-top: 0.45rem;
+}
+
+.privacy-policy a {
+  color: var(--jm-purple-mid);
+
+  font-weight: 750;
+  text-decoration-color: rgba(111, 29, 149, 0.35);
+  text-underline-offset: 0.18em;
+}
+
+.privacy-policy a:hover {
+  color: var(--jm-purple-bright);
+  text-decoration-color: currentColor;
+}
+
+
+/* =========================================================
+   PROVIDER CARDS
+========================================================= */
+
+.privacy-tools {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+
+  margin-top: 1.25rem;
+}
+
+.privacy-tool {
+  min-width: 0;
+  padding: 1.05rem;
+
+  border: 1px solid var(--jm-border);
+  border-radius: var(--jm-radius-md);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(247, 241, 251, 0.78),
+      rgba(255, 255, 255, 0.98)
+    );
+}
+
+.privacy-tool p {
+  margin-bottom: 0.7rem;
+
+  color: var(--jm-muted);
+
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.privacy-tool a {
+  font-size: 0.82rem;
+}
+
+
+/* =========================================================
+   COOKIE SETTINGS BUTTON
+========================================================= */
+
+.privacy-cookie-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 0.35rem;
+  padding: 0.82rem 1.05rem;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  background: var(--jm-purple);
+  color: var(--jm-white);
+
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1;
+  font-weight: 800;
+
+  box-shadow: var(--jm-shadow-button);
+  cursor: pointer;
+
+  transition:
+    transform var(--jm-transition-fast),
+    background var(--jm-transition-fast),
+    box-shadow var(--jm-transition-fast);
+}
+
+.privacy-cookie-button:hover {
+  transform: translateY(-2px);
+  background: var(--jm-purple-deep);
+  box-shadow: var(--jm-shadow-button-hover);
+}
+
+
+/* =========================================================
+   CONTACT PANEL
+========================================================= */
+
+.privacy-policy > .privacy-contact {
+  padding: clamp(1.6rem, 4vw, 2.4rem);
+
+  border-color: transparent;
+
+  background:
+    radial-gradient(
+      circle at 90% 0,
+      rgba(0, 212, 255, 0.16),
+      transparent 34%
+    ),
+    var(--jm-gradient-purple-deep);
+
+  color: var(--jm-white);
+}
+
+.privacy-contact .jm-eyebrow {
+  margin-bottom: 0.65rem;
+  color: var(--jm-purple-light);
+}
+
+.privacy-contact h2,
+.privacy-contact p,
+.privacy-contact a {
+  color: var(--jm-white);
+}
+
+.privacy-contact p {
+  color: var(--jm-text-on-dark);
+}
+
+.privacy-contact a {
+  text-decoration-color: rgba(255, 255, 255, 0.38);
+}
+
+
+/* =========================================================
+   FOOTER PRIVACY LINKS
+========================================================= */
+
+.jm-footer__legal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+
+  width: 100%;
+  max-width: var(--jm-content-max);
+
+  margin: 0.65rem auto 0;
+  padding-top: 0.65rem;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.jm-footer__legal a,
+.jm-footer__legal button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+
+  color: rgba(255, 255, 255, 0.52);
+
+  font: inherit;
+  font-size: 0.64rem;
+  line-height: 1.4;
+  font-weight: 700;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    color var(--jm-transition-fast),
+    text-shadow var(--jm-transition-fast);
+}
+
+.jm-footer__legal a:hover,
+.jm-footer__legal button:hover {
+  color: var(--jm-cyan);
+  text-shadow: 0 0 12px rgba(0, 212, 255, 0.3);
+}
+
+.jm-footer__legal a[aria-current="page"] {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 720px) {
+  .privacy-tools {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .privacy-hero {
+    min-height: auto;
+    padding-block: 3.5rem;
+  }
+
+  .privacy-hero .jm-h1 {
+    font-size: clamp(2.55rem, 12vw, 4rem);
+    line-height: 1;
+  }
+
+  .privacy-summary,
+  .privacy-policy > section {
+    padding: 1.15rem;
+  }
+
+  .privacy-policy p,
+  .privacy-policy li {
+    font-size: 0.96rem;
+  }
+
+  .privacy-cookie-button {
+    width: 100%;
+  }
+}

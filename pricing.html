@@ -140,7 +140,77 @@
     href="images/logo.png"
     type="image/png"
   >
+<!-- =====================================================
+       GOOGLE TAG MANAGER
+  ====================================================== -->
 
+  <script>
+    (function(w, d, s, l, i) {
+
+      w[l] = w[l] || [];
+
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js"
+      });
+
+      var firstScript = d.getElementsByTagName(s)[0];
+      var gtmScript = d.createElement(s);
+      var dataLayerParameter =
+        l !== "dataLayer" ? "&l=" + l : "";
+
+      gtmScript.async = true;
+
+      gtmScript.src =
+        "https://www.googletagmanager.com/gtm.js?id=" +
+        i +
+        dataLayerParameter;
+
+      firstScript.parentNode.insertBefore(
+        gtmScript,
+        firstScript
+      );
+
+    })(
+      window,
+      document,
+      "script",
+      "dataLayer",
+      "GTM-NGD77XP2"
+    );
+  </script>
+    <!-- =====================================================
+       GOOGLE TAG MANAGER - NOSCRIPT
+  ====================================================== -->
+
+  <noscript>
+
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-NGD77XP2"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden"
+      title="Google Tag Manager"
+    ></iframe>
+
+  </noscript>
+<!-- =====================================================
+       JM SITES ANALYTICS
+  ====================================================== -->
+
+  <!-- Vercel Web Analytics -->
+<script>
+  window.va =
+    window.va ||
+    function () {
+      (window.vaq = window.vaq || []).push(arguments);
+    };
+</script>
+
+<script
+  defer
+  src="/_vercel/insights/script.js"
+></script>
 </head>
 
 
@@ -256,973 +326,991 @@
        MAIN
   ====================================================== -->
 
-  <main id="main-content">
+<main id="main-content">
 
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
+  <!-- ===================================================
+       PRICING SHOWROOM
+  ==================================================== -->
 
-    <section
-  class="jm-hero jm-hero--spotlight pricing-hero"
-  aria-labelledby="pricing-title"
->
+  <section
+    class="pricing-showroom"
+    aria-labelledby="pricing-title"
+  >
 
-      <span class="jm-eyebrow jm-eyebrow--center">
-        JM Sites Pricing
-      </span>
+    <span
+      class="pricing-liquid pricing-liquid-one"
+      aria-hidden="true"
+    ></span>
 
+    <span
+      class="pricing-liquid pricing-liquid-two"
+      aria-hidden="true"
+    ></span>
 
-      <h1 id="pricing-title" class="jm-h1 jm-hero__title">
-
-        Clear pricing for
-
-        <span class="jm-gradient-text">
-          real website work
-        </span>
-
-      </h1>
-
-
-      <p class="jm-lead jm-hero__intro">
-
-        Simple starting prices for websites, technical work,
-        digital tools and ongoing support.
-
-      </p>
+    <span
+      class="pricing-liquid pricing-liquid-three"
+      aria-hidden="true"
+    ></span>
 
 
-      <div class="jm-hero__actions">
+    <div class="pricing-showroom__inner">
+
+
+      <!-- SHOWROOM HEADING -->
+
+      <header class="pricing-showroom__header">
+
+        <div class="pricing-showroom__heading">
+
+          <h1
+            id="pricing-title"
+            class="jm-h1"
+          >
+            Clear pricing
+            <span class="jm-gradient-text">
+              built around the work
+            </span>
+          </h1>
+
+          <p class="jm-lead">
+            Straightforward starting points for websites,
+            digital tools, technical work and ongoing support
+          </p>
+
+        </div>
+
+      </header>
+
+
+      <!-- 3D PRICING STAGE -->
+
+      <div class="pricing-stage">
+
+
+        <div
+          class="pricing-stage__platform"
+          aria-hidden="true"
+        ></div>
+
+
+        <!-- PROFESSIONAL WEBSITE -->
+
+        <article
+          class="pricing-plan pricing-plan--left reveal"
+        >
+
+          <span
+            class="pricing-plan__shine"
+            aria-hidden="true"
+          ></span>
+
+
+          <div class="pricing-plan__content">
+
+            <header>
+
+              <h2>
+                Professional Website
+              </h2>
+
+              <p>
+                A polished foundation for a service business
+              </p>
+
+            </header>
+
+
+            <div class="pricing-plan__price">
+
+              <span>
+                From
+              </span>
+
+              <strong>
+                $2,800
+              </strong>
+
+            </div>
+
+
+            <ul>
+
+              <li>Up to 4 core pages</li>
+              <li>Custom responsive design</li>
+              <li>Contact form</li>
+              <li>SEO foundations</li>
+              <li>Performance testing</li>
+              <li>Launch QA</li>
+
+            </ul>
+
+          </div>
+
+        </article>
+
+
+        <!-- WEBSITE AND CMS -->
+
+        <article
+          class="pricing-plan pricing-plan--featured reveal"
+        >
+
+          <span
+            class="pricing-plan__shine"
+            aria-hidden="true"
+          ></span>
+
+
+          <span class="pricing-plan__choice">
+            Most popular
+          </span>
+
+
+          <div class="pricing-plan__content">
+
+            <header>
+
+              <h2>
+                Website + CMS
+              </h2>
+
+              <p>
+                Built for businesses with growing content
+              </p>
+
+            </header>
+
+
+            <div class="pricing-plan__price">
+
+              <span>
+                From
+              </span>
+
+              <strong>
+                $5,500
+              </strong>
+
+            </div>
+
+
+            <ul>
+
+              <li>Up to 7 core pages</li>
+              <li>Custom responsive design</li>
+              <li>CMS Collection and reusable template</li>
+              <li>SEO and performance testing</li>
+              <li>Analytics foundations</li>
+              <li>CMS handover</li>
+
+            </ul>
+
+          </div>
+
+        </article>
+
+
+        <!-- ADVANCED WEBSITE -->
+
+        <article
+          class="pricing-plan pricing-plan--right reveal"
+        >
+
+          <span
+            class="pricing-plan__shine"
+            aria-hidden="true"
+          ></span>
+
+
+          <div class="pricing-plan__content">
+
+            <header>
+
+              <h2>
+                Advanced Website
+              </h2>
+
+              <p>
+                For larger builds and complex requirements
+              </p>
+
+            </header>
+
+
+            <div class="pricing-plan__price">
+
+              <span>
+                From
+              </span>
+
+              <strong>
+                $9,500
+              </strong>
+
+            </div>
+
+
+            <ul>
+
+              <li>Multiple CMS systems</li>
+              <li>Custom CSS and JavaScript</li>
+              <li>Dynamic content</li>
+              <li>Third-party integrations</li>
+              <li>Deeper performance optimisation</li>
+              <li>Technical handover</li>
+
+            </ul>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+
+      <!-- SHARED ACTION -->
+
+      <div class="pricing-showroom__action reveal">
+
+        <p>
+          Larger platforms and highly complex builds
+          are scoped separately
+        </p>
 
         <a
-          href="#pricing-contact"
-          class="jm-button jm-button--secondary"
+          href="contact.html"
+          class="jm-button jm-button--primary"
         >
-          Start a Project
+          Tell Me About Your Website
+          <span aria-hidden="true">→</span>
         </a>
 
       </div>
 
-    </section>
+
+      <!-- COMMON ADDITIONS -->
+
+      <div class="pricing-additions reveal">
+
+        <div class="pricing-additions__intro">
+
+          <h2>
+            Common additions
+          </h2>
+
+          <p>
+            Multiple additions are quoted together
+            as one project scope
+          </p>
+
+        </div>
 
 
-
-    <!-- =====================================================
-         WEBSITE BUILDS
-    ====================================================== -->
-
-    <section
-      id="website-pricing"
-      class="jm-section"
-    >
-
-      <span class="jm-eyebrow">
-        Website Builds
-      </span>
+        <div class="pricing-additions__rail">
 
 
-      <h2 class="jm-h2">
-        Website starting points
-      </h2>
+          <div class="pricing-addition">
 
+            <span class="pricing-addition__icon" aria-hidden="true">
+  <svg viewBox="0 0 24 24">
+    <rect x="7" y="5" width="11" height="14" rx="2"></rect>
+    <path d="M7 8H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2"></path>
+    <path d="M12.5 9v6M9.5 12h6"></path>
+  </svg>
+</span>
 
-      <div class="pricing-package-grid">
-
-
-        <!-- =================================================
-             CUSTOM WEBSITE
-        ================================================== -->
-
-        <article class="jm-card jm-card--raised pricing-package">
-
-          <span class="jm-card__label">
-            Custom Website
-          </span>
-
-
-          <h3 class="jm-h3">
-            Professional business website
-          </h3>
-
-
-          <div class="pricing-price">
-
-            <span class="pricing-price__from">
-              from
+            <span>
+              Additional page
             </span>
 
-            <strong class="pricing-price__amount">
-              $2,800
+            <strong>
+              +$350
             </strong>
 
           </div>
 
 
-          <ul class="pricing-feature-list">
+          <div class="pricing-addition">
 
-            <li>
-              Up to 4 core pages
-            </li>
+            <span class="pricing-addition__icon" aria-hidden="true">
+  <svg viewBox="0 0 24 24">
+    <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+    <path d="M3 8h18"></path>
+    <path d="M7 13h4M7 16h7"></path>
+    <path d="m17 11 .5 1.5L19 13l-1.5.5L17 15l-.5-1.5L15 13l1.5-.5L17 11Z"></path>
+  </svg>
+</span>
 
-            <li>
-              Custom design
-            </li>
-
-            <li>
-              Responsive development
-            </li>
-
-            <li>
-              Contact form
-            </li>
-
-            <li>
-              SEO foundations
-            </li>
-
-            <li>
-              Performance + PageSpeed testing
-            </li>
-
-            <li>
-              Launch QA
-            </li>
-
-          </ul>
-
-
-          <a
-            href="#pricing-contact"
-            class="jm-button jm-button--secondary pricing-package__button"
-          >
-            Start a Project
-          </a>
-
-        </article>
-
-
-
-        <!-- =================================================
-             WEBSITE + CMS
-        ================================================== -->
-
-        <article
-          class="jm-card jm-card--raised pricing-package pricing-package--featured"
-        >
-
-          <div class="pricing-package__badge">
-            Popular
-          </div>
-
-
-          <span class="jm-card__label">
-            Website + CMS
-          </span>
-
-
-          <h3 class="jm-h3">
-            Built for growing content
-          </h3>
-
-
-          <div class="pricing-price">
-
-            <span class="pricing-price__from">
-              from
+            <span>
+              Complex custom page
             </span>
 
-            <strong class="pricing-price__amount">
-              $5,500
+            <strong>
+              From $700
             </strong>
 
           </div>
 
 
-          <ul class="pricing-feature-list">
+          <div class="pricing-addition">
 
-            <li>
-              Up to 7 core pages
-            </li>
+            <span class="pricing-addition__icon" aria-hidden="true">
+  <svg viewBox="0 0 24 24">
+    <ellipse cx="12" cy="5" rx="7" ry="3"></ellipse>
+    <path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5"></path>
+    <path d="M5 11v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"></path>
+  </svg>
+</span>
 
-            <li>
-              Custom design
-            </li>
-
-            <li>
-              CMS Collection + reusable template
-            </li>
-
-            <li>
-              Responsive development
-            </li>
-
-            <li>
-              SEO + performance testing
-            </li>
-
-            <li>
-              Analytics foundations
-            </li>
-
-            <li>
-              Launch QA + CMS handover
-            </li>
-
-          </ul>
-
-
-          <a
-            href="#pricing-contact"
-            class="jm-button jm-button--primary pricing-package__button"
-          >
-            Discuss My Project
-          </a>
-
-        </article>
-
-
-
-        <!-- =================================================
-             ADVANCED WEBSITE
-        ================================================== -->
-
-        <article class="jm-card jm-card--raised pricing-package">
-
-          <span class="jm-card__label">
-            Advanced Website
-          </span>
-
-
-          <h3 class="jm-h3">
-            Larger or complex builds
-          </h3>
-
-
-          <div class="pricing-price">
-
-            <span class="pricing-price__from">
-              from
+            <span>
+              CMS Collection
             </span>
 
-            <strong class="pricing-price__amount">
-              $9,500
+            <strong>
+              From $750
             </strong>
 
           </div>
 
 
-          <ul class="pricing-feature-list">
+          <div class="pricing-addition">
 
-            <li>
-              Multiple CMS systems
-            </li>
+            <span class="pricing-addition__icon" aria-hidden="true">
+  <svg viewBox="0 0 24 24">
+    <circle cx="10" cy="10" r="6"></circle>
+    <path d="m14.5 14.5 5 5"></path>
+    <path d="M7 8h6M8.5 11h3"></path>
+  </svg>
+</span>
 
-            <li>
-              Custom CSS / JavaScript
-            </li>
+            <span>
+              Filtering or search
+            </span>
 
-            <li>
-              Dynamic content
-            </li>
+            <strong>
+              From $600
+            </strong>
 
-            <li>
-              Integrations
-            </li>
-
-            <li>
-              Deeper performance optimisation
-            </li>
-
-            <li>
-              Technical QA + handover
-            </li>
-
-          </ul>
+          </div>
 
 
-          <a
-            href="#pricing-contact"
-            class="jm-button jm-button--secondary pricing-package__button"
-          >
-            Scope My Build
-          </a>
+          <div class="pricing-addition">
 
-        </article>
+            <span class="pricing-addition__icon" aria-hidden="true">
+  <svg viewBox="0 0 24 24">
+    <circle cx="6" cy="12" r="2.5"></circle>
+    <circle cx="17.5" cy="6" r="2.5"></circle>
+    <circle cx="17.5" cy="18" r="2.5"></circle>
+    <path d="m8.3 10.8 7-3.6M8.3 13.2l7 3.6"></path>
+  </svg>
+</span>
 
+            <span>
+              HubSpot integration
+            </span>
+
+            <strong>
+              From $500
+            </strong>
+
+          </div>
+
+
+          <div class="pricing-addition">
+
+            <span class="pricing-addition__icon" aria-hidden="true">
+  <svg viewBox="0 0 24 24">
+    <path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path>
+    <path d="m4 7 6-4 6 6 5-5"></path>
+  </svg>
+</span>
+
+            <span>
+              GTM and GA4 setup
+            </span>
+
+            <strong>
+              From $400
+            </strong>
+
+          </div>
+
+
+          <div class="pricing-addition">
+
+            <span class="pricing-addition__icon" aria-hidden="true">
+  <svg viewBox="0 0 24 24">
+    <path d="m8 6-5 6 5 6M16 6l5 6-5 6"></path>
+    <path d="m14 4-4 16"></path>
+  </svg>
+</span>
+
+            <span>
+              JavaScript feature
+            </span>
+
+            <strong>
+              From $500
+            </strong>
+
+          </div>
+
+
+          <div class="pricing-addition">
+
+            <span class="pricing-addition__icon" aria-hidden="true">
+  <svg viewBox="0 0 24 24">
+    <path d="M4.2 18a9 9 0 1 1 15.6 0"></path>
+    <path d="m12 14 4-5"></path>
+    <circle cx="12" cy="14" r="1.5"></circle>
+    <path d="M6.5 16H4M20 16h-2.5M12 5V3"></path>
+  </svg>
+</span>
+
+            <span>
+              Performance optimisation
+            </span>
+
+            <strong>
+              From $600
+            </strong>
+
+          </div>
+
+
+        </div>
 
       </div>
 
 
-      <p class="jm-small pricing-package-note">
+    </div>
 
-        Larger custom platforms and highly complex builds
-        are scoped separately.
-
-      </p>
-
-    </section>
+  </section>
 
 
+<!-- ===================================================
+     ONGOING SUPPORT
+==================================================== -->
 
-    <!-- =====================================================
-         COMMON ADD-ONS
-    ====================================================== -->
+<section
+  class="pricing-support"
+  aria-labelledby="support-title"
+>
 
-    <section class="jm-section jm-soft">
-
-      <span class="jm-eyebrow">
-        Common Add-ons
-      </span>
+  <div class="pricing-support__inner">
 
 
-      <h2 class="jm-h2">
-        Need a little more?
+    <!-- HEADING -->
+
+    <div class="pricing-support__heading reveal">
+
+      <h2
+        id="support-title"
+        class="jm-h2"
+      >
+        Support that stays
+        <span class="jm-gradient-text">with you</span>
       </h2>
 
-
-      <div class="pricing-addon-list pricing-addon-list--main">
-
-
-        <div class="pricing-addon-row">
-
-          <span>
-            Additional standard page
-          </span>
-
-          <strong>
-            +$350
-          </strong>
-
-        </div>
-
-
-        <div class="pricing-addon-row">
-
-          <span>
-            Complex custom page
-          </span>
-
-          <strong>
-            from $700
-          </strong>
-
-        </div>
-
-
-        <div class="pricing-addon-row">
-
-          <span>
-            CMS Collection + template
-          </span>
-
-          <strong>
-            from $750
-          </strong>
-
-        </div>
-
-
-        <div class="pricing-addon-row">
-
-          <span>
-            CMS filtering / search
-          </span>
-
-          <strong>
-            from $600
-          </strong>
-
-        </div>
-
-
-        <div class="pricing-addon-row">
-
-          <span>
-            HubSpot form integration
-          </span>
-
-          <strong>
-            from $500
-          </strong>
-
-        </div>
-
-
-        <div class="pricing-addon-row">
-
-          <span>
-            GTM + GA4 setup
-          </span>
-
-          <strong>
-            from $400
-          </strong>
-
-        </div>
-
-
-        <div class="pricing-addon-row">
-
-          <span>
-            Custom JavaScript feature
-          </span>
-
-          <strong>
-            from $500
-          </strong>
-
-        </div>
-
-
-        <div class="pricing-addon-row">
-
-          <span>
-            Dedicated performance optimisation
-          </span>
-
-          <strong>
-            from $600
-          </strong>
-
-        </div>
-
-
-      </div>
-
-
-      <p class="jm-small pricing-breakdown-note">
-
-        Multiple additions are quoted together
-        as one project scope.
-
+      <p>
+        Ongoing help for businesses that need more than
+        occasional one-off fixes
       </p>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         ONGOING SUPPORT
-    ====================================================== -->
-
-    <section class="jm-section">
-
-      <span class="jm-eyebrow">
-        Ongoing Support
-      </span>
-
-
-      <h2 class="jm-h2">
-        Need help after launch?
-      </h2>
-
-
-      <div class="pricing-support-grid">
-
-
-        <!-- =================================================
-             WEBSITE SUPPORT
-        ================================================== -->
-
-        <article class="jm-card jm-card--raised pricing-support-card">
-
-          <span class="jm-card__label">
-            Website Support
-          </span>
-
-
-          <h3 class="jm-h3 pricing-support-card__price">
-            $750 / month
-          </h3>
-
-
-          <ul class="pricing-support-list">
-
-            <li>
-              Regular website changes
-            </li>
-
-            <li>
-              CMS updates
-            </li>
-
-            <li>
-              Responsive fixes
-            </li>
-
-            <li>
-              Forms + light integrations
-            </li>
-
-          </ul>
-
-        </article>
-
-
-
-        <!-- =================================================
-             TECHNICAL PARTNER
-        ================================================== -->
-
-        <article class="jm-card jm-card--purple pricing-support-card">
-
-          <span class="jm-card__label">
-            Technical Partner
-          </span>
-
-
-          <h3 class="jm-h3 pricing-support-card__price">
-            $1,500 / month
-          </h3>
-
-
-          <ul class="pricing-support-list">
-
-            <li>
-              Ongoing development
-            </li>
-
-            <li>
-              Webflow + CMS work
-            </li>
-
-            <li>
-              Custom code
-            </li>
-
-            <li>
-              Technical improvements
-            </li>
-
-            <li>
-              Campaign + launch QA
-            </li>
-
-          </ul>
-
-        </article>
-
-
-
-        <!-- =================================================
-             DEDICATED WEBSITE PARTNER
-        ================================================== -->
-
-        <article class="jm-card jm-card--raised pricing-support-card">
-
-          <span class="jm-card__label">
-            Dedicated Website Partner
-          </span>
-
-
-          <h3 class="jm-h3 pricing-support-card__price">
-            From $2,500 / month
-          </h3>
-
-
-          <ul class="pricing-support-list">
-
-            <li>
-              Priority development support
-            </li>
-
-            <li>
-              New pages + sections
-            </li>
-
-            <li>
-              Webflow technical ownership
-            </li>
-
-            <li>
-              SEO + analytics monitoring
-            </li>
-
-            <li>
-              Integrations + improvements
-            </li>
-
-            <li>
-              Ongoing team support
-            </li>
-
-          </ul>
-
-        </article>
-
-
-      </div>
-
-
-      <p class="jm-small pricing-support-note">
-
-        Need greater ongoing development capacity?
-        Embedded support is available by custom scope.
-
-        <br>
-
-        Larger standalone applications, major rebuilds
-        and substantial new systems are scoped separately.
-
-      </p>
-
-    </section>
-
-
-
-  <!-- =====================================================
-     FOCUSED WEB APPLICATIONS
-====================================================== -->
-
-<section class="jm-section jm-dark pricing-apps">
-
-  <div class="pricing-apps__layout">
-
-
-    <!-- =================================================
-         APP INTRO
-    ================================================== -->
-
-    <div class="pricing-apps__content">
-
-      <span class="jm-eyebrow">
-        Focused Web Applications
-      </span>
-
-
-      <h2 class="jm-h2">
-        Need something
-        <span class="jm-gradient-text">
-          beyond a website?
-        </span>
-      </h2>
-
-
-      <p class="jm-body">
-
-        I build focused digital tools around one clear
-        business problem - from dashboards and portals
-        to internal workflows and API-connected tools.
-
-      </p>
-
-
-      <div class="pricing-apps__examples">
-
-        <span class="jm-pill">
-          Dashboards
-        </span>
-
-        <span class="jm-pill">
-          Client Portals
-        </span>
-
-        <span class="jm-pill">
-          Workflow Tools
-        </span>
-
-        <span class="jm-pill">
-          Audit Tools
-        </span>
-
-        <span class="jm-pill">
-          API Utilities
-        </span>
-
-        <span class="jm-pill">
-          AI Features
-        </span>
-
-      </div>
 
     </div>
 
 
+    <!-- SUPPORT OPTIONS -->
 
-    <!-- =================================================
-         APP FEATURE CARD
-    ================================================== -->
-
-    <article class="jm-card jm-card--highlight pricing-app-feature">
-
-      <span class="jm-card__label">
-        Focused Web App / Digital Tool
-      </span>
+    <div class="pricing-support__grid">
 
 
-      <strong class="pricing-app-feature__price">
-        From $5,000
-      </strong>
+      <!-- WEBSITE SUPPORT -->
+
+      <article class="pricing-support-card reveal">
+
+        <div class="pricing-support-card__top">
+
+          <span
+            class="pricing-support-card__icon"
+            aria-hidden="true"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M14.7 6.3a4 4 0 0 0-5 5L3 18l3 3 6.7-6.7a4 4 0 0 0 5-5l-2.4 2.4-3-3 2.4-2.4z"/>
+            </svg>
+          </span>
+
+          <div>
+            <h3>
+              Website Support
+            </h3>
+
+            <p>
+              Reliable help with regular website work
+            </p>
+          </div>
+
+        </div>
 
 
-      <p class="jm-card__text">
+        <div class="pricing-support-card__price">
 
-        Best for a contained application with one clear
-        workflow and a defined technical scope.
+          <strong>
+            $750
+          </strong>
 
-      </p>
+          <span>
+            per month
+          </span>
 
-
-      <ul class="pricing-app-feature__list">
-
-        <li>
-          Custom interface
-        </li>
-
-        <li>
-          Responsive development
-        </li>
-
-        <li>
-          Authentication where required
-        </li>
-
-        <li>
-          Database or API connections
-        </li>
-
-        <li>
-          Focused workflow or functionality
-        </li>
-
-        <li>
-          Testing + deployment
-        </li>
-
-      </ul>
+        </div>
 
 
-      <a
-        href="#pricing-contact"
-        class="jm-button jm-button--primary"
+        <ul>
+
+          <li>Regular website changes</li>
+          <li>CMS updates</li>
+          <li>Responsive fixes</li>
+          <li>Forms and light integrations</li>
+
+        </ul>
+
+      </article>
+
+
+      <!-- TECHNICAL PARTNER -->
+
+      <article
+        class="pricing-support-card pricing-support-card--featured reveal"
       >
-        Discuss an App Idea
-      </a>
 
-    </article>
+        <span class="pricing-support-card__badge">
+          Most flexible
+        </span>
+
+        <div class="pricing-support-card__top">
+
+          <span
+            class="pricing-support-card__icon"
+            aria-hidden="true"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 2v3"/>
+              <path d="M12 19v3"/>
+              <path d="m4.93 4.93 2.12 2.12"/>
+              <path d="m16.95 16.95 2.12 2.12"/>
+              <path d="M2 12h3"/>
+              <path d="M19 12h3"/>
+              <path d="m4.93 19.07 2.12-2.12"/>
+              <path d="m16.95 7.05 2.12-2.12"/>
+              <circle cx="12" cy="12" r="4"/>
+            </svg>
+          </span>
 
+          <div>
+            <h3>
+              Technical Partner
+            </h3>
 
-  </div>
+            <p>
+              Ongoing development and technical improvements
+            </p>
+          </div>
 
+        </div>
 
-  <p class="jm-small pricing-apps__note">
 
-    Larger or technically uncertain applications
-    are scoped separately after discovery.
+        <div class="pricing-support-card__price">
 
-  </p>
+          <strong>
+            $1,500
+          </strong>
 
-</section>
+          <span>
+            per month
+          </span>
 
+        </div>
 
 
-<!-- =====================================================
-     TECHNICAL WORK
-====================================================== -->
+        <ul>
 
-<section class="jm-section jm-soft">
+          <li>Ongoing development</li>
+          <li>Webflow and CMS work</li>
+          <li>Custom code</li>
+          <li>Campaign and launch QA</li>
 
-  <span class="jm-eyebrow">
-    Technical Work
-  </span>
+        </ul>
 
+      </article>
 
-  <h2 class="jm-h2">
-    Already have a website?
-  </h2>
 
+      <!-- DEDICATED PARTNER -->
 
-  <div class="pricing-other-grid">
+      <article class="pricing-support-card reveal">
 
+        <div class="pricing-support-card__top">
 
-    <!-- =================================================
-         SMALL FIX
-    ================================================== -->
+          <span
+            class="pricing-support-card__icon"
+            aria-hidden="true"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </span>
 
-    <article class="jm-card jm-card--raised">
+          <div>
+            <h3>
+              Dedicated Website Partner
+            </h3>
 
-      <span class="jm-card__label">
-        Small Fix
-      </span>
+            <p>
+              Priority website ownership and ongoing growth
+            </p>
+          </div>
 
+        </div>
 
-      <strong class="jm-card__title pricing-other-price">
-        From $200
-      </strong>
 
+        <div class="pricing-support-card__price">
 
-      <p class="jm-card__text">
+          <strong>
+            From $2,500
+          </strong>
 
-        One clear, contained website fix
-        or small approved change.
+          <span>
+            per month
+          </span>
 
-      </p>
+        </div>
 
-    </article>
 
+        <ul>
 
+          <li>Priority development support</li>
+          <li>New pages and sections</li>
+          <li>Webflow technical ownership</li>
+          <li>SEO and analytics monitoring</li>
 
-    <!-- =================================================
-         TECHNICAL DIAGNOSTIC
-    ================================================== -->
+        </ul>
 
-    <article class="jm-card jm-card--highlight">
+      </article>
 
-      <span class="jm-card__label">
-        Technical Diagnostic
-      </span>
 
+    </div>
 
-      <strong class="jm-card__title pricing-other-price">
-        From $350
-      </strong>
 
-
-      <p class="jm-card__text">
-
-        For problems where the cause needs
-        to be investigated before the repair is scoped.
-
-      </p>
-
-    </article>
-
-
-
-    <!-- =================================================
-         TECHNICAL RESCUE
-    ================================================== -->
-
-    <article class="jm-card jm-card--purple">
-
-      <span class="jm-card__label">
-        Technical Rescue
-      </span>
-
-
-      <strong class="jm-card__title pricing-other-price">
-        From $1,500
-      </strong>
-
-
-      <p class="jm-card__text">
-
-        Larger Webflow, CMS, responsive,
-        custom-code or integration problems
-        that need more substantial repair.
-
-      </p>
-
-    </article>
-
-
-  </div>
-
-
-  <p class="jm-small pricing-technical-note">
-
-    If the cause is unclear, I start with a diagnostic
-    before quoting the larger repair.
-
-  </p>
-
-</section>
-
-
-
-<!-- =====================================================
-     HOW IT WORKS
-====================================================== -->
-
-<section class="jm-section">
-
-  <span class="jm-eyebrow">
-    How It Works
-  </span>
-
-
-  <h2 class="jm-h2">
-    Simple from the start
-  </h2>
-
-
-  <div class="pricing-process-grid">
-
-
-    <article class="jm-card">
-
-      <span class="jm-number">
-        01
-      </span>
-
-      <strong class="jm-card__title">
-        Tell me what you need
-      </strong>
-
-    </article>
-
-
-    <article class="jm-card">
-
-      <span class="jm-number">
-        02
-      </span>
-
-      <strong class="jm-card__title">
-        I confirm the scope
-      </strong>
-
-    </article>
-
-
-    <article class="jm-card">
-
-      <span class="jm-number">
-        03
-      </span>
-
-      <strong class="jm-card__title">
-        You get a clear quote
-      </strong>
-
-    </article>
-
-
-    <article class="jm-card">
-
-      <span class="jm-number">
-        04
-      </span>
-
-      <strong class="jm-card__title">
-        I build
-      </strong>
-
-    </article>
-
+    <p class="pricing-support__note">
+      Larger ongoing development requirements are available
+      by custom scope
+    </p>
 
   </div>
 
 </section>
 
-    <!-- =====================================================
-         QUICK FAQ
-    ====================================================== -->
 
-    <section class="jm-section jm-soft">
+  <!-- ===================================================
+       SPECIALIST WORK
+  ==================================================== -->
 
-      <span class="jm-eyebrow">
-        Quick Questions
-      </span>
+  <section
+    class="jm-section pricing-specialist"
+    aria-labelledby="specialist-title"
+  >
 
 
-      <h2 class="jm-h2">
+    <header class="pricing-specialist__heading reveal">
+
+      <h2
+        id="specialist-title"
+        class="jm-h2"
+      >
+        Beyond a standard
+        <span class="jm-gradient-text">
+          website
+        </span>
+      </h2>
+
+      <p>
+        Focused digital products and technical help
+        for existing platforms
+      </p>
+
+    </header>
+
+
+    <div class="pricing-specialist__layout">
+
+
+      <!-- FOCUSED APPLICATION -->
+
+      <article class="pricing-application reveal">
+
+        <span
+          class="pricing-application__cube pricing-application__cube--one"
+          aria-hidden="true"
+        ></span>
+
+        <span
+          class="pricing-application__cube pricing-application__cube--two"
+          aria-hidden="true"
+        ></span>
+
+
+        <div class="pricing-application__content">
+
+          <h3>
+            Focused Web Application
+          </h3>
+
+          <strong>
+            From $5,000
+          </strong>
+
+          <p>
+            A contained application built around one clear
+            workflow and a defined technical scope
+          </p>
+
+          <ul>
+
+            <li>Custom interface</li>
+            <li>Responsive development</li>
+            <li>Authentication where required</li>
+            <li>Database or API connections</li>
+            <li>Testing and deployment</li>
+
+          </ul>
+
+          <p class="pricing-application__examples">
+            Dashboards · Client portals · Workflow tools ·
+            Audit tools · API utilities · AI features
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- TECHNICAL WORK -->
+
+      <div class="pricing-technical reveal">
+
+        <h3 class="jm-h3">
+          Already have a website
+        </h3>
+
+        <p class="pricing-technical__intro">
+          Choose a clear starting point for fixes,
+          investigation or larger technical repairs
+        </p>
+
+
+        <div class="pricing-technical__list">
+
+
+          <article>
+
+            <div>
+
+              <h4>
+                Small Fix
+              </h4>
+
+              <p>
+                One clear website fix or small approved change
+              </p>
+
+            </div>
+
+            <strong>
+              From $200
+            </strong>
+
+          </article>
+
+
+          <article>
+
+            <div>
+
+              <h4>
+                Technical Diagnostic
+              </h4>
+
+              <p>
+                Investigation when the cause needs to be
+                understood before repair
+              </p>
+
+            </div>
+
+            <strong>
+              From $350
+            </strong>
+
+          </article>
+
+
+          <article>
+
+            <div>
+
+              <h4>
+                Technical Rescue
+              </h4>
+
+              <p>
+                Larger Webflow, CMS, responsive, custom-code
+                or integration repairs
+              </p>
+
+            </div>
+
+            <strong>
+              From $1,500
+            </strong>
+
+          </article>
+
+
+        </div>
+
+
+        <p class="pricing-technical__note">
+          If the cause is unclear, the work begins
+          with a diagnostic
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- ===================================================
+       PROCESS AND FAQ
+  ==================================================== -->
+
+  <section class="jm-section pricing-information">
+
+
+    <!-- PROCESS -->
+
+    <div
+      class="pricing-process reveal"
+      aria-labelledby="process-title"
+    >
+
+      <h2
+        id="process-title"
+        class="jm-h2"
+      >
+        Simple from the start
+      </h2>
+
+
+      <ol class="pricing-process__list">
+
+        <li>
+
+          <span>
+            01
+          </span>
+
+          <strong>
+            Tell me what you need
+          </strong>
+
+        </li>
+
+        <li>
+
+          <span>
+            02
+          </span>
+
+          <strong>
+            I confirm the scope
+          </strong>
+
+        </li>
+
+        <li>
+
+          <span>
+            03
+          </span>
+
+          <strong>
+            You receive a clear quote
+          </strong>
+
+        </li>
+
+        <li>
+
+          <span>
+            04
+          </span>
+
+          <strong>
+            I build and deliver
+          </strong>
+
+        </li>
+
+      </ol>
+
+    </div>
+
+
+    <!-- FAQ -->
+
+    <div
+      class="pricing-faq-panel reveal"
+      aria-labelledby="faq-title"
+    >
+
+      <h2
+        id="faq-title"
+        class="jm-h2"
+      >
         Good to know
       </h2>
 
 
       <div class="pricing-faq">
-
 
         <details>
 
@@ -1231,8 +1319,8 @@
           </summary>
 
           <p>
-            They are starting prices.
-            Your final quote is based on the agreed scope.
+            They are starting prices. Your final quote
+            is based on the agreed scope.
           </p>
 
         </details>
@@ -1245,8 +1333,8 @@
           </summary>
 
           <p>
-            I prefer fixed pricing for clearly defined work
-            wherever possible.
+            I prefer fixed pricing for clearly defined
+            work wherever possible.
           </p>
 
         </details>
@@ -1259,7 +1347,8 @@
           </summary>
 
           <p>
-            Yes. Small contained technical work starts from $200.
+            Yes. Small contained technical work
+            starts from $200.
           </p>
 
         </details>
@@ -1268,7 +1357,7 @@
         <details>
 
           <summary>
-            Not sure what I need?
+            What if I am not sure what I need?
           </summary>
 
           <p>
@@ -1278,62 +1367,65 @@
 
         </details>
 
-
       </div>
 
-    </section>
+    </div>
 
 
-
-    <!-- =====================================================
-         FINAL CTA
-    ====================================================== -->
-
-    <section
-      id="pricing-contact"
-      class="jm-final jm-purple"
-    >
-
-      <p class="jm-final__eyebrow">
-        Start a Project
-      </p>
+  </section>
 
 
-      <h2 class="jm-final__title">
+  <!-- ===================================================
+       FINAL CTA
+  ==================================================== -->
 
-        Tell me what you need<br>
-        I'll help you work out the rest
+  <section
+    id="pricing-contact"
+    class="pricing-final"
+    aria-labelledby="pricing-final-title"
+  >
 
+    <span
+      class="pricing-final__liquid pricing-final__liquid--one"
+      aria-hidden="true"
+    ></span>
+
+    <span
+      class="pricing-final__liquid pricing-final__liquid--two"
+      aria-hidden="true"
+    ></span>
+
+
+    <div class="pricing-final__panel reveal">
+
+      <h2
+        id="pricing-final-title"
+        class="pricing-final__title"
+      >
+        Tell me what you need
+        <span class="jm-gradient-text">
+          I’ll help work out the rest
+        </span>
       </h2>
 
+      <p>
+        Start with what you know so far
+      </p>
 
-      <div class="jm-final__actions">
+      <a
+        href="contact.html"
+        class="jm-button jm-button--primary"
+      >
+        Start a Conversation
+        <span aria-hidden="true">→</span>
+      </a>
 
+    </div>
 
-        <a
-          href="https://calendly.com/jess-manning-dev/new-meeting"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="jm-button jm-button--glass"
-        >
-          Book a Free Call
-        </a>
-
-
-        <a
-          href="mailto:jess.manning.dev@gmail.com?subject=JM%20Sites%20Project%20Enquiry"
-          class="jm-button jm-button--glass"
-        >
-          Email Me
-        </a>
+  </section>
 
 
-      </div>
-
-    </section>
-
-
-  </main>
+</main>
 
 
 
@@ -1341,215 +1433,121 @@
      GLOBAL JM SITES FOOTER
 ====================================================== -->
 
-<footer class="jm-footer">
+  <footer class="jm-footer">
+    <div class="jm-footer__glow" aria-hidden="true"></div>
 
-  <div
-    class="jm-footer__glow"
-    aria-hidden="true"
-  ></div>
+    <div class="jm-footer__inner">
+      <div class="jm-footer__social-block">
+        <span class="jm-footer__label">Connect</span>
 
-
-  <div class="jm-footer__inner">
-
-
-    <!-- SOCIALS - LEFT -->
-
-    <div class="jm-footer__social-block">
-
-      <span class="jm-footer__label">
-        Connect
-      </span>
-
-      <div
-        class="jm-footer__socials"
-        aria-label="JM Sites social links"
-      >
-
-        <a
-          href="https://www.linkedin.com/in/jess-manning-dev"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Jessica Manning on LinkedIn"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            aria-hidden="true"
+        <div class="jm-footer__socials" aria-label="JM Sites social links">
+          <a
+            href="https://www.linkedin.com/in/jess-manning-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Jessica Manning on LinkedIn"
           >
-            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-          </svg>
-        </a>
-<!-- X -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
 
-<a
-  href="https://x.com/JessJMSites"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="JM Sites on X"
->
-  <svg
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    aria-hidden="true"
-  >
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.458l-5.056-6.605-5.79 6.605H2.215l7.55-8.63L1.773 2.25H8.39l4.57 6.04 5.284-6.04zm-1.161 17.52h1.833L7.394 4.126H5.428L17.083 19.77z"/>
-  </svg>
-</a>
-
-<!-- FACEBOOK -->
-
-<a
-  href="PASTE-YOUR-FACEBOOK-PAGE-URL-HERE"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="JM Sites on Facebook"
->
-  <svg
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    aria-hidden="true"
-  >
-    <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.099 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.414c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.971h-1.513c-1.49 0-1.956.931-1.956 1.887v2.262h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.099 24 12.073z"/>
-  </svg>
-</a>
-
-
-        <a
-          href="https://www.instagram.com/jmsites.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="JM Sites on Instagram"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            aria-hidden="true"
+          <a
+            href="https://x.com/JessJMSites"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="JM Sites on X"
           >
-            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-          </svg>
-        </a>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.458l-5.056-6.605-5.79 6.605H2.215l7.55-8.63L1.773 2.25H8.39l4.57 6.04 5.284-6.04zm-1.161 17.52h1.833L7.394 4.126H5.428L17.083 19.77z"/>
+            </svg>
+          </a>
 
-
-        <a
-          href="https://github.com/Jess-dev-93"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Jessica Manning on GitHub"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            aria-hidden="true"
+          <a
+            href="https://www.facebook.com/profile.php?id=61593877079027"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="JM Sites on Facebook"
           >
-            <path d="M12 .7C5.73.7.7 5.82.7 12.13c0 5.05 3.24 9.33 7.73 10.84.56.11.77-.25.77-.55v-2.15c-3.15.69-3.81-1.35-3.81-1.35-.51-1.33-1.26-1.68-1.26-1.68-1.03-.71.08-.7.08-.7 1.14.08 1.74 1.18 1.74 1.18 1.01 1.75 2.65 1.25 3.3.95.1-.74.4-1.25.72-1.54-2.51-.29-5.15-1.27-5.15-5.64 0-1.25.44-2.27 1.17-3.07-.12-.29-.51-1.45.11-3.03 0 0 .95-.31 3.12 1.17a10.7 10.7 0 0 1 5.68 0c2.17-1.48 3.12-1.17 3.12-1.17.62 1.58.23 2.74.11 3.03.73.8 1.17 1.82 1.17 3.07 0 4.38-2.65 5.34-5.17 5.63.41.36.77 1.06.77 2.14v3.17c0 .3.2.66.78.55 4.48-1.51 7.71-5.79 7.71-10.84C23.3 5.82 18.27.7 12 .7z"/>
-          </svg>
-        </a>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.099 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.414c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.971h-1.513c-1.49 0-1.956.931-1.956 1.887v2.262h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.099 24 12.073z"/>
+            </svg>
+          </a>
 
+          <a
+            href="https://www.instagram.com/jmsites.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="JM Sites on Instagram"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+
+          <a
+            href="https://github.com/Jess-dev-93"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Jessica Manning on GitHub"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .7C5.73.7.7 5.82.7 12.13c0 5.05 3.24 9.33 7.73 10.84.56.11.77-.25.77-.55v-2.15c-3.15.69-3.81-1.35-3.81-1.35-.51-1.33-1.26-1.68-1.26-1.68-1.03-.71.08-.7.08-.7 1.14.08 1.74 1.18 1.74 1.18 1.01 1.75 2.65 1.25 3.3.95.1-.74.4-1.25.72-1.54-2.51-.29-5.15-1.27-5.15-5.64 0-1.25.44-2.27 1.17-3.07-.12-.29-.51-1.45.11-3.03 0 0 .95-.31 3.12 1.17a10.7 10.7 0 0 1 5.68 0c2.17-1.48 3.12-1.17 3.12-1.17.62 1.58.23 2.74.11 3.03.73.8 1.17 1.82 1.17 3.07 0 4.38-2.65 5.34-5.17 5.63.41.36.77 1.06.77 2.14v3.17c0 .3.2.66.78.55 4.48-1.51 7.71-5.79 7.71-10.84C23.3 5.82 18.27.7 12 .7z"/>
+            </svg>
+          </a>
+        </div>
       </div>
 
+      <a href="index.html" class="jm-footer__brand" aria-label="JM Sites home">
+        <img
+          src="images/logo.png"
+          alt=""
+          class="jm-footer__logo"
+          width="50"
+          height="50"
+        >
+        <span class="jm-footer__brand-copy"><strong>JM Sites</strong></span>
+      </a>
+
+      <nav class="jm-footer__nav" aria-label="Footer navigation">
+        <span class="jm-footer__label">Explore</span>
+        <div class="jm-footer__nav-links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="index.html#about">About</a>
+          <a href="contact.html">Contact</a>
+      
+        </div>
+      </nav>
     </div>
 
-
-    <!-- BRAND - CENTRE -->
-
-    <a
-      href="index.html"
-      class="jm-footer__brand"
-      aria-label="JM Sites home"
-    >
-
-      <img
-        src="images/logo.png"
-        alt=""
-        class="jm-footer__logo"
-        width="50"
-        height="50"
-      >
-
-      <span class="jm-footer__brand-copy">
-
-        <strong>
-          JM Sites
-        </strong>
-
-      </span>
-
-    </a>
-
-
-    <!-- NAVIGATION - RIGHT -->
-
-    <nav
-      class="jm-footer__nav"
-      aria-label="Footer navigation"
-    >
-
-      <span class="jm-footer__label">
-        Explore
-      </span>
-
-      <div class="jm-footer__nav-links">
-
-        <a href="index.html">
-          Home
-        </a>
-
-        <a href="projects.html">
-          Projects
-        </a>
-
-        <a href="pricing.html">
-          Pricing
-        </a>
-
-        <a href="index.html#about">
-          About
-        </a>
-
-        <a href="contact.html">
-          Contact
-        </a>
-
+    <div class="jm-footer__bottom">
+      <div class="jm-footer__direct">
+        <a href="mailto:jess.manning.dev@gmail.com">jess.manning.dev@gmail.com</a>
+        <a href="tel:+61415757754">0415 757 754</a>
       </div>
 
-    </nav>
-
-
-  </div>
-
-
-  <!-- CONTACT + LEGAL -->
-
-  <div class="jm-footer__bottom">
-
-    <div class="jm-footer__direct">
-
-      <a href="mailto:jess.manning.dev@gmail.com">
-        jess.manning.dev@gmail.com
-      </a>
-
-      <a href="tel:+61415757754">
-        0415 757 754
-      </a>
-
+      <p>© <span id="year"></span> JM Sites · Web Development &amp; Digital Solutions</p>
+      <p>ABN 84 985 864 627</p>
     </div>
 
-    <p>
-      © <span id="year"></span>
-      JM Sites · Web Development & Digital Solutions
-    </p>
-
-    <p>
-      ABN 84 985 864 627
-    </p>
-
-  </div>
-
-</footer>
+    <div class="jm-footer__legal" aria-label="Privacy links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <button
+        type="button"
+        onclick="window._hsp = window._hsp || []; window._hsp.push(['showBanner']);"
+      >
+        Cookie Settings
+      </button>
+    </div>
+  </footer>
 
 
   <script src="jm-global.js"></script>
-
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-ap1.hs-scripts.com/442868073.js"></script>
+<!-- End of HubSpot Embed Code -->
 </body>
 
 </html>

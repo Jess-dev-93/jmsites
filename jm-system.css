@@ -542,7 +542,7 @@ a {
 
 .jm-hero .jm-gradient-text {
   display: block;
-
+overflow: visible;
   padding-bottom: 0.08em;
 }
 
@@ -846,6 +846,8 @@ a {
 
   color:
     transparent;
+  padding-right: 0.18em;
+padding-bottom: 0.1em;
 
   -webkit-text-fill-color:
     transparent;
@@ -1679,7 +1681,7 @@ a {
     var(--jm-white);
 
   color:
-    var(--jm-purple);
+    var(--jm-purple-light);
 
   box-shadow:
     0 16px 34px
@@ -2353,6 +2355,13 @@ a {
       0
       0;
   }
+
+     .jm-nav__link, .jm-nav__cta  {
+  border-color: rgba(218, 145, 255, 0.42);
+  background: linear-gradient(135deg, #6a12b8, #8f2be7 60%, #a13af2);
+  box-shadow: 0 14px 36px rgba(119, 34, 215, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+
+}
 
 
   /* HAMBURGER TO X */
@@ -3532,4 +3541,130 @@ a {
 .jm-hero--spotlight .jm-hero__intro {
   color:
     var(--jm-muted);
+}
+
+.jm-footer__cookie-button {
+  position: relative;
+
+  padding:
+    0.2rem
+    0;
+
+  border: 0;
+
+  background:
+    transparent;
+
+  color:
+    rgba(255, 255, 255, 0.70);
+
+  font-family:
+    inherit;
+
+  font-size:
+    0.74rem;
+
+  line-height:
+    1;
+
+  font-weight:
+    700;
+
+  cursor:
+    pointer;
+
+  transition:
+    color
+    var(--jm-transition-fast),
+
+    text-shadow
+    var(--jm-transition-fast);
+}
+
+.jm-footer__cookie-button:hover {
+  color:
+    var(--jm-white);
+
+  text-shadow:
+    0 0 12px
+    rgba(198, 107, 247, 0.28);
+}
+
+/* =========================================================
+   FOOTER PRIVACY LINKS
+========================================================= */
+
+.jm-footer__legal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap:
+    0.45rem
+    1rem;
+
+  width: 100%;
+  max-width: var(--jm-content-max);
+
+  margin:
+    0.65rem
+    auto
+    0;
+
+  padding-top: 0.65rem;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+}
+
+.jm-footer__legal a,
+.jm-footer__legal button {
+  padding: 0;
+
+  border: 0;
+
+  background:
+    transparent;
+
+  color:
+    rgba(255, 255, 255, 0.52);
+
+  font:
+    inherit;
+
+  font-size: 0.64rem;
+
+  line-height: 1.4;
+
+  font-weight: 700;
+
+  text-decoration:
+    none;
+
+  cursor:
+    pointer;
+
+  transition:
+    color
+    var(--jm-transition-fast),
+
+    text-shadow
+    var(--jm-transition-fast);
+}
+
+.jm-footer__legal a:hover,
+.jm-footer__legal button:hover {
+  color:
+    var(--jm-cyan);
+
+  text-shadow:
+    0 0 12px
+    rgba(0, 212, 255, 0.30);
+}
+
+.jm-footer__legal a[aria-current="page"] {
+  color:
+    rgba(255, 255, 255, 0.82);
 }
